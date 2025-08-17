@@ -1,38 +1,38 @@
 {
   description = "My personal NUR repository";
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  inputs = {
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
+  };
   outputs =
-    { self, nixpkgs }:
+    { self, nixpkgs, ... }@inputs:
     let
-      forAllSystems = nixpkgs.lib.genAttrs [
-        "aarch64-darwin"
-        "aarch64-linux"
-        "x86_64-darwin"
-        "x86_64-linux"
-      ];
+      forAllSystems =
+        f:
+        nixpkgs.lib.genAttrs [
+          "aarch64-darwin"
+          "aarch64-linux"
+          "x86_64-darwin"
+          "x86_64-linux"
+        ] (system: f nixpkgs.legacyPackages.${system});
     in
     {
       legacyPackages = forAllSystems (
-        system:
+        pkgs:
         import ./default.nix {
-          pkgs = import nixpkgs { inherit system; };
+          inherit pkgs;
         }
       );
       packages = forAllSystems (
-        system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
+        pkgs: pkgs.lib.filterAttrs (_: v: pkgs.lib.isDerivation v) self.legacyPackages.${pkgs.system}
       );
-      devShells = forAllSystems (system: {
-        default =
-          let
-            pkgs = import nixpkgs { inherit system; };
-          in
-          pkgs.mkShell {
-            packages = with pkgs; [
-              nvfetcher
-              cachix
-              node2nix
-            ];
-          };
+      devShells = forAllSystems (pkgs: {
+        default = pkgs.mkShell {
+          packages = with pkgs; [
+            nvfetcher
+            cachix
+            node2nix
+          ];
+        };
       });
     };
 }
