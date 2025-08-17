@@ -25,4 +25,5 @@ in
   claude-code = nodePkgs."@anthropic-ai/claude-code";
   ccusage = nodePkgs."ccusage";
   vim = pkgs.callPackage ./pkgs/vim { };
+  neovim = pkgs.callPackage ./pkgs/neovim { };
 }
