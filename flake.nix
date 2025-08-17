@@ -30,6 +30,7 @@
             packages = with pkgs; [
               nvfetcher
               cachix
+              node2nix
             ];
           };
       });
