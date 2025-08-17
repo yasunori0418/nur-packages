@@ -8,5 +8,11 @@
       enable = true;
       package = pkgs.nixfmt-rfc-style;
     };
+    statix = {
+      enable = true;
+      excludes = [
+        ".direnv"
+      ];
+    };
   };
 }
