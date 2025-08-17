@@ -21,5 +21,14 @@
       packages = forAllSystems (
         system: nixpkgs.lib.filterAttrs (_: v: nixpkgs.lib.isDerivation v) self.legacyPackages.${system}
       );
+      devShells = forAllSystems (system: {
+        default =
+          let
+            pkgs = import nixpkgs { inherit system; };
+          in
+          pkgs.mkShell {
+            packages = with pkgs; [ nvfetcher ];
+          };
+      });
     };
 }
