@@ -9,7 +9,13 @@
 {
   pkgs ? import <nixpkgs> { },
 }:
-
+let
+  nodePkgs = pkgs.callPackage ./pkgs/node2nix {
+    inherit pkgs;
+    inherit (pkgs) system;
+    nodejs = pkgs.nodejs_24;
+  };
+in
 {
   # The `lib`, `modules`, and `overlays` names are special
   lib = import ./lib { inherit pkgs; }; # functions
@@ -17,6 +23,8 @@
   overlays = import ./overlays; # nixpkgs overlays
 
   example-package = pkgs.callPackage ./pkgs/example-package { };
+  claude-code = nodePkgs."@anthropic-ai/claude-code";
+  ccusage = nodePkgs."ccusage";
   # some-qt5-package = pkgs.libsForQt5.callPackage ./pkgs/some-qt5-package { };
   # ...
 }
