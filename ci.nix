@@ -57,7 +57,6 @@ let
       map (n: nameValuePair n nurAttrs.${n}) (filter (n: !isReserved n) (attrNames nurAttrs))
     )
   );
-
 in
 rec {
   buildPkgs = filter isBuildable nurPkgs;
