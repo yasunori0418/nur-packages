@@ -27,7 +27,10 @@
             pkgs = import nixpkgs { inherit system; };
           in
           pkgs.mkShell {
-            packages = with pkgs; [ nvfetcher ];
+            packages = with pkgs; [
+              nvfetcher
+              cachix
+            ];
           };
       });
     };
