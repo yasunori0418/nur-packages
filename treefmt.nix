@@ -14,5 +14,8 @@
         ".direnv"
       ];
     };
+    prettier = {
+      enable = true;
+    };
   };
 }
