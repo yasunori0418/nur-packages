@@ -1,44 +1,44 @@
 {
-    "neovim": {
-        "cargoLocks": null,
-        "date": "2025-08-21",
-        "extract": null,
-        "name": "neovim",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "neovim",
-            "repo": "neovim",
-            "rev": "94677318655eb803fccef4409834b6b77e11282a",
-            "sha256": "sha256-b2Xk0g8JfH3+X7gwCf/3JhEJjOyDeZpD6Ur2aL98o1A=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "94677318655eb803fccef4409834b6b77e11282a"
+  "neovim": {
+    "cargoLocks": null,
+    "date": "2025-08-21",
+    "extract": null,
+    "name": "neovim",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "neovim",
+      "repo": "neovim",
+      "rev": "94677318655eb803fccef4409834b6b77e11282a",
+      "sha256": "sha256-b2Xk0g8JfH3+X7gwCf/3JhEJjOyDeZpD6Ur2aL98o1A=",
+      "sparseCheckout": [],
+      "type": "github"
     },
-    "vim": {
-        "cargoLocks": null,
-        "date": "2025-08-20",
-        "extract": null,
-        "name": "vim",
-        "passthru": null,
-        "pinned": false,
-        "src": {
-            "deepClone": false,
-            "fetchSubmodules": false,
-            "leaveDotGit": false,
-            "name": null,
-            "owner": "vim",
-            "repo": "vim",
-            "rev": "f3055eac84d2ec657a8c1758a9c62f93f0670b8a",
-            "sha256": "sha256-uFpraV18I1xnEOuQl8EYrBY8nF9KjyWtYv7B6Ar2QPQ=",
-            "sparseCheckout": [],
-            "type": "github"
-        },
-        "version": "f3055eac84d2ec657a8c1758a9c62f93f0670b8a"
-    }
+    "version": "94677318655eb803fccef4409834b6b77e11282a"
+  },
+  "vim": {
+    "cargoLocks": null,
+    "date": "2025-08-20",
+    "extract": null,
+    "name": "vim",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "vim",
+      "repo": "vim",
+      "rev": "f3055eac84d2ec657a8c1758a9c62f93f0670b8a",
+      "sha256": "sha256-uFpraV18I1xnEOuQl8EYrBY8nF9KjyWtYv7B6Ar2QPQ=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "f3055eac84d2ec657a8c1758a9c62f93f0670b8a"
+  }
 }
