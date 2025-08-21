@@ -1,0 +1,3 @@
+[neovim]
+src.git = "https://github.com/neovim/neovim"
+fetch.github = "neovim/neovim"

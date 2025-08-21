@@ -1,1 +1,23 @@
-{}
+{
+  "neovim": {
+    "cargoLocks": null,
+    "date": "2025-08-21",
+    "extract": null,
+    "name": "neovim",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "neovim",
+      "repo": "neovim",
+      "rev": "94677318655eb803fccef4409834b6b77e11282a",
+      "sha256": "sha256-b2Xk0g8JfH3+X7gwCf/3JhEJjOyDeZpD6Ur2aL98o1A=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "94677318655eb803fccef4409834b6b77e11282a"
+  }
+}
