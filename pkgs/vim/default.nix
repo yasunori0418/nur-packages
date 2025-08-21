@@ -1,5 +1,6 @@
 {
   pkgs,
+  sources,
 }:
 let
   inherit (pkgs) lib;
@@ -13,13 +14,14 @@ let
 in
 with pkgs;
 vim.overrideAttrs (prev: rec {
-  version = "9.1.1634";
-  src = fetchFromGitHub {
-    owner = "vim";
-    repo = "vim";
-    rev = "v${version}";
-    hash = "sha256-PRTvJ7DwdPE8pl2/12iTqaXUB4Jmnr8xqrHIaXbt3nQ=";
-  };
+  inherit (sources.vim) version src;
+  # version = "9.1.1634";
+  # src = fetchFromGitHub {
+  #   owner = "vim";
+  #   repo = "vim";
+  #   rev = "v${version}";
+  #   hash = "sha256-PRTvJ7DwdPE8pl2/12iTqaXUB4Jmnr8xqrHIaXbt3nQ=";
+  # };
   configureFlags =
     prev.configureFlags
     ++ [
