@@ -15,6 +15,7 @@ let
     inherit (pkgs) system;
     nodejs = pkgs.nodejs_24;
   };
+  sources = pkgs.callPackage ./_sources/generated.nix { };
 in
 {
   # The `lib`, `modules`, and `overlays` names are special
@@ -25,5 +26,5 @@ in
   claude-code = nodePkgs."@anthropic-ai/claude-code";
   ccusage = nodePkgs."ccusage";
   vim = pkgs.callPackage ./pkgs/vim { };
-  neovim = pkgs.callPackage ./pkgs/neovim { };
+  neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
 }
