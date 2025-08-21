@@ -18,4 +18,16 @@
     };
     date = "2025-08-21";
   };
+  vim = {
+    pname = "vim";
+    version = "f3055eac84d2ec657a8c1758a9c62f93f0670b8a";
+    src = fetchFromGitHub {
+      owner = "vim";
+      repo = "vim";
+      rev = "f3055eac84d2ec657a8c1758a9c62f93f0670b8a";
+      fetchSubmodules = false;
+      sha256 = "sha256-uFpraV18I1xnEOuQl8EYrBY8nF9KjyWtYv7B6Ar2QPQ=";
+    };
+    date = "2025-08-20";
+  };
 }
