@@ -13,7 +13,7 @@ let
   optionalIsLinux = optional pkgs.stdenv.isLinux;
 in
 with pkgs;
-vim.overrideAttrs (prev: rec {
+vim.overrideAttrs (prev: {
   inherit (sources.vim) version src;
   # version = "9.1.1634";
   # src = fetchFromGitHub {
