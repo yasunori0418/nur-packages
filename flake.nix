@@ -69,7 +69,7 @@
         formatting = treefmtEval.${pkgs.system}.config.build.check self;
       });
       tests = forAllSystems (pkgs: {
-        lib = import ./lib/default_test.nix pkgs;
+        lib = import ./lib/default_test.nix { inherit pkgs; };
       });
     };
 }

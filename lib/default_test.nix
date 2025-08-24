@@ -3,5 +3,5 @@
   ...
 }:
 {
-  attrsets = import ./attrsets_test.nix pkgs;
+  attrsets = import ./attrsets_test.nix { inherit pkgs; };
 }
