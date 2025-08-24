@@ -1,5 +1,8 @@
+{
+  pkgs ? import <nixpkgs> { },
+  ...
+}:
 let
-  pkgs = import <nixpkgs> { };
   lib = import ./attrsets.nix pkgs;
 in
 {
