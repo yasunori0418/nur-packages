@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nix eval --raw --show-trace --impure '.#tests'
