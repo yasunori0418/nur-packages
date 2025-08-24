@@ -2,7 +2,10 @@
   description = "My personal NUR repository";
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
-    nixtest.url = "github:jetify-com/nixtest";
+    nix-unit = {
+      url = "github:nix-community/nix-unit";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     treefmt-nix = {
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -32,6 +35,7 @@
             nvfetcher
             cachix
             node2nix
+            inputs.nix-unit.packages.${pkgs.system}.default
           ];
         };
       });
@@ -39,6 +43,5 @@
       checks = forAllSystems (pkgs: {
         formatting = treefmtEval.${pkgs.system}.config.build.check self;
       });
-      tests = inputs.nixtest.run ./.;
     };
 }
