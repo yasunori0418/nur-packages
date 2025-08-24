@@ -35,10 +35,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "16.1.2";
+    version = "16.2.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-16.1.2.tgz";
-      sha512 = "QFPytT7fgZCJN5ECk9zbkvyrCIRHgODS7O5kMkRD+oW4sH2wnqC+8kTv/HYoWCAPEuK8ZViYkNI+Zw+9rcqscw==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-16.2.0.tgz";
+      sha512 = "eP7RosNkL44L4N0tAevlQxbgwfihNQ6jsGdtK00JXe89KmXaoLawm2nDrW+R/sAJv3Yk2+S0uS7K/sidYtYQdg==";
     };
     buildInputs = globalBuildInputs;
     meta = {

@@ -1,7 +1,7 @@
 {
   "neovim": {
     "cargoLocks": null,
-    "date": "2025-08-23",
+    "date": "2025-08-24",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -13,12 +13,12 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "ed40d89d7c55fdc318095ee0d0f181ddafaca8e1",
-      "sha256": "sha256-4043/NLZLz4WG0IKCNN0FGsHug5RRjx5tTrUW7kFuc8=",
+      "rev": "810a234978d3013e736c6efce0dd5875759cfc56",
+      "sha256": "sha256-5b7pZplGRWegypbgKspCE2Le4l7oGgTIUNwS/lTNh+Y=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "ed40d89d7c55fdc318095ee0d0f181ddafaca8e1"
+    "version": "810a234978d3013e736c6efce0dd5875759cfc56"
   },
   "vim": {
     "cargoLocks": null,
@@ -34,11 +34,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "191d77872d8938fce28abaec061d4d6cde88cf48",
-      "sha256": "sha256-h+IvLUQ+eC5hunsPjBMtYuVaetWhSCoGwCxZ0OonhFg=",
+      "rev": "dc725a04fa739cdeccb8dd7489046b27e0fdec31",
+      "sha256": "sha256-UI8YKhlPsqA2hfyK6hMOY+pC1HNXfCs1rJV6LRxk728=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "191d77872d8938fce28abaec061d4d6cde88cf48"
+    "version": "dc725a04fa739cdeccb8dd7489046b27e0fdec31"
   }
 }
