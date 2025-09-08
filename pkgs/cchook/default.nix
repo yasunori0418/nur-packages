@@ -4,9 +4,8 @@
   sources,
   git,
 }:
-buildGoModule rec {
-  pname = "cchook";
-  inherit (sources.cchook) version src;
+buildGoModule {
+  inherit (sources.cchook) pname version src;
 
   vendorHash = "sha256-2RGMSBWbdaDOfnu31GhRuFj6JUiGvmW6n1LxfLOFJew=";
 
