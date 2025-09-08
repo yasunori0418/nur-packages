@@ -1,7 +1,28 @@
 {
+  "cchook": {
+    "cargoLocks": null,
+    "date": "2025-09-06",
+    "extract": null,
+    "name": "cchook",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "syou6162",
+      "repo": "cchook",
+      "rev": "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3",
+      "sha256": "sha256-Fwx4dipTk9H+P/dNOGqjF4p/nhvR7zv9eD6n6RVnPOc=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3"
+  },
   "neovim": {
     "cargoLocks": null,
-    "date": "2025-09-03",
+    "date": "2025-09-07",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -13,16 +34,16 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "1f7d6c3876c59c30990fb99229e6b867e974c2b0",
-      "sha256": "sha256-QYokpyU8NzKjIyskIAYL67avLWvLuK8cgb3vSBW5198=",
+      "rev": "1cb1cfead017df79aa590d1d297b116a85cb31c0",
+      "sha256": "sha256-wIR5HGfXh2KvPWljC1CfYjsbfKfuoPqfoNaE5m8MPhs=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1f7d6c3876c59c30990fb99229e6b867e974c2b0"
+    "version": "1cb1cfead017df79aa590d1d297b116a85cb31c0"
   },
   "vim": {
     "cargoLocks": null,
-    "date": "2025-09-02",
+    "date": "2025-09-07",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -34,11 +55,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "f165798184dc03895709704df864bd1e43eaf09f",
-      "sha256": "sha256-5Xx03gMt5SkFjgHbsf7z391mYJfHU1yND2ldygKL09E=",
+      "rev": "c7f235bd432c0a7500ae39acdad7d63a614a1b33",
+      "sha256": "sha256-cbPq/paWz1ayUFWA3zx5mxo3UTDSX6/9w2rbT6tOGkw=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "f165798184dc03895709704df864bd1e43eaf09f"
+    "version": "c7f235bd432c0a7500ae39acdad7d63a614a1b33"
   }
 }

@@ -6,28 +6,40 @@
   dockerTools,
 }:
 {
+  cchook = {
+    pname = "cchook";
+    version = "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3";
+    src = fetchFromGitHub {
+      owner = "syou6162";
+      repo = "cchook";
+      rev = "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3";
+      fetchSubmodules = false;
+      sha256 = "sha256-Fwx4dipTk9H+P/dNOGqjF4p/nhvR7zv9eD6n6RVnPOc=";
+    };
+    date = "2025-09-06";
+  };
   neovim = {
     pname = "neovim";
-    version = "1f7d6c3876c59c30990fb99229e6b867e974c2b0";
+    version = "1cb1cfead017df79aa590d1d297b116a85cb31c0";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "1f7d6c3876c59c30990fb99229e6b867e974c2b0";
+      rev = "1cb1cfead017df79aa590d1d297b116a85cb31c0";
       fetchSubmodules = false;
-      sha256 = "sha256-QYokpyU8NzKjIyskIAYL67avLWvLuK8cgb3vSBW5198=";
+      sha256 = "sha256-wIR5HGfXh2KvPWljC1CfYjsbfKfuoPqfoNaE5m8MPhs=";
     };
-    date = "2025-09-03";
+    date = "2025-09-07";
   };
   vim = {
     pname = "vim";
-    version = "f165798184dc03895709704df864bd1e43eaf09f";
+    version = "c7f235bd432c0a7500ae39acdad7d63a614a1b33";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "f165798184dc03895709704df864bd1e43eaf09f";
+      rev = "c7f235bd432c0a7500ae39acdad7d63a614a1b33";
       fetchSubmodules = false;
-      sha256 = "sha256-5Xx03gMt5SkFjgHbsf7z391mYJfHU1yND2ldygKL09E=";
+      sha256 = "sha256-cbPq/paWz1ayUFWA3zx5mxo3UTDSX6/9w2rbT6tOGkw=";
     };
-    date = "2025-09-02";
+    date = "2025-09-07";
   };
 }

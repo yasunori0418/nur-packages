@@ -5,3 +5,7 @@ fetch.github = "neovim/neovim"
 [vim]
 src.git = "https://github.com/vim/vim"
 fetch.github = "vim/vim"
+
+[cchook]
+src.git = "https://github.com/syou6162/cchook"
+fetch.github = "syou6162/cchook"

@@ -25,6 +25,7 @@ in
 
   claude-code = nodePkgs."@anthropic-ai/claude-code";
   ccusage = nodePkgs."ccusage";
+  cchook = pkgs.callPackage ./pkgs/cchook { inherit sources; };
   vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
   neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
 }
