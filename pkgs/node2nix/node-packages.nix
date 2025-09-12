@@ -300,13 +300,13 @@ let
         sha512 = "gKXj5ALrKWQLsYG9jlTRmR/xKluxHV+Z9QEwNIgCfM1/uwPMCuzVVnh5mwTd+OuBZcwSIMbqssNWRm1lE51QaQ==";
       };
     };
-    "ansi-escapes-7.0.0" = {
+    "ansi-escapes-7.1.0" = {
       name = "ansi-escapes";
       packageName = "ansi-escapes";
-      version = "7.0.0";
+      version = "7.1.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-7.0.0.tgz";
-        sha512 = "GdYO7a61mR0fOlAsvC9/rIHf7L96sBc6dEWzeOu+KAea5bZyQRPIpojrVoI4AXGJS/ycu/fBTdLrUkA4ODrvjw==";
+        url = "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-7.1.0.tgz";
+        sha512 = "YdhtCd19sKRKfAAUsrcC1wzm4JuzJoiX4pOJqIoW2qmKj5WzG/dL8uUJ0361zaXtHqK7gEhOwtAtz7t3Yq3X5g==";
       };
     };
     "ansi-regex-5.0.1" = {
@@ -597,13 +597,13 @@ let
         sha512 = "dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==";
       };
     };
-    "commander-14.0.0" = {
+    "commander-14.0.1" = {
       name = "commander";
       packageName = "commander";
-      version = "14.0.0";
+      version = "14.0.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/commander/-/commander-14.0.0.tgz";
-        sha512 = "2uM9rYjPvyq39NwLRqaiLtWHyDC1FvryJDa2ATTVims5YAS4PupsEQsDvP14FqhFr0P49CYDugi59xaxJlTXRA==";
+        url = "https://registry.npmjs.org/commander/-/commander-14.0.1.tgz";
+        sha512 = "2JkV3gUZUVrbNA+1sjBOYLsMZ5cEEl8GTFP2a4AVz5hvasAMCQ1D2l2le/cX+pV4N6ZU17zjUahLpIXRrnWL8A==";
       };
     };
     "convert-to-spaces-2.0.1" = {
@@ -732,13 +732,13 @@ let
         sha512 = "5U0rVMU5Y2n2+ykNLQqMoqklN9ICBT/KsvC1Gz6vqHbz2AXXGkG+Pm5rMWk/8Vjrr/mY9985Hi8DYzn1F09Nyw==";
       };
     };
-    "env-editor-1.1.0" = {
+    "env-editor-1.3.0" = {
       name = "env-editor";
       packageName = "env-editor";
-      version = "1.1.0";
+      version = "1.3.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/env-editor/-/env-editor-1.1.0.tgz";
-        sha512 = "7AXskzN6T7Q9TFcKAGJprUbpQa4i1VsAetO9rdBqbGMGlragTziBgWt4pVYJMBWHQlLoX0buy6WFikzPH4Qjpw==";
+        url = "https://registry.npmjs.org/env-editor/-/env-editor-1.3.0.tgz";
+        sha512 = "EqiD/j01PooUbeWk+etUo2TWoocjoxMfGNYpS9e47glIJ5r8WepycIki+LCbonFbPdwlqY5ETeSTAJVMih4z4w==";
       };
     };
     "environment-1.1.0" = {
@@ -876,13 +876,13 @@ let
         sha512 = "DyFP3BM/3YHTQOCUL/w0OZHR0lpKeGrxotcHWcqNEdnltqFwXVfhEBQ94eIo34AfQpo0rGki4cyIiftY06h2Fg==";
       };
     };
-    "get-east-asian-width-1.3.1" = {
+    "get-east-asian-width-1.4.0" = {
       name = "get-east-asian-width";
       packageName = "get-east-asian-width";
-      version = "1.3.1";
+      version = "1.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/get-east-asian-width/-/get-east-asian-width-1.3.1.tgz";
-        sha512 = "R1QfovbPsKmosqTnPoRFiJ7CF9MLRgb53ChvMZm+r4p76/+8yKDy17qLL2PKInORy2RkZZekuK0efYgmzTkXyQ==";
+        url = "https://registry.npmjs.org/get-east-asian-width/-/get-east-asian-width-1.4.0.tgz";
+        sha512 = "QZjmEOC+IT1uk6Rx0sX22V6uHWVwbdbxf1faPqJ1QhLdGgsRGCZoyaQBm/piRdJy/D2um6hM1UP7ZEeQ4EkP+Q==";
       };
     };
     "get-stream-8.0.1" = {
@@ -1875,13 +1875,13 @@ let
         sha512 = "9LkiTwjUh6rT555DtE9rTX+BKByPfrMzEAtnlEtdEwr3Nkffwiihqe2bWADg+OQRjt9gl6ICdmB/ZFDCGAtSow==";
       };
     };
-    "run-applescript-7.0.0" = {
+    "run-applescript-7.1.0" = {
       name = "run-applescript";
       packageName = "run-applescript";
-      version = "7.0.0";
+      version = "7.1.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/run-applescript/-/run-applescript-7.0.0.tgz";
-        sha512 = "9by4Ij99JUr/MCFBUkDKLWK3G9HVXmabKz9U5MlIAIuvuzkiOicRYs8XJLxX+xahD+mLiiCYDqF9dKAgtzKP1A==";
+        url = "https://registry.npmjs.org/run-applescript/-/run-applescript-7.1.0.tgz";
+        sha512 = "DPe5pVFaAsinSaV6QjQ6gdiedWDcRCbUuiQfQa2wmWV7+xC9bGulGI8+TdRmoFkAPaBXk8CrAbnlY2ISniJ47Q==";
       };
     };
     "safer-buffer-2.1.2" = {
@@ -2505,13 +2505,13 @@ let
         sha512 = "0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==";
       };
     };
-    "zod-4.1.5" = {
+    "zod-4.1.8" = {
       name = "zod";
       packageName = "zod";
-      version = "4.1.5";
+      version = "4.1.8";
       src = fetchurl {
-        url = "https://registry.npmjs.org/zod/-/zod-4.1.5.tgz";
-        sha512 = "rcUUZqlLJgBC33IT3PNMgsCq6TzLQEG/Ei/KTCU0PedSWRMAXoOUN+4t/0H+Q8bdnLPdqUYnvboJT0bn/229qg==";
+        url = "https://registry.npmjs.org/zod/-/zod-4.1.8.tgz";
+        sha512 = "5R1P+WwQqmmMIEACyzSvo4JXHY5WiAFHRMg+zBZKgKS+Q1viRa0C1hmUKtHltoIFKtIdki3pRxkmpP74jnNYHQ==";
       };
     };
   };
@@ -2520,10 +2520,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "1.0.109";
+    version = "1.0.112";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.109.tgz";
-      sha512 = "gjj76f/+M5KfI+ORA9VNVJgR7s8eyur66XCWIIO66q4poNWcszxidXo+TDTqokLLwuNV+qFGx4JkK/PDmtwqMA==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.112.tgz";
+      sha512 = "UMGxS1iLA8RlrDGpSzMfnJpVHXxcL7AdD8kQfqFy/hAFqwyKpoJPHGBwXt5KjuVDwcWwkpXc3tXDVt//4z6icg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2538,10 +2538,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "16.2.3";
+    version = "16.2.4";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-16.2.3.tgz";
-      sha512 = "/BvsGfNjZ45SwSyzZy6xhQpwm2w8x2dp1yRGZql8115DQS3PNFNF9QJ+1YLMF0OayY/BU5R/mUQdd12DLekySQ==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-16.2.4.tgz";
+      sha512 = "B/sLmE4Aqz6Z27D6Oouq58Hk7MdiSLMooAb3IqpwSMrloX3NLCJ4Uf4wP/s7hjIRP07+iAyxgJ+3tw9w3a98Aw==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2556,10 +2556,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.0.18";
+    version = "1.0.21";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.0.18.tgz";
-      sha512 = "1ymUR/7DHJaq2ZE+R5mqRxc2FF3mo86iErA+5cWvhf67fcXVTZ07d5PZTqPLF/D9SRmUZOicG1JdVGo1YELxMQ==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.0.21.tgz";
+      sha512 = "rdeKKtjSZnnK8ScJKz7qrd/SiY2jTN615Sz+Hzt8s5dJK7jxgitQHtpYANg5JBndsUJdQAORApNtpAbGtXdz/g==";
     };
     dependencies = [
       sources."@inquirer/checkbox-4.2.2"
@@ -2618,7 +2618,7 @@ in
       sources."err-code-2.0.3"
       sources."foreground-child-3.3.1"
       sources."fs-minipass-3.0.3"
-      sources."get-east-asian-width-1.3.1"
+      sources."get-east-asian-width-1.4.0"
       sources."glob-10.4.5"
       sources."hosted-git-info-8.1.0"
       sources."http-cache-semantics-4.2.0"
@@ -2759,7 +2759,7 @@ in
       sources."@types/gradient-string-1.1.6"
       sources."@types/react-19.1.12"
       sources."@types/tinycolor2-1.4.6"
-      sources."ansi-escapes-7.0.0"
+      sources."ansi-escapes-7.1.0"
       sources."ansi-regex-6.2.2"
       sources."ansi-styles-6.2.3"
       sources."any-promise-1.3.0"
@@ -2822,7 +2822,7 @@ in
       sources."code-excerpt-4.0.0"
       sources."color-convert-2.0.1"
       sources."color-name-1.1.4"
-      sources."commander-14.0.0"
+      sources."commander-14.0.1"
       sources."convert-to-spaces-2.0.1"
       sources."cross-spawn-7.0.6"
       sources."csstype-3.1.3"
@@ -2833,7 +2833,7 @@ in
       sources."define-property-1.0.0"
       sources."emoji-regex-10.5.0"
       sources."emojilib-2.4.0"
-      sources."env-editor-1.1.0"
+      sources."env-editor-1.3.0"
       sources."environment-1.1.0"
       sources."es-toolkit-1.39.10"
       sources."escalade-3.2.0"
@@ -2845,7 +2845,7 @@ in
       sources."figures-6.1.0"
       sources."function-bind-1.1.2"
       sources."get-caller-file-2.0.5"
-      sources."get-east-asian-width-1.3.1"
+      sources."get-east-asian-width-1.4.0"
       sources."get-stream-8.0.1"
       (
         sources."gradient-string-2.0.2"
@@ -2985,7 +2985,7 @@ in
           ];
         }
       )
-      sources."run-applescript-7.0.0"
+      sources."run-applescript-7.1.0"
       sources."scheduler-0.26.0"
       sources."section-matter-1.0.0"
       sources."shebang-command-2.0.0"
@@ -3041,7 +3041,7 @@ in
       sources."yargs-parser-20.2.9"
       sources."yoctocolors-2.1.2"
       sources."yoga-layout-3.2.1"
-      sources."zod-4.1.5"
+      sources."zod-4.1.8"
     ];
     buildInputs = globalBuildInputs;
     meta = {
