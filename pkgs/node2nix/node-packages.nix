@@ -246,22 +246,22 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/node-24.3.1" = {
+    "@types/node-24.3.3" = {
       name = "_at_types_slash_node";
       packageName = "@types/node";
-      version = "24.3.1";
+      version = "24.3.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/node/-/node-24.3.1.tgz";
-        sha512 = "3vXmQDXy+woz+gnrTvuvNrPzekOi+Ds0ReMxw0LzBiK3a+1k0kQn9f2NWk+lgD4rJehFUmYy2gMhJ2ZI+7YP9g==";
+        url = "https://registry.npmjs.org/@types/node/-/node-24.3.3.tgz";
+        sha512 = "GKBNHjoNw3Kra1Qg5UXttsY5kiWMEfoHq2TmXb+b1rcm6N7B3wTrFYIf/oSZ1xNQ+hVVijgLkiDZh7jRRsh+Gw==";
       };
     };
-    "@types/react-19.1.12" = {
+    "@types/react-19.1.13" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.1.12";
+      version = "19.1.13";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.1.12.tgz";
-        sha512 = "cMoR+FoAf/Jyq6+Df2/Z41jISvGZZ2eTlnsaJRptmZ76Caldwy1odD4xTr/gNV9VLj0AWgg/nmkevIyUfIIq5w==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.1.13.tgz";
+        sha512 = "hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -2520,10 +2520,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "1.0.112";
+    version = "1.0.113";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.112.tgz";
-      sha512 = "UMGxS1iLA8RlrDGpSzMfnJpVHXxcL7AdD8kQfqFy/hAFqwyKpoJPHGBwXt5KjuVDwcWwkpXc3tXDVt//4z6icg==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.113.tgz";
+      sha512 = "K/+N/rECfWa1ZauWLD6C/CnX6bxxAck5CFDuK58JjRN8v6QDuJVX7HZcNCanB0ucxEkaczAwvWnEM+UjFQsdqw==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2594,7 +2594,7 @@ in
       sources."@npmcli/agent-3.0.0"
       sources."@npmcli/fs-4.0.0"
       sources."@npmcli/redact-3.2.2"
-      sources."@types/node-24.3.1"
+      sources."@types/node-24.3.3"
       sources."abbrev-3.0.1"
       sources."agent-base-7.1.4"
       sources."ansi-escapes-4.3.2"
@@ -2757,7 +2757,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.1.12"
+      sources."@types/react-19.1.13"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.1.0"
       sources."ansi-regex-6.2.2"
