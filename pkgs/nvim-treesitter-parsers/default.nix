@@ -5,29 +5,35 @@
   ...
 }:
 let
-  inherit (builtins) toString map;
-  inherit (lib) concatStringsSep;
+  inherit (builtins) toString;
+  inherit (lib) concatStringsSep foldl;
 
-  genTreeSitterParsersAttrs =
-    parsers:
-    map (parser: {
+  baseOutDirectory = "mkdir -p $out/{parser,queries}";
+
+  genQueriesDirectory = foldl (acc: parser: acc + "mkdir -p $out/queries/${parser}\n") "";
+
+  genTreeSitterLinks = foldl (
+    acc: parser:
+    let
       name = parser;
       store = toString tree-sitter-grammars."tree-sitter-${parser}";
-    }) parsers;
-
-  genTreeSitterLinks =
-    parsersAttrs:
-    map (v: ''
-      ln -svf ${v.store}/parser $out/parser/${v.name}.so
-      ln -svf ${v.store}/queries/* $out/queries/${v.name}/
-    '') parsersAttrs;
-
-  nvim-treesitter-parsers = parsers: stdenv.mkDerivation {
-    name = "nvim-treesitter-parsers";
-    buildCommand = ''
-      mkdir -p $out/{parser,queries/{${concatStringsSep "," parsers}}}
+    in
+    acc
+    + ''
+      ln -svf ${store}/parser $out/parser/${name}.so
+      ln -svf ${store}/queries/* $out/queries/${name}/
     ''
-    + (parsers |> genTreeSitterParsersAttrs |> genTreeSitterLinks |> (concatStringsSep "\n"));
-  };
+  ) "";
+
+  nvim-treesitter-parsers =
+    parsers:
+    stdenv.mkDerivation {
+      name = "nvim-treesitter-parsers";
+      buildCommand = concatStringsSep "\n" [
+        baseOutDirectory
+        (genQueriesDirectory parsers)
+        (genTreeSitterLinks parsers)
+      ];
+    };
 in
 nvim-treesitter-parsers
