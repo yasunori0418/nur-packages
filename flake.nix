@@ -60,7 +60,6 @@
               nix-unit \
                 --eval-store "$HOME" \
                 --extra-experimental-features flakes \
-                --extra-experimental-features pipe-operators \
                 --override-input nixpkgs ${nixpkgs} \
                 --impure \
                 --flake '${self}#tests'

@@ -3,6 +3,7 @@ let
   inherit (pkgs.lib)
     getAttrs
     attrValues
+    pipe
     ;
   inherit (builtins)
     foldl'
@@ -116,5 +117,10 @@ in
     attrSet :: AttrSet [a]
     : The original AttrSet
   */
-  targetAttrsValue = targetNames: attrSet: attrSet |> getAttrs targetNames |> attrValues;
+  targetAttrsValue =
+    targetNames: attrSet:
+    pipe attrSet [
+      (getAttrs targetNames)
+      attrValues
+    ];
 }
