@@ -2800,4 +2800,22 @@ in
     bypassCache = true;
     reconstructLock = true;
   };
+  cc-sdd = nodeEnv.buildNodePackage {
+    name = "cc-sdd";
+    packageName = "cc-sdd";
+    version = "1.1.4";
+    src = fetchurl {
+      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-1.1.4.tgz";
+      sha512 = "6kz1eu9zjPLm6On5zRfGEZh8k6JwUY1Reg0x8+0MZvOsjVz8bb/IZkOKG09vXF1yfP8yYktVV+uNHm9jnJ5SkQ==";
+    };
+    buildInputs = globalBuildInputs;
+    meta = {
+      description = "Transform your coding workflow with AI-DLC and Spec-Driven Development. One command installs 7 powerful slash commands, Project Memory, and structured development workflows for Claude Code.";
+      homepage = "https://github.com/gotalab/cc-sdd#readme";
+      license = "MIT";
+    };
+    production = true;
+    bypassCache = true;
+    reconstructLock = true;
+  };
 }

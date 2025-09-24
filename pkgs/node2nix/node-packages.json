@@ -1,1 +1,7 @@
-["@anthropic-ai/claude-code", "ccusage", "@aikidosec/safe-chain", "ccexp"]
+[
+  "@anthropic-ai/claude-code",
+  "ccusage",
+  "@aikidosec/safe-chain",
+  "ccexp",
+  "cc-sdd"
+]
