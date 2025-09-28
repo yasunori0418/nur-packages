@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.1.13" = {
+    "@types/react-19.1.14" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.1.13";
+      version = "19.1.14";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.1.13.tgz";
-        sha512 = "hHkbU/eoO3EG5/MZkuFSKmYqPbSVk5byPFa3e7y/8TybHiLMACgI8seVYlicwk7H5K/rI2px9xrQp/C+AUDTiQ==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.1.14.tgz";
+        sha512 = "ukd93VGzaNPMAUPy0gRDSC57UuQbnH9Kussp7HBjM06YFi9uZTFhOvMSO2OKqXm1rSgzOE+pVx1k1PYHGwlc8Q==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -363,13 +363,13 @@ let
         sha512 = "ywqV+5MmyL4E7ybXgKys4DugZbX0FC6LnwrhjuykIjnK9k8OQacQ7axGKnjDXWNhns0xot3bZI5h55H8yo9cJg==";
       };
     };
-    "cli-spinners-3.2.1" = {
+    "cli-spinners-3.3.0" = {
       name = "cli-spinners";
       packageName = "cli-spinners";
-      version = "3.2.1";
+      version = "3.3.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/cli-spinners/-/cli-spinners-3.2.1.tgz";
-        sha512 = "Xh+cRh7dzk9n7gYE+M1Lusy3yg5ADy9m6zOHqmcu9kSkWpo7ySWVUS3dXleR3konJOEOdHzsKjWkGed6g2eJuA==";
+        url = "https://registry.npmjs.org/cli-spinners/-/cli-spinners-3.3.0.tgz";
+        sha512 = "/+40ljC3ONVnYIttjMWrlL51nItDAbBrq2upN8BPyvGU/2n5Oxw3tbNwORCaNuNqLJnxGqOfjUuhsv7l5Q4IsQ==";
       };
     };
     "cli-table3-0.6.5" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "1.0.123";
+    version = "1.0.128";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.123.tgz";
-      sha512 = "egniOpnrjpm8pA2ygj9aDw+rZ0jKJdso94CvKlKzdVcLdw0r0FSMvgxWRGGxjHuqcl6BP6yhHGSKlZ6qzd14OA==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.128.tgz";
+      sha512 = "uUg5cFMJfeQetQzFw76Vpbro6DAXst2Lpu8aoZWRFSoQVYu5ZSAnbBoxaWmW/IgnHSqIIvtMwzCoqmcA9j9rNQ==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2304,10 +2304,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.0.2";
+    version = "17.0.3";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.0.2.tgz";
-      sha512 = "t8W/L8bjOvH0BtnPusATWGmMrrWVqQ3Yp5Jb+zqws9FbL3nxAeScPDH43BVaXbKIK98fJSFmKapRJnnfTSR4Rg==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.0.3.tgz";
+      sha512 = "pXqyZ9vbYX9ed7eKNcyTnhwOPFM6Cb6bkwbRBibDKOvpJwqIXkZq2rQ4kPEjumJ4AWn4RXZ2GMpANMqZSkYRTA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2322,10 +2322,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.0.23";
+    version = "1.0.24";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.0.23.tgz";
-      sha512 = "gs7LvJogdUfHR6clEVXoHLdAyugDsgLVV5jSZAhARutrFJm61TyoL46LrCanIUIDaN3+YrabFmAxVgsHdIxjig==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.0.24.tgz";
+      sha512 = "4o7+2CX6CE+TpAV7HEdjWpMJ0B1PVAIoQ0lK9t6NRIwQvcxf622/hC4gw+GhWJc4PCRN7CXssT9wsv+CLIPOBw==";
     };
     dependencies = [
       sources."@isaacs/cliui-8.0.2"
@@ -2504,7 +2504,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.1.13"
+      sources."@types/react-19.1.14"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.1.1"
       sources."ansi-regex-6.2.2"
@@ -2529,7 +2529,7 @@ in
           ];
         }
       )
-      sources."cli-spinners-3.2.1"
+      sources."cli-spinners-3.3.0"
       (
         sources."cli-table3-0.6.5"
         // {
@@ -2803,10 +2803,10 @@ in
   cc-sdd = nodeEnv.buildNodePackage {
     name = "cc-sdd";
     packageName = "cc-sdd";
-    version = "1.1.4";
+    version = "1.1.5";
     src = fetchurl {
-      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-1.1.4.tgz";
-      sha512 = "6kz1eu9zjPLm6On5zRfGEZh8k6JwUY1Reg0x8+0MZvOsjVz8bb/IZkOKG09vXF1yfP8yYktVV+uNHm9jnJ5SkQ==";
+      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-1.1.5.tgz";
+      sha512 = "ky97zIz79f4eVbT/4xcT3/+xGGLBPAJe3CocvYIAIIpvoIcYPGG5OS2CIZ2LdcQ1cDN+7EYQcS4xUtRABuKDIg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
