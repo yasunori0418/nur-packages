@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.1.14" = {
+    "@types/react-19.1.15" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.1.14";
+      version = "19.1.15";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.1.14.tgz";
-        sha512 = "ukd93VGzaNPMAUPy0gRDSC57UuQbnH9Kussp7HBjM06YFi9uZTFhOvMSO2OKqXm1rSgzOE+pVx1k1PYHGwlc8Q==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.1.15.tgz";
+        sha512 = "+kLxJpaJzXybyDyFXYADyP1cznTO8HSuBpenGlnKOAkH4hyNINiywvXS/tGJhsrGGP/gM185RA3xpjY0Yg4erA==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "1.0.128";
+    version = "2.0.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-1.0.128.tgz";
-      sha512 = "uUg5cFMJfeQetQzFw76Vpbro6DAXst2Lpu8aoZWRFSoQVYu5ZSAnbBoxaWmW/IgnHSqIIvtMwzCoqmcA9j9rNQ==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.0.tgz";
+      sha512 = "qUaM1d2NeOshOZfHyh54gaFRwTE4+peNhHARYxUz3QPG5vbm2jp70tFING79laoCEK/LEOxeE5zwJpxVep856w==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2304,10 +2304,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.0.3";
+    version = "17.1.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.0.3.tgz";
-      sha512 = "pXqyZ9vbYX9ed7eKNcyTnhwOPFM6Cb6bkwbRBibDKOvpJwqIXkZq2rQ4kPEjumJ4AWn4RXZ2GMpANMqZSkYRTA==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.0.tgz";
+      sha512 = "Ti/1hcE5lEs6vgLKOEl/rBuvLGbPIZL9eiWLjU8o6MoAKBNUQtA+Aw4CtNtzfjC3RHcZpmeHnM6Q5xwJ/XSq4A==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2504,7 +2504,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.1.14"
+      sources."@types/react-19.1.15"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.1.1"
       sources."ansi-regex-6.2.2"
