@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.1.16" = {
+    "@types/react-19.2.1" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.1.16";
+      version = "19.2.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.1.16.tgz";
-        sha512 = "WBM/nDbEZmDUORKnh5i1bTnAz6vTohUf9b8esSMu+b24+srbaxa04UbJgWx78CVfNXA20sNu0odEIluZDFdCog==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.1.tgz";
+        sha512 = "1U5NQWh/GylZQ50ZMnnPjkYHEaGhg6t5i/KI0LDDh3t4E3h3T3vzm+GLY2BRzMfIjSBwzm6tginoZl5z0O/qsA==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -1614,13 +1614,13 @@ let
         sha512 = "oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==";
       };
     };
-    "react-19.1.1" = {
+    "react-19.2.0" = {
       name = "react";
       packageName = "react";
-      version = "19.1.1";
+      version = "19.2.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/react/-/react-19.1.1.tgz";
-        sha512 = "w8nqGImo45dmMIfljjMwOGtbmC/mk4CMYhWIicdSflH91J9TyCyczcPFXJzrZ/ZXcgGRFeP6BU0BEJTw6tZdfQ==";
+        url = "https://registry.npmjs.org/react/-/react-19.2.0.tgz";
+        sha512 = "tmbWg6W31tQLeB5cdIBOicJDJRR2KzXsV7uSK9iNfLWQ5bIZfxuPEHp7M8wiHyHnn0DD1i7w3Zmin0FtkrwoCQ==";
       };
     };
     "react-devtools-core-6.1.5" = {
@@ -2271,13 +2271,13 @@ let
         sha512 = "0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==";
       };
     };
-    "zod-4.1.11" = {
+    "zod-4.1.12" = {
       name = "zod";
       packageName = "zod";
-      version = "4.1.11";
+      version = "4.1.12";
       src = fetchurl {
-        url = "https://registry.npmjs.org/zod/-/zod-4.1.11.tgz";
-        sha512 = "WPsqwxITS2tzx1bzhIKsEs19ABD5vmCVa4xBo2tq/SrV4RNZtfws1EnCWQXM6yh8bD08a1idvkB5MZSBiZsjwg==";
+        url = "https://registry.npmjs.org/zod/-/zod-4.1.12.tgz";
+        sha512 = "JInaHOamG8pt5+Ey8kGmdcAcg3OL9reK8ltczgHTAwNhMys/6ThXHityHxVV2p3fkw/c+MAvBHFVYHFZDmjMCQ==";
       };
     };
   };
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.1";
+    version = "2.0.9";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.1.tgz";
-      sha512 = "2SboYcdJ+dsE2K784dbJ4ohVWlAkLZhU7mZG1lebyG6TvGLXLhjc2qTEfCxSeelCjJHhIh/YkNpe06veB4IgBw==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.9.tgz";
+      sha512 = "2IAXb7OogfoTVv7fa4vnMxhUSnQ5yx7ije0xmjvLKrw7CGEiE2cvxKeFGg7nHjL0EE64CrVWYscS3SwD/7/HhQ==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2304,10 +2304,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.1.0";
+    version = "17.1.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.0.tgz";
-      sha512 = "Ti/1hcE5lEs6vgLKOEl/rBuvLGbPIZL9eiWLjU8o6MoAKBNUQtA+Aw4CtNtzfjC3RHcZpmeHnM6Q5xwJ/XSq4A==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.2.tgz";
+      sha512 = "Y2tGbJmPDJDwW9H9zab1mHqbIwAnYnQL+eCfNfL+IWBrgTKPdaFg5hhL0j45zjvxpz0A4/Ik4UbcUYWcTe9IoQ==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2504,7 +2504,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.1.16"
+      sources."@types/react-19.2.1"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.1.1"
       sources."ansi-regex-6.2.2"
@@ -2709,7 +2709,7 @@ in
       sources."picomatch-4.0.3"
       sources."pretty-ms-9.3.0"
       sources."prop-types-15.8.1"
-      sources."react-19.1.1"
+      sources."react-19.2.0"
       (
         sources."react-devtools-core-6.1.5"
         // {
@@ -2788,7 +2788,7 @@ in
       sources."yargs-parser-20.2.9"
       sources."yoctocolors-2.1.2"
       sources."yoga-layout-3.2.1"
-      sources."zod-4.1.11"
+      sources."zod-4.1.12"
     ];
     buildInputs = globalBuildInputs;
     meta = {
