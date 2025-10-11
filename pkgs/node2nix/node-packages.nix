@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.2.1" = {
+    "@types/react-19.2.2" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.2.1";
+      version = "19.2.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.2.1.tgz";
-        sha512 = "1U5NQWh/GylZQ50ZMnnPjkYHEaGhg6t5i/KI0LDDh3t4E3h3T3vzm+GLY2BRzMfIjSBwzm6tginoZl5z0O/qsA==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.2.tgz";
+        sha512 = "6mDvHUFSjyT2B2yeNx2nUgMxh9LtOWvkhIU3uePn2I2oyNymUAX1NIsdgviM4CH+JSrp2D2hsMvJOkxY+0wNRA==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -597,13 +597,13 @@ let
         sha512 = "2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==";
       };
     };
-    "es-toolkit-1.39.10" = {
+    "es-toolkit-1.40.0" = {
       name = "es-toolkit";
       packageName = "es-toolkit";
-      version = "1.39.10";
+      version = "1.40.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.39.10.tgz";
-        sha512 = "E0iGnTtbDhkeczB0T+mxmoVlT4YNweEKBLq7oaU4p11mecdsZpNWOglI4895Vh4usbQ+LsJiuLuI2L0Vdmfm2w==";
+        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.40.0.tgz";
+        sha512 = "8o6w0KFmU0CiIl0/Q/BCEOabF2IJaELM1T2PWj6e8KqzHv1gdx+7JtFnDwOx1kJH/isJ5NwlDG1nCr1HrRF94Q==";
       };
     };
     "escalade-3.2.0" = {
@@ -1200,13 +1200,13 @@ let
         sha512 = "8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==";
       };
     };
-    "marked-16.3.0" = {
+    "marked-16.4.0" = {
       name = "marked";
       packageName = "marked";
-      version = "16.3.0";
+      version = "16.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/marked/-/marked-16.3.0.tgz";
-        sha512 = "K3UxuKu6l6bmA5FUwYho8CfJBlsUWAooKtdGgMcERSpF7gcBUrCGsLH7wDaaNOzwq18JzSUDyoEb/YsrqMac3w==";
+        url = "https://registry.npmjs.org/marked/-/marked-16.4.0.tgz";
+        sha512 = "CTPAcRBq57cn3R8n3hwc2REddc28hjR7RzDXQ+lXLmMJYqn20BaI2cGw6QjgZGIgVfp2Wdfw4aMzgNteQ6qJgQ==";
       };
     };
     "marked-terminal-7.3.0" = {
@@ -1369,6 +1369,15 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/node-emoji/-/node-emoji-2.2.0.tgz";
         sha512 = "Z3lTE9pLaJF47NyMhd4ww1yFTAP8YhYI8SleJiHzM46Fgpm5cnNzSl9XfzFNqbaz+VlJrIj3fXQ4DeN1Rjm6cw==";
+      };
+    };
+    "node-forge-1.3.1" = {
+      name = "node-forge";
+      packageName = "node-forge";
+      version = "1.3.1";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/node-forge/-/node-forge-1.3.1.tgz";
+        sha512 = "dPEtOeMvF9VMcYV/1Wb8CPoVAXtp6MKMlcbAt4ddqmGqUJ6fQZFXkNZNkNlfevtNkGtaSoXf/vNNNSvgrdXwtA==";
       };
     };
     "node-gyp-build-4.8.4" = {
@@ -2286,10 +2295,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.9";
+    version = "2.0.14";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.9.tgz";
-      sha512 = "2IAXb7OogfoTVv7fa4vnMxhUSnQ5yx7ije0xmjvLKrw7CGEiE2cvxKeFGg7nHjL0EE64CrVWYscS3SwD/7/HhQ==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.14.tgz";
+      sha512 = "Q4A4Jo7WZ4aMUIu8CUIIo2Jt66kl2vrEjRg/kYzX6syuK0DiV3WhdMZceSvLAU0BFpX1L8aERhRWxLWDxX3fYg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2304,10 +2313,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.1.2";
+    version = "17.1.3";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.2.tgz";
-      sha512 = "Y2tGbJmPDJDwW9H9zab1mHqbIwAnYnQL+eCfNfL+IWBrgTKPdaFg5hhL0j45zjvxpz0A4/Ik4UbcUYWcTe9IoQ==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.3.tgz";
+      sha512 = "1fgnlS3kLQo61m7Nz5AUj7le57+K6JaSN5KC0/hD+oNzRvg6Uss0TNKLCuIjNjm7b0LCiN+4DjKSNHJWCiAwxg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2322,10 +2331,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.0.24";
+    version = "1.1.4";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.0.24.tgz";
-      sha512 = "4o7+2CX6CE+TpAV7HEdjWpMJ0B1PVAIoQ0lK9t6NRIwQvcxf622/hC4gw+GhWJc4PCRN7CXssT9wsv+CLIPOBw==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.4.tgz";
+      sha512 = "rIZ59/gTiGNzbgUSJMN0pTY6VunZqLhK/Nkw5wz6274nyDuvsxhFmarY/MVr8SJ3jueO+1bK70a5/SaJP09/tA==";
     };
     dependencies = [
       sources."@isaacs/cliui-8.0.2"
@@ -2412,6 +2421,7 @@ in
       sources."minizlib-3.1.0"
       sources."ms-2.1.3"
       sources."negotiator-1.0.0"
+      sources."node-forge-1.3.1"
       sources."npm-package-arg-12.0.2"
       sources."npm-registry-fetch-18.0.2"
       sources."onetime-7.0.0"
@@ -2481,7 +2491,7 @@ in
     ];
     buildInputs = globalBuildInputs;
     meta = {
-      description = "The Aikido Safe Chain wraps around the [npm cli](https://github.com/npm/cli), [npx](https://github.com/npm/cli/blob/latest/docs/content/commands/npx.md), [yarn](https://yarnpkg.com/), [pnpm](https://pnpm.io/), and [pnpx](https://pnpm.io/cli/dlx) to provid";
+      description = "The Aikido Safe Chain wraps around the [npm cli](https://github.com/npm/cli), [npx](https://github.com/npm/cli/blob/latest/docs/content/commands/npx.md), [yarn](https://yarnpkg.com/), [pnpm](https://pnpm.io/), [pnpx](https://pnpm.io/cli/dlx), [bun](https:";
       homepage = "https://github.com/AikidoSec/safe-chain#readme";
       license = "AGPL-3.0-or-later";
     };
@@ -2504,7 +2514,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.2.1"
+      sources."@types/react-19.2.2"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.1.1"
       sources."ansi-regex-6.2.2"
@@ -2582,7 +2592,7 @@ in
       sources."emojilib-2.4.0"
       sources."env-editor-1.3.0"
       sources."environment-1.1.0"
-      sources."es-toolkit-1.39.10"
+      sources."es-toolkit-1.40.0"
       sources."escalade-3.2.0"
       sources."escape-string-regexp-2.0.0"
       sources."esprima-4.0.1"
@@ -2655,7 +2665,7 @@ in
         }
       )
       sources."loose-envify-1.4.0"
-      sources."marked-16.3.0"
+      sources."marked-16.4.0"
       (
         sources."marked-terminal-7.3.0"
         // {
