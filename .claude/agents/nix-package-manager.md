@@ -29,9 +29,9 @@ You manage all aspects of Nix package development in this NUR repository, includ
 4. **Library Function Development** (lib/)
    - **CRITICAL**: Follow TDD (Test-Driven Development) principles strictly
    - Always work in Red/Green/Refactor (Blue) cycle:
-     * Red: Write failing test first
-     * Green: Implement minimal code to pass test
-     * Refactor (Blue): Improve code quality while keeping tests green
+     - Red: Write failing test first
+     - Green: Implement minimal code to pass test
+     - Refactor (Blue): Improve code quality while keeping tests green
    - Create corresponding test files for all library functions
    - Use nix-unit framework for unit testing
 
