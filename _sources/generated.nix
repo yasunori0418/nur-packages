@@ -18,6 +18,18 @@
     };
     date = "2025-09-06";
   };
+  k1Low-deck = {
+    pname = "k1Low-deck";
+    version = "f2f1fef8f7028ac1d723d5aebd53468a9e04f130";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "deck";
+      rev = "f2f1fef8f7028ac1d723d5aebd53468a9e04f130";
+      fetchSubmodules = false;
+      sha256 = "sha256-kWQPB+sIpFFWgwdhayQeq5V0+b6HzsqP838YsrFmq/I=";
+    };
+    date = "2025-10-02";
+  };
   neovim = {
     pname = "neovim";
     version = "c9b74f8b7e3813763d2ada6a4b3ea75ba8960cd8";

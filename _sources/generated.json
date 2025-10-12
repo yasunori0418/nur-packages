@@ -20,6 +20,27 @@
     },
     "version": "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3"
   },
+  "k1Low-deck": {
+    "cargoLocks": null,
+    "date": "2025-10-02",
+    "extract": null,
+    "name": "k1Low-deck",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "k1LoW",
+      "repo": "deck",
+      "rev": "f2f1fef8f7028ac1d723d5aebd53468a9e04f130",
+      "sha256": "sha256-kWQPB+sIpFFWgwdhayQeq5V0+b6HzsqP838YsrFmq/I=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "f2f1fef8f7028ac1d723d5aebd53468a9e04f130"
+  },
   "neovim": {
     "cargoLocks": null,
     "date": "2025-10-12",
