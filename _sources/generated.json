@@ -41,6 +41,27 @@
     },
     "version": "f2f1fef8f7028ac1d723d5aebd53468a9e04f130"
   },
+  "laminate": {
+    "cargoLocks": null,
+    "date": "2025-09-05",
+    "extract": null,
+    "name": "laminate",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "Songmu",
+      "repo": "laminate",
+      "rev": "1580b51f607bca5ded2a0d1d9e9ae1e156fb5eb9",
+      "sha256": "sha256-KoSE73ka7odmA29fpYC7iKCE3glMYWL0Q7AZOX5vAYU=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "1580b51f607bca5ded2a0d1d9e9ae1e156fb5eb9"
+  },
   "neovim": {
     "cargoLocks": null,
     "date": "2025-10-13",

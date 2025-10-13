@@ -30,6 +30,18 @@
     };
     date = "2025-10-02";
   };
+  laminate = {
+    pname = "laminate";
+    version = "1580b51f607bca5ded2a0d1d9e9ae1e156fb5eb9";
+    src = fetchFromGitHub {
+      owner = "Songmu";
+      repo = "laminate";
+      rev = "1580b51f607bca5ded2a0d1d9e9ae1e156fb5eb9";
+      fetchSubmodules = false;
+      sha256 = "sha256-KoSE73ka7odmA29fpYC7iKCE3glMYWL0Q7AZOX5vAYU=";
+    };
+    date = "2025-09-05";
+  };
   neovim = {
     pname = "neovim";
     version = "a65202e6bd17f5daffaa2d2673128e6fc7b48d5d";

@@ -30,6 +30,7 @@ in
   cc-sdd = nodePkgs."cc-sdd";
   cchook = pkgs.callPackage ./pkgs/cchook { inherit sources; };
   k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck { inherit sources; };
+  laminate = pkgs.callPackage ./pkgs/laminate { inherit sources; };
   vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
   neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
   nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };

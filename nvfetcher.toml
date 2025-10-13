@@ -13,3 +13,7 @@ fetch.github = "syou6162/cchook"
 [k1Low-deck]
 src.git = "https://github.com/k1LoW/deck"
 fetch.github = "k1LoW/deck"
+
+[laminate]
+src.git = "https://github.com/Songmu/laminate"
+fetch.github = "Songmu/laminate"
