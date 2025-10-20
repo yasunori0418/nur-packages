@@ -129,15 +129,6 @@ let
         sha512 = "iEN8J0BoMnsWBqjVbWH/c0G0Hh7O21lpR2/+PrvAVgWdzL7eexIFm4JN/Wn10PTcmNdtS6U67r499mlWMXOxNw==";
       };
     };
-    "abbrev-3.0.1" = {
-      name = "abbrev";
-      packageName = "abbrev";
-      version = "3.0.1";
-      src = fetchurl {
-        url = "https://registry.npmjs.org/abbrev/-/abbrev-3.0.1.tgz";
-        sha512 = "AO2ac6pjRB3SJmGJo+v5/aK6Omggp6fsLrs6wN9bd35ulu4cCwaAU9+7ZhXjeqHVkaHThLuzH0nZr0YpCDhygg==";
-      };
-    };
     "agent-base-7.1.4" = {
       name = "agent-base";
       packageName = "agent-base";
@@ -1200,13 +1191,13 @@ let
         sha512 = "8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==";
       };
     };
-    "marked-16.4.0" = {
+    "marked-16.4.1" = {
       name = "marked";
       packageName = "marked";
-      version = "16.4.0";
+      version = "16.4.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/marked/-/marked-16.4.0.tgz";
-        sha512 = "CTPAcRBq57cn3R8n3hwc2REddc28hjR7RzDXQ+lXLmMJYqn20BaI2cGw6QjgZGIgVfp2Wdfw4aMzgNteQ6qJgQ==";
+        url = "https://registry.npmjs.org/marked/-/marked-16.4.1.tgz";
+        sha512 = "ntROs7RaN3EvWfy3EZi14H4YxmT6A5YvywfhO+0pm+cH/dnSQRmdAmoFIc3B9aiwTehyk7pESH4ofyBY+V5hZg==";
       };
     };
     "marked-terminal-7.3.0" = {
@@ -2295,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.14";
+    version = "2.0.22";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.14.tgz";
-      sha512 = "Q4A4Jo7WZ4aMUIu8CUIIo2Jt66kl2vrEjRg/kYzX6syuK0DiV3WhdMZceSvLAU0BFpX1L8aERhRWxLWDxX3fYg==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.22.tgz";
+      sha512 = "3FVySgr2zYrHnQ0deOeCzXdLSa/JkCBm1QR7x4j07puNnvHrFhBo6whv/IMOcSvxL62RRW3csRcGsQhUGPNc/w==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2331,10 +2322,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.1.4";
+    version = "1.1.5";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.4.tgz";
-      sha512 = "rIZ59/gTiGNzbgUSJMN0pTY6VunZqLhK/Nkw5wz6274nyDuvsxhFmarY/MVr8SJ3jueO+1bK70a5/SaJP09/tA==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.5.tgz";
+      sha512 = "m3fJaJazByZBfm4JfXo/X3czB7h/BGKWzX2bdR125xJyItt4E1iEdbd1lJ/B3px4CDMxhyMHnWLYIA2xT7YL/w==";
     };
     dependencies = [
       sources."@isaacs/cliui-8.0.2"
@@ -2342,7 +2333,6 @@ in
       sources."@npmcli/agent-3.0.0"
       sources."@npmcli/fs-4.0.0"
       sources."@npmcli/redact-3.2.2"
-      sources."abbrev-3.0.1"
       sources."agent-base-7.1.4"
       sources."ansi-regex-5.0.1"
       sources."ansi-styles-6.2.3"
@@ -2665,7 +2655,7 @@ in
         }
       )
       sources."loose-envify-1.4.0"
-      sources."marked-16.4.0"
+      sources."marked-16.4.1"
       (
         sources."marked-terminal-7.3.0"
         // {
