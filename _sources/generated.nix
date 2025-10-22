@@ -44,15 +44,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "869e55f2aacdc986a51f0bb683f11dcf0c464e98";
+    version = "cf48741227a9aa77533d5adfd2379e7c16c71363";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "869e55f2aacdc986a51f0bb683f11dcf0c464e98";
+      rev = "cf48741227a9aa77533d5adfd2379e7c16c71363";
       fetchSubmodules = false;
-      sha256 = "sha256-bbmsJ+bk/VQ3SIFCiYedpqbu37/Mu8nppHc5O2+Ohkw=";
+      sha256 = "sha256-Kfso8/0Q4TFsqQ6Xzfy5XNlk5oj5j31h3E6BAWK0OQw=";
     };
-    date = "2025-10-20";
+    date = "2025-10-21";
   };
   vim = {
     pname = "vim";

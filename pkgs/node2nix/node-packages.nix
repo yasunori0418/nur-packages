@@ -12,13 +12,13 @@
 
 let
   sources = {
-    "@alcalzone/ansi-tokenize-0.2.0" = {
+    "@alcalzone/ansi-tokenize-0.2.1" = {
       name = "_at_alcalzone_slash_ansi-tokenize";
       packageName = "@alcalzone/ansi-tokenize";
-      version = "0.2.0";
+      version = "0.2.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@alcalzone/ansi-tokenize/-/ansi-tokenize-0.2.0.tgz";
-        sha512 = "qI/5TaaaCZE4yeSZ83lu0+xi1r88JSxUjnH4OP/iZF7+KKZ75u3ee5isd0LxX+6N8U0npL61YrpbthILHB6BnA==";
+        url = "https://registry.npmjs.org/@alcalzone/ansi-tokenize/-/ansi-tokenize-0.2.1.tgz";
+        sha512 = "0rJMGIohyuFVf/uq9wCTtVLmVs/+7zoCGYkj7T8igV3XMPpjaSspXx/JvD9zmGprPVsIVvVRYVCaBkEz+SvN9g==";
       };
     };
     "@inkjs/ui-2.0.0" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.22";
+    version = "2.0.25";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.22.tgz";
-      sha512 = "3FVySgr2zYrHnQ0deOeCzXdLSa/JkCBm1QR7x4j07puNnvHrFhBo6whv/IMOcSvxL62RRW3csRcGsQhUGPNc/w==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.25.tgz";
+      sha512 = "5gooMB9DCLmzatQ+b2R0/pP2WxUSADcmpF77Qf3fIDpTf30UFreLXl2pe1exJ2kInsfiPK7PvDuJip5MDEv4CQ==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2498,7 +2498,7 @@ in
       sha512 = "jTyGUYLXL7seqqdnPLvSNYDWRqwJtNCXG/9SsMRkHMY1JhoezLy3ouNTHt5ts1+SEno5wR42XhpIU6I3fhuoMQ==";
     };
     dependencies = [
-      sources."@alcalzone/ansi-tokenize-0.2.0"
+      sources."@alcalzone/ansi-tokenize-0.2.1"
       sources."@inkjs/ui-2.0.0"
       sources."@sec-ant/readable-stream-0.4.1"
       sources."@sindresorhus/is-4.6.0"
