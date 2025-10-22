@@ -29,6 +29,7 @@ in
   ccexp = nodePkgs."ccexp";
   cc-sdd = nodePkgs."cc-sdd";
   cchook = pkgs.callPackage ./pkgs/cchook { inherit sources; };
+  gwq = pkgs.callPackage ./pkgs/gwq { inherit sources; };
   k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck { inherit sources; };
   laminate = pkgs.callPackage ./pkgs/laminate { inherit sources; };
   vim = pkgs.callPackage ./pkgs/vim { inherit sources; };

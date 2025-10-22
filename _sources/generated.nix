@@ -18,6 +18,18 @@
     };
     date = "2025-09-06";
   };
+  gwq = {
+    pname = "gwq";
+    version = "61ac92e04b7f16c2330942fa8bca6c0c9f3cdf26";
+    src = fetchFromGitHub {
+      owner = "d-kuro";
+      repo = "gwq";
+      rev = "61ac92e04b7f16c2330942fa8bca6c0c9f3cdf26";
+      fetchSubmodules = false;
+      sha256 = "sha256-yjnhF7D7TmtLbXKEI6+dZ/6UssVbSL7M0L+DgdaOfys=";
+    };
+    date = "2025-10-05";
+  };
   k1Low-deck = {
     pname = "k1Low-deck";
     version = "f2f1fef8f7028ac1d723d5aebd53468a9e04f130";

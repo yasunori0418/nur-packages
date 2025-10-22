@@ -20,6 +20,27 @@
     },
     "version": "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3"
   },
+  "gwq": {
+    "cargoLocks": null,
+    "date": "2025-10-05",
+    "extract": null,
+    "name": "gwq",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "d-kuro",
+      "repo": "gwq",
+      "rev": "61ac92e04b7f16c2330942fa8bca6c0c9f3cdf26",
+      "sha256": "sha256-yjnhF7D7TmtLbXKEI6+dZ/6UssVbSL7M0L+DgdaOfys=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "61ac92e04b7f16c2330942fa8bca6c0c9f3cdf26"
+  },
   "k1Low-deck": {
     "cargoLocks": null,
     "date": "2025-10-02",
