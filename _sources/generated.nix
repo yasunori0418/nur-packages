@@ -32,15 +32,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "f2f1fef8f7028ac1d723d5aebd53468a9e04f130";
+    version = "94f0fe6a391df64af079d020c5ebe413da8ca61e";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "f2f1fef8f7028ac1d723d5aebd53468a9e04f130";
+      rev = "94f0fe6a391df64af079d020c5ebe413da8ca61e";
       fetchSubmodules = false;
-      sha256 = "sha256-kWQPB+sIpFFWgwdhayQeq5V0+b6HzsqP838YsrFmq/I=";
+      sha256 = "sha256-nmMb5+Y71nHd7qxraClXqbbIGSIX6ktW5vWwnFedsDk=";
     };
-    date = "2025-10-02";
+    date = "2025-10-22";
   };
   laminate = {
     pname = "laminate";
@@ -56,26 +56,26 @@
   };
   neovim = {
     pname = "neovim";
-    version = "cf48741227a9aa77533d5adfd2379e7c16c71363";
+    version = "07461bac27962345ec46feea2e6200f4f82afce7";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "cf48741227a9aa77533d5adfd2379e7c16c71363";
+      rev = "07461bac27962345ec46feea2e6200f4f82afce7";
       fetchSubmodules = false;
-      sha256 = "sha256-Kfso8/0Q4TFsqQ6Xzfy5XNlk5oj5j31h3E6BAWK0OQw=";
+      sha256 = "sha256-l9GiUY3aMxMvZgYMdcSKXdBcm5o6Ydyh7vMopFBW/l8=";
     };
-    date = "2025-10-21";
+    date = "2025-10-25";
   };
   vim = {
     pname = "vim";
-    version = "0124320c97b0fbbb44613f42fc1c34fee6181fc8";
+    version = "b32da7de63c81d8880bf5b25835c53bcf363fc26";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "0124320c97b0fbbb44613f42fc1c34fee6181fc8";
+      rev = "b32da7de63c81d8880bf5b25835c53bcf363fc26";
       fetchSubmodules = false;
-      sha256 = "sha256-qY3Gw7gMNeBuScn3tRiY1/V2MjhE3EBD2oPdznlPDbM=";
+      sha256 = "sha256-A4s9/J9siipivlAVDZk1OUkBcls+QtV2vS9BnUvIioY=";
     };
-    date = "2025-10-18";
+    date = "2025-10-25";
   };
 }

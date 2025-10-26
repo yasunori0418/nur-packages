@@ -12,13 +12,13 @@
 
 let
   sources = {
-    "@alcalzone/ansi-tokenize-0.2.1" = {
+    "@alcalzone/ansi-tokenize-0.2.2" = {
       name = "_at_alcalzone_slash_ansi-tokenize";
       packageName = "@alcalzone/ansi-tokenize";
-      version = "0.2.1";
+      version = "0.2.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@alcalzone/ansi-tokenize/-/ansi-tokenize-0.2.1.tgz";
-        sha512 = "0rJMGIohyuFVf/uq9wCTtVLmVs/+7zoCGYkj7T8igV3XMPpjaSspXx/JvD9zmGprPVsIVvVRYVCaBkEz+SvN9g==";
+        url = "https://registry.npmjs.org/@alcalzone/ansi-tokenize/-/ansi-tokenize-0.2.2.tgz";
+        sha512 = "mkOh+Wwawzuf5wa30bvc4nA+Qb6DIrGWgBhRR/Pw4T9nsgYait8izvXkNyU78D6Wcu3Z+KUdwCmLCxlWjEotYA==";
       };
     };
     "@inkjs/ui-2.0.0" = {
@@ -426,13 +426,13 @@ let
         sha512 = "dOy+3AuW3a2wNbZHIuMZpTcgjGuLU/uBL/ubcZF9OXbDo8ff4O8yVp5Bf0efS8uEoYo5q4Fx7dY9OgQGXgAsQA==";
       };
     };
-    "commander-14.0.1" = {
+    "commander-14.0.2" = {
       name = "commander";
       packageName = "commander";
-      version = "14.0.1";
+      version = "14.0.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/commander/-/commander-14.0.1.tgz";
-        sha512 = "2JkV3gUZUVrbNA+1sjBOYLsMZ5cEEl8GTFP2a4AVz5hvasAMCQ1D2l2le/cX+pV4N6ZU17zjUahLpIXRrnWL8A==";
+        url = "https://registry.npmjs.org/commander/-/commander-14.0.2.tgz";
+        sha512 = "TywoWNNRbhoD0BXs1P3ZEScW8W5iKrnbithIl0YH+uCmBd0QpPOA8yc82DS3BIE5Ma6FnBVUsJ7wVUDz4dvOWQ==";
       };
     };
     "convert-to-spaces-2.0.1" = {
@@ -588,13 +588,13 @@ let
         sha512 = "2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==";
       };
     };
-    "es-toolkit-1.40.0" = {
+    "es-toolkit-1.41.0" = {
       name = "es-toolkit";
       packageName = "es-toolkit";
-      version = "1.40.0";
+      version = "1.41.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.40.0.tgz";
-        sha512 = "8o6w0KFmU0CiIl0/Q/BCEOabF2IJaELM1T2PWj6e8KqzHv1gdx+7JtFnDwOx1kJH/isJ5NwlDG1nCr1HrRF94Q==";
+        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.41.0.tgz";
+        sha512 = "bDd3oRmbVgqZCJS6WmeQieOrzpl3URcWBUVDXxOELlUW2FuW+0glPOz1n0KnRie+PdyvUZcXz2sOn00c6pPRIA==";
       };
     };
     "escalade-3.2.0" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.25";
+    version = "2.0.27";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.25.tgz";
-      sha512 = "5gooMB9DCLmzatQ+b2R0/pP2WxUSADcmpF77Qf3fIDpTf30UFreLXl2pe1exJ2kInsfiPK7PvDuJip5MDEv4CQ==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.27.tgz";
+      sha512 = "Ml4tnBeJu+K7MUFLTg8q7U2BE39Vx2D+KI7t86QnFX/K90c58ekFDUUDnfAp1PqTe9vRms6vARJiWzNxrePinA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2498,7 +2498,7 @@ in
       sha512 = "jTyGUYLXL7seqqdnPLvSNYDWRqwJtNCXG/9SsMRkHMY1JhoezLy3ouNTHt5ts1+SEno5wR42XhpIU6I3fhuoMQ==";
     };
     dependencies = [
-      sources."@alcalzone/ansi-tokenize-0.2.1"
+      sources."@alcalzone/ansi-tokenize-0.2.2"
       sources."@inkjs/ui-2.0.0"
       sources."@sec-ant/readable-stream-0.4.1"
       sources."@sindresorhus/is-4.6.0"
@@ -2569,7 +2569,7 @@ in
       sources."code-excerpt-4.0.0"
       sources."color-convert-2.0.1"
       sources."color-name-1.1.4"
-      sources."commander-14.0.1"
+      sources."commander-14.0.2"
       sources."convert-to-spaces-2.0.1"
       sources."cross-spawn-7.0.6"
       sources."csstype-3.1.3"
@@ -2582,7 +2582,7 @@ in
       sources."emojilib-2.4.0"
       sources."env-editor-1.3.0"
       sources."environment-1.1.0"
-      sources."es-toolkit-1.40.0"
+      sources."es-toolkit-1.41.0"
       sources."escalade-3.2.0"
       sources."escape-string-regexp-2.0.0"
       sources."esprima-4.0.1"

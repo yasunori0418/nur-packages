@@ -43,7 +43,7 @@
   },
   "k1Low-deck": {
     "cargoLocks": null,
-    "date": "2025-10-02",
+    "date": "2025-10-22",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "f2f1fef8f7028ac1d723d5aebd53468a9e04f130",
-      "sha256": "sha256-kWQPB+sIpFFWgwdhayQeq5V0+b6HzsqP838YsrFmq/I=",
+      "rev": "94f0fe6a391df64af079d020c5ebe413da8ca61e",
+      "sha256": "sha256-nmMb5+Y71nHd7qxraClXqbbIGSIX6ktW5vWwnFedsDk=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "f2f1fef8f7028ac1d723d5aebd53468a9e04f130"
+    "version": "94f0fe6a391df64af079d020c5ebe413da8ca61e"
   },
   "laminate": {
     "cargoLocks": null,
@@ -85,7 +85,7 @@
   },
   "neovim": {
     "cargoLocks": null,
-    "date": "2025-10-21",
+    "date": "2025-10-25",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -97,16 +97,16 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "cf48741227a9aa77533d5adfd2379e7c16c71363",
-      "sha256": "sha256-Kfso8/0Q4TFsqQ6Xzfy5XNlk5oj5j31h3E6BAWK0OQw=",
+      "rev": "07461bac27962345ec46feea2e6200f4f82afce7",
+      "sha256": "sha256-l9GiUY3aMxMvZgYMdcSKXdBcm5o6Ydyh7vMopFBW/l8=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "cf48741227a9aa77533d5adfd2379e7c16c71363"
+    "version": "07461bac27962345ec46feea2e6200f4f82afce7"
   },
   "vim": {
     "cargoLocks": null,
-    "date": "2025-10-18",
+    "date": "2025-10-25",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -118,11 +118,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "0124320c97b0fbbb44613f42fc1c34fee6181fc8",
-      "sha256": "sha256-qY3Gw7gMNeBuScn3tRiY1/V2MjhE3EBD2oPdznlPDbM=",
+      "rev": "b32da7de63c81d8880bf5b25835c53bcf363fc26",
+      "sha256": "sha256-A4s9/J9siipivlAVDZk1OUkBcls+QtV2vS9BnUvIioY=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "0124320c97b0fbbb44613f42fc1c34fee6181fc8"
+    "version": "b32da7de63c81d8880bf5b25835c53bcf363fc26"
   }
 }
