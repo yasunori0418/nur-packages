@@ -66,6 +66,17 @@
     };
     date = "2025-10-25";
   };
+  tree-sitter = {
+    pname = "tree-sitter";
+    version = "v0.25.10";
+    src = fetchFromGitHub {
+      owner = "tree-sitter";
+      repo = "tree-sitter";
+      rev = "v0.25.10";
+      fetchSubmodules = false;
+      sha256 = "sha256-aHszbvLCLqCwAS4F4UmM3wbSb81QuG9FM7BDHTu1ZvM=";
+    };
+  };
   vim = {
     pname = "vim";
     version = "b32da7de63c81d8880bf5b25835c53bcf363fc26";

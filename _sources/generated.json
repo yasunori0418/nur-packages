@@ -104,6 +104,27 @@
     },
     "version": "07461bac27962345ec46feea2e6200f4f82afce7"
   },
+  "tree-sitter": {
+    "cargoLocks": null,
+    "date": null,
+    "extract": null,
+    "name": "tree-sitter",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "tree-sitter",
+      "repo": "tree-sitter",
+      "rev": "v0.25.10",
+      "sha256": "sha256-aHszbvLCLqCwAS4F4UmM3wbSb81QuG9FM7BDHTu1ZvM=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "v0.25.10"
+  },
   "vim": {
     "cargoLocks": null,
     "date": "2025-10-25",
