@@ -8,15 +8,15 @@
 {
   cchook = {
     pname = "cchook";
-    version = "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3";
+    version = "a337236a3017bf16bef7481a1fa763f70feb9a8d";
     src = fetchFromGitHub {
       owner = "syou6162";
       repo = "cchook";
-      rev = "a87a9dc93ce2c088f7b3d5d8de410365c7d43ed3";
+      rev = "a337236a3017bf16bef7481a1fa763f70feb9a8d";
       fetchSubmodules = false;
-      sha256 = "sha256-Fwx4dipTk9H+P/dNOGqjF4p/nhvR7zv9eD6n6RVnPOc=";
+      sha256 = "sha256-WJX5/3PUSfmVgQUIwQnqH9Oc+hz5HOkVHAQeqJGkQHM=";
     };
-    date = "2025-09-06";
+    date = "2025-10-27";
   };
   gwq = {
     pname = "gwq";
@@ -32,15 +32,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "94f0fe6a391df64af079d020c5ebe413da8ca61e";
+    version = "1dd2029897cb797e54caab958a9f91cb0c2f313f";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "94f0fe6a391df64af079d020c5ebe413da8ca61e";
+      rev = "1dd2029897cb797e54caab958a9f91cb0c2f313f";
       fetchSubmodules = false;
-      sha256 = "sha256-nmMb5+Y71nHd7qxraClXqbbIGSIX6ktW5vWwnFedsDk=";
+      sha256 = "sha256-bkDXAR21okeqgWL2whs/AmJ0awxHjTxf0dUFlPgiW6k=";
     };
-    date = "2025-10-22";
+    date = "2025-10-27";
   };
   laminate = {
     pname = "laminate";
@@ -56,15 +56,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "07461bac27962345ec46feea2e6200f4f82afce7";
+    version = "7088441de41c468e22dc5daffd377c00211ce45b";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "07461bac27962345ec46feea2e6200f4f82afce7";
+      rev = "7088441de41c468e22dc5daffd377c00211ce45b";
       fetchSubmodules = false;
-      sha256 = "sha256-l9GiUY3aMxMvZgYMdcSKXdBcm5o6Ydyh7vMopFBW/l8=";
+      sha256 = "sha256-L+QYBlIRmYexS3vNILbMiFazdoNyhMjuYwI924GRGnA=";
     };
-    date = "2025-10-25";
+    date = "2025-10-28";
   };
   tree-sitter = {
     pname = "tree-sitter";
@@ -79,14 +79,14 @@
   };
   vim = {
     pname = "vim";
-    version = "b32da7de63c81d8880bf5b25835c53bcf363fc26";
+    version = "21ef3c6e5972bbe8ab61195f98ccb85048b78985";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "b32da7de63c81d8880bf5b25835c53bcf363fc26";
+      rev = "21ef3c6e5972bbe8ab61195f98ccb85048b78985";
       fetchSubmodules = false;
-      sha256 = "sha256-A4s9/J9siipivlAVDZk1OUkBcls+QtV2vS9BnUvIioY=";
+      sha256 = "sha256-8mHOhjWPXGI9U5/DzPp+pM3pJZmyBKzVcvtkhsEuqBA=";
     };
-    date = "2025-10-25";
+    date = "2025-10-27";
   };
 }

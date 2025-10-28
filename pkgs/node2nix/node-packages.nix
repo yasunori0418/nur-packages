@@ -858,13 +858,13 @@ let
         sha512 = "m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==";
       };
     };
-    "ink-6.3.1" = {
+    "ink-6.4.0" = {
       name = "ink";
       packageName = "ink";
-      version = "6.3.1";
+      version = "6.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ink/-/ink-6.3.1.tgz";
-        sha512 = "3wGwITGrzL6rkWsi2gEKzgwdafGn4ZYd3u4oRp+sOPvfoxEHlnoB5Vnk9Uy5dMRUhDOqF3hqr4rLQ4lEzBc2sQ==";
+        url = "https://registry.npmjs.org/ink/-/ink-6.4.0.tgz";
+        sha512 = "v43isNGrHeFfipbQbwz7/Eg0+aWz3ASEdT/s1Ty2JtyBzR3maE0P77FwkMET+Nzh5KbRL3efLgkT/ZzPFzW3BA==";
       };
     };
     "ink-big-text-2.0.0" = {
@@ -2028,13 +2028,13 @@ let
         sha512 = "8nIfc2vgQ4TeLnk2lFj4tRLvvJwEfQuabdsmvDdQPT0xlk9TaNtpGd6nNRxXoK6vQhN6RSzj+Cnp5tTQmpxmbw==";
       };
     };
-    "ts-pattern-5.8.0" = {
+    "ts-pattern-5.9.0" = {
       name = "ts-pattern";
       packageName = "ts-pattern";
-      version = "5.8.0";
+      version = "5.9.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ts-pattern/-/ts-pattern-5.8.0.tgz";
-        sha512 = "kIjN2qmWiHnhgr5DAkAafF9fwb0T5OhMVSWrm8XEdTFnX6+wfXwYOFjeF86UZ54vduqiR7BfqScFmXSzSaH8oA==";
+        url = "https://registry.npmjs.org/ts-pattern/-/ts-pattern-5.9.0.tgz";
+        sha512 = "6s5V71mX8qBUmlgbrfL33xDUwO0fq48rxAu2LBE11WBeGdpCPOsXksQbZJHvHwhrd3QjUusd3mAOM5Gg0mFBLg==";
       };
     };
     "type-fest-2.19.0" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.27";
+    version = "2.0.28";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.27.tgz";
-      sha512 = "Ml4tnBeJu+K7MUFLTg8q7U2BE39Vx2D+KI7t86QnFX/K90c58ekFDUUDnfAp1PqTe9vRms6vARJiWzNxrePinA==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.28.tgz";
+      sha512 = "H5tfhYoAwv6wZ7KhTAe2vj3dus+3GaapD0EkmG3ckxoP6aTo3dfjXRLZ+7dxDA4M1h34pBMpN36Hud6B/0m+0A==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2322,10 +2322,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.1.5";
+    version = "1.1.6";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.5.tgz";
-      sha512 = "m3fJaJazByZBfm4JfXo/X3czB7h/BGKWzX2bdR125xJyItt4E1iEdbd1lJ/B3px4CDMxhyMHnWLYIA2xT7YL/w==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.6.tgz";
+      sha512 = "qIraB73M2pYTA55gQdJ107jc16C7XSkfs8OKMWDLFINSMPvz6FMfk0SanBuM5cvoxu9H+aX2SG2DfMF1za5rug==";
     };
     dependencies = [
       sources."@isaacs/cliui-8.0.2"
@@ -2611,7 +2611,7 @@ in
       sources."human-signals-5.0.0"
       sources."indent-string-5.0.0"
       (
-        sources."ink-6.3.1"
+        sources."ink-6.4.0"
         // {
           dependencies = [
             sources."signal-exit-3.0.7"
@@ -2761,7 +2761,7 @@ in
       sources."thenify-all-1.6.0"
       sources."tinycolor2-1.6.0"
       sources."tinygradient-1.1.5"
-      sources."ts-pattern-5.8.0"
+      sources."ts-pattern-5.9.0"
       sources."type-fest-4.41.0"
       sources."unicode-emoji-modifier-base-1.0.0"
       sources."unicorn-magic-0.3.0"

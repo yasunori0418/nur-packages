@@ -13,7 +13,7 @@ neovim-unwrapped.overrideAttrs (prev: {
   inherit (sources.neovim) src;
 
   # ビルドの依存にtree-sitterのparserを含めない
-  treesitter-parsers = {};
+  treesitter-parsers = { };
 
   buildInputs = map (
     dep: if (dep.pname or "") == "tree-sitter" then tree-sitter-updated else dep
