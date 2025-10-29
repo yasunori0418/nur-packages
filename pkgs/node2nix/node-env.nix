@@ -14,7 +14,7 @@
 
 let
   # Workaround to cope with utillinux in Nixpkgs 20.09 and util-linux in Nixpkgs master
-  utillinux = pkgs.utillinux or pkgs.util-linux;
+  utillinux = pkgs.util-linux;
 
   python = nodejs.python or python2;
 
