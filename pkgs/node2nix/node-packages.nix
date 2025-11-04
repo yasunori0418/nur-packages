@@ -1983,13 +1983,13 @@ let
         sha512 = "ulAk51I9UVUyJgxlv9M6lFot2WP3e7t8Kz9+IS6D4rVba1tR9kON+Ey69f+1R4Q8cd45Lod6a4IcJIxnzGc/zA==";
       };
     };
-    "tar-7.5.1" = {
+    "tar-7.5.2" = {
       name = "tar";
       packageName = "tar";
-      version = "7.5.1";
+      version = "7.5.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/tar/-/tar-7.5.1.tgz";
-        sha512 = "nlGpxf+hv0v7GkWBK2V9spgactGOp0qvfWRxUMjqHyzrt3SgwE48DIv/FhqPHJYLHpgW1opq3nERbz5Anq7n1g==";
+        url = "https://registry.npmjs.org/tar/-/tar-7.5.2.tgz";
+        sha512 = "7NyxrTE4Anh8km8iEy7o0QYPs+0JKBTj5ZaqHg6B39erLg0qYXN3BijtShwbsNSvQ+LN75+KV+C4QR/f6Gwnpg==";
       };
     };
     "thenify-3.3.1" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.28";
+    version = "2.0.32";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.28.tgz";
-      sha512 = "H5tfhYoAwv6wZ7KhTAe2vj3dus+3GaapD0EkmG3ckxoP6aTo3dfjXRLZ+7dxDA4M1h34pBMpN36Hud6B/0m+0A==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.32.tgz";
+      sha512 = "F9uIAfhr1LCuaDDIR/boEzuGXfugC7eGdC4Gb1F7NfjDLFcmKqs2lXpB/pPTPa9Z1nldzFrXgQANUwDc1nla5Q==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2322,10 +2322,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.1.6";
+    version = "1.1.7";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.6.tgz";
-      sha512 = "qIraB73M2pYTA55gQdJ107jc16C7XSkfs8OKMWDLFINSMPvz6FMfk0SanBuM5cvoxu9H+aX2SG2DfMF1za5rug==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.7.tgz";
+      sha512 = "U6cshGzFVM48XIgpqvnP3WnLWhgX5zCVt0aAxKx/5vzMnTfxtaZaPhXr7OCwstb25t5Q5uzTBci5shHbH+NZow==";
     };
     dependencies = [
       sources."@isaacs/cliui-8.0.2"
@@ -2460,7 +2460,7 @@ in
         }
       )
       sources."strip-ansi-cjs-6.0.1"
-      sources."tar-7.5.1"
+      sources."tar-7.5.2"
       sources."unique-filename-4.0.0"
       sources."unique-slug-5.0.0"
       sources."validate-npm-package-name-6.0.2"

@@ -7,7 +7,7 @@
 buildGoModule {
   inherit (sources.cchook) pname version src;
 
-  vendorHash = "sha256-2RGMSBWbdaDOfnu31GhRuFj6JUiGvmW6n1LxfLOFJew=";
+  vendorHash = "sha256-3zvqxtNDV5DUPS8thzECEY21UGA+eCHtsdeUya5fvu8=";
 
   nativeCheckInputs = [ git ];
 
