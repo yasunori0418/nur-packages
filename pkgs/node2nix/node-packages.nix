@@ -138,13 +138,13 @@ let
         sha512 = "MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==";
       };
     };
-    "ansi-escapes-7.1.1" = {
+    "ansi-escapes-7.2.0" = {
       name = "ansi-escapes";
       packageName = "ansi-escapes";
-      version = "7.1.1";
+      version = "7.2.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-7.1.1.tgz";
-        sha512 = "Zhl0ErHcSRUaVfGUeUdDuLgpkEo8KIFjB4Y9uAc46ScOpdDiU1Dbyplh7qWJeJ/ZHpbyMSM26+X3BySgnIz40Q==";
+        url = "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-7.2.0.tgz";
+        sha512 = "g6LhBsl+GBPRWGWsBtutpzBYuIIdBkLEvad5C/va/74Db018+5TZiyA26cZJAr3Rft5lprVqOIPxf5Vid6tqAw==";
       };
     };
     "ansi-regex-5.0.1" = {
@@ -1191,13 +1191,13 @@ let
         sha512 = "8dD6FusOQSrpv9Z1rdNMdlSgQOIP880DHqnohobOmYLElGEqAL/JvxvuxZO16r4HtjTlfPRDC1hbvxC9dPN2nA==";
       };
     };
-    "marked-16.4.1" = {
+    "marked-16.4.2" = {
       name = "marked";
       packageName = "marked";
-      version = "16.4.1";
+      version = "16.4.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/marked/-/marked-16.4.1.tgz";
-        sha512 = "ntROs7RaN3EvWfy3EZi14H4YxmT6A5YvywfhO+0pm+cH/dnSQRmdAmoFIc3B9aiwTehyk7pESH4ofyBY+V5hZg==";
+        url = "https://registry.npmjs.org/marked/-/marked-16.4.2.tgz";
+        sha512 = "TI3V8YYWvkVf3KJe1dRkpnjs68JUPyEa5vjKrp1XEEJUAOaQc+Qj+L1qWbPd0SJuAdQkFU0h73sXXqwDYxsiDA==";
       };
     };
     "marked-terminal-7.3.0" = {
@@ -2286,10 +2286,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.32";
+    version = "2.0.36";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.32.tgz";
-      sha512 = "F9uIAfhr1LCuaDDIR/boEzuGXfugC7eGdC4Gb1F7NfjDLFcmKqs2lXpB/pPTPa9Z1nldzFrXgQANUwDc1nla5Q==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.36.tgz";
+      sha512 = "xsdZk/OKakTUNVokA6nCYKA/pJ5xwVLr7bTnnqSmIuz8+OaGe+msew543Mo2hHLecOtl8yxi0XnJmviZKpNqTQ==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2304,10 +2304,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.1.3";
+    version = "17.1.4";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.3.tgz";
-      sha512 = "1fgnlS3kLQo61m7Nz5AUj7le57+K6JaSN5KC0/hD+oNzRvg6Uss0TNKLCuIjNjm7b0LCiN+4DjKSNHJWCiAwxg==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.4.tgz";
+      sha512 = "TnosfQkcvjUnyNHQho21q0mlZIidC31XKjRGqIZpJRWZhuqx+v71EgzdnQmi6RpF2q24cUJ14tNlfboJxsVWvg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2506,7 +2506,7 @@ in
       sources."@types/gradient-string-1.1.6"
       sources."@types/react-19.2.2"
       sources."@types/tinycolor2-1.4.6"
-      sources."ansi-escapes-7.1.1"
+      sources."ansi-escapes-7.2.0"
       sources."ansi-regex-6.2.2"
       sources."ansi-styles-6.2.3"
       sources."any-promise-1.3.0"
@@ -2655,7 +2655,7 @@ in
         }
       )
       sources."loose-envify-1.4.0"
-      sources."marked-16.4.1"
+      sources."marked-16.4.2"
       (
         sources."marked-terminal-7.3.0"
         // {

@@ -1,7 +1,7 @@
 {
   "cchook": {
     "cargoLocks": null,
-    "date": "2025-11-04",
+    "date": "2025-11-05",
     "extract": null,
     "name": "cchook",
     "passthru": null,
@@ -13,12 +13,12 @@
       "name": null,
       "owner": "syou6162",
       "repo": "cchook",
-      "rev": "7bc937e5c4124381b2d7bcb8d5b0ee21419c19ba",
-      "sha256": "sha256-MhO4CBoB7SDKK1LHfeb480CJQtwh8y31x6pO19T2Z0o=",
+      "rev": "9eda7c56e29b787706f29b0006713cf95c6d3e30",
+      "sha256": "sha256-MBemOFJDb7KnTWtrnGnR46OAveR4o4vpMutfqWgIeIc=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "7bc937e5c4124381b2d7bcb8d5b0ee21419c19ba"
+    "version": "9eda7c56e29b787706f29b0006713cf95c6d3e30"
   },
   "gwq": {
     "cargoLocks": null,
@@ -43,7 +43,7 @@
   },
   "k1Low-deck": {
     "cargoLocks": null,
-    "date": "2025-10-29",
+    "date": "2025-11-07",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "0b525cbed9cec68cb5f72a8adec0ebb4a0e170b6",
-      "sha256": "sha256-4gyFtW+L3d6H1QNADUaE6pjVkDnpZdbYDNF286i0OzM=",
+      "rev": "ce9d5d739b19ead21fe80f83a5b54c971f0fbda7",
+      "sha256": "sha256-7UKaugVNggjBcAe+XOxaJYFVO0Hoi8fZYweQd1u8MYw=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "0b525cbed9cec68cb5f72a8adec0ebb4a0e170b6"
+    "version": "ce9d5d739b19ead21fe80f83a5b54c971f0fbda7"
   },
   "laminate": {
     "cargoLocks": null,
@@ -85,7 +85,7 @@
   },
   "neovim": {
     "cargoLocks": null,
-    "date": "2025-11-03",
+    "date": "2025-11-08",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -97,12 +97,12 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "b80d390765b0c987f86ecd257fa8c38cc1225797",
-      "sha256": "sha256-5XdkjVsB8LbqTUMmOmK3YscnCVm7yHenKoaKrgFESac=",
+      "rev": "8d6963a6a0f083350549d259606c388ae07b266f",
+      "sha256": "sha256-yVMEGlnqYyEf5tBcL2BLwDSIVbbZ4bLthiZ8+BnPAYE=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "b80d390765b0c987f86ecd257fa8c38cc1225797"
+    "version": "8d6963a6a0f083350549d259606c388ae07b266f"
   },
   "tree-sitter": {
     "cargoLocks": null,
@@ -127,7 +127,7 @@
   },
   "vim": {
     "cargoLocks": null,
-    "date": "2025-11-02",
+    "date": "2025-11-06",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -139,11 +139,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "1ead1b51e1d56ca3248661805c37422f865d2c95",
-      "sha256": "sha256-nBV57UGhY6D/asf7SExze33WVqQX6mLhX/Xib78Wg6E=",
+      "rev": "cf4d9625c6eb21107e030dc879c1390596fbdb8d",
+      "sha256": "sha256-VCnulDiLM6jrWcHzXNZbhDNpyGzU1xdLXW1mgi491ic=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1ead1b51e1d56ca3248661805c37422f865d2c95"
+    "version": "cf4d9625c6eb21107e030dc879c1390596fbdb8d"
   }
 }
