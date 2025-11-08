@@ -27,13 +27,13 @@
     {
       legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs; });
       packages = forAllSystems (
-        pkgs: pkgs.lib.filterAttrs (_: v: pkgs.lib.isDerivation v) self.legacyPackages.${pkgs.system}
+        pkgs: pkgs.lib.filterAttrs (_: v: pkgs.lib.isDerivation v) self.legacyPackages.${pkgs.stdenv.hostPlatform.system}
       );
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
           packages =
             let
-              nix-unit = inputs.nix-unit.packages.${pkgs.system}.default;
+              nix-unit = inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default;
             in
             with pkgs;
             [
@@ -44,11 +44,11 @@
             ];
         };
       });
-      formatter = forAllSystems (pkgs: treefmtEval.${pkgs.system}.config.build.wrapper);
+      formatter = forAllSystems (pkgs: treefmtEval.${pkgs.stdenv.hostPlatform.system}.config.build.wrapper);
       checks = forAllSystems (pkgs: {
         default =
           let
-            nix-unit = inputs.nix-unit.packages.${pkgs.system}.default;
+            nix-unit = inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default;
           in
           pkgs.runCommand "tests"
             {
@@ -65,7 +65,7 @@
                 --flake '${self}#tests'
               touch $out
             '';
-        formatting = treefmtEval.${pkgs.system}.config.build.check self;
+        formatting = treefmtEval.${pkgs.stdenv.hostPlatform.system}.config.build.check self;
       });
       tests = forAllSystems (pkgs: {
         lib = import ./lib/default_test.nix { inherit pkgs; };
