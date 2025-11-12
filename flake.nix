@@ -27,7 +27,10 @@
     {
       legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs; });
       packages = forAllSystems (
-        pkgs: pkgs.lib.filterAttrs (_: v: pkgs.lib.isDerivation v) self.legacyPackages.${pkgs.stdenv.hostPlatform.system}
+        pkgs:
+        pkgs.lib.filterAttrs (
+          _: v: pkgs.lib.isDerivation v
+        ) self.legacyPackages.${pkgs.stdenv.hostPlatform.system}
       );
       devShells = forAllSystems (pkgs: {
         default = pkgs.mkShell {
@@ -44,7 +47,9 @@
             ];
         };
       });
-      formatter = forAllSystems (pkgs: treefmtEval.${pkgs.stdenv.hostPlatform.system}.config.build.wrapper);
+      formatter = forAllSystems (
+        pkgs: treefmtEval.${pkgs.stdenv.hostPlatform.system}.config.build.wrapper
+      );
       checks = forAllSystems (pkgs: {
         default =
           let
