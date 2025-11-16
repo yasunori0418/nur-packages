@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.2.3" = {
+    "@types/react-19.2.5" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.2.3";
+      version = "19.2.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.2.3.tgz";
-        sha512 = "k5dJVszUiNr1DSe8Cs+knKR6IrqhqdhpUwzqhkS8ecQTSf3THNtbfIp/umqHMpX2bv+9dkx3fwDv/86LcSfvSg==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.5.tgz";
+        sha512 = "keKxkZMqnDicuvFoJbzrhbtdLSPhj/rZThDlKWCDbgXmUg0rEUFtRssDXKYmtXluZlIqiC5VqkCgRwzuyLHKHw==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -453,13 +453,13 @@ let
         sha512 = "uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==";
       };
     };
-    "csstype-3.1.3" = {
+    "csstype-3.2.2" = {
       name = "csstype";
       packageName = "csstype";
-      version = "3.1.3";
+      version = "3.2.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/csstype/-/csstype-3.1.3.tgz";
-        sha512 = "M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw==";
+        url = "https://registry.npmjs.org/csstype/-/csstype-3.2.2.tgz";
+        sha512 = "D80T+tiqkd/8B0xNlbstWDG4x6aqVfO52+OlSUNIdkTvmNw0uQpJLeos2J/2XvpyidAFuTPmpad+tUxLndwj6g==";
       };
     };
     "debug-4.4.3" = {
@@ -480,22 +480,22 @@ let
         sha512 = "3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==";
       };
     };
-    "default-browser-5.3.0" = {
+    "default-browser-5.4.0" = {
       name = "default-browser";
       packageName = "default-browser";
-      version = "5.3.0";
+      version = "5.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/default-browser/-/default-browser-5.3.0.tgz";
-        sha512 = "Qq68+VkJlc8tjnPV1i7HtbIn7ohmjZa88qUvHMIK0ZKUXMCuV45cT7cEXALPUmeXCe0q1DWQkQTemHVaLIFSrg==";
+        url = "https://registry.npmjs.org/default-browser/-/default-browser-5.4.0.tgz";
+        sha512 = "XDuvSq38Hr1MdN47EDvYtx3U0MTqpCEn+F6ft8z2vYDzMrvQhVp0ui9oQdqW3MvK3vqUETglt1tVGgjLuJ5izg==";
       };
     };
-    "default-browser-id-5.0.0" = {
+    "default-browser-id-5.0.1" = {
       name = "default-browser-id";
       packageName = "default-browser-id";
-      version = "5.0.0";
+      version = "5.0.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/default-browser-id/-/default-browser-id-5.0.0.tgz";
-        sha512 = "A6p/pu/6fyBcA1TRz/GqWYPViplrftcW2gZC9q79ngNCKAeR/X3gcEdXQHl4KNXV+3wgIJ1CPkJQ3IHM6lcsyA==";
+        url = "https://registry.npmjs.org/default-browser-id/-/default-browser-id-5.0.1.tgz";
+        sha512 = "x1VCxdX4t+8wVfd1so/9w+vQ4vx7lKd2Qp5tDRutErwmR85OgmfX7RlLRMWafRMY7hbEiXIbudNrjOAPa/hL8Q==";
       };
     };
     "define-lazy-prop-3.0.0" = {
@@ -1092,13 +1092,13 @@ let
         sha512 = "RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==";
       };
     };
-    "js-yaml-3.14.1" = {
+    "js-yaml-3.14.2" = {
       name = "js-yaml";
       packageName = "js-yaml";
-      version = "3.14.1";
+      version = "3.14.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.1.tgz";
-        sha512 = "okMH7OXXJ7YrN9Ok3/SXrnu4iX9yOk+25nqX4imS2npuvTYDmo/QEZoqwZkYaIDk3jVvBOTOIEgEhaLOynBS9g==";
+        url = "https://registry.npmjs.org/js-yaml/-/js-yaml-3.14.2.tgz";
+        sha512 = "PMSmkqxr106Xa156c2M265Z+FTrPl+oxd/rgOQy2tijQeK5TxQ43psO1ZCwhVOSdnn+RzkzlRz/eY4BgJBYVpg==";
       };
     };
     "jsonparse-1.3.1" = {
@@ -2277,10 +2277,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.37";
+    version = "2.0.42";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.37.tgz";
-      sha512 = "8d4qRGY9/LGqEbYNfno00wg0tprDC0dPNBBZHk8CVvl5vlB8PX2HVwlI6kok3ZNFBMDL+Hqjbp26xXC1hTL6Hw==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.42.tgz";
+      sha512 = "poK4Z+mviehjjCIQe+KTU40kSTgnUitxROg79rAwN3L3A7FyvQE8v6jdakvtxYb452/8qBSf+FbvImHvuXn0rw==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2295,10 +2295,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.1.4";
+    version = "17.1.5";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.4.tgz";
-      sha512 = "TnosfQkcvjUnyNHQho21q0mlZIidC31XKjRGqIZpJRWZhuqx+v71EgzdnQmi6RpF2q24cUJ14tNlfboJxsVWvg==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.5.tgz";
+      sha512 = "ljzdAffDSxKbIMcn2/Nmi4lOWMiRmeB+U9oG+4aMAUjSs2Fg7K7onYTJBbdxa6yTxcX7KHq/VaW2o9faQD4o+A==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2495,7 +2495,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.2.3"
+      sources."@types/react-19.2.5"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.2.0"
       sources."ansi-regex-6.2.2"
@@ -2555,10 +2555,10 @@ in
       sources."commander-14.0.2"
       sources."convert-to-spaces-2.0.1"
       sources."cross-spawn-7.0.6"
-      sources."csstype-3.1.3"
+      sources."csstype-3.2.2"
       sources."deepmerge-4.3.1"
-      sources."default-browser-5.3.0"
-      sources."default-browser-id-5.0.0"
+      sources."default-browser-5.4.0"
+      sources."default-browser-id-5.0.1"
       sources."define-lazy-prop-3.0.0"
       sources."define-property-1.0.0"
       sources."emoji-regex-10.6.0"
@@ -2627,7 +2627,7 @@ in
       sources."is64bit-2.0.0"
       sources."isexe-2.0.0"
       sources."js-tokens-4.0.0"
-      sources."js-yaml-3.14.1"
+      sources."js-yaml-3.14.2"
       sources."kind-of-6.0.3"
       (
         sources."line-column-path-3.0.0"
@@ -2800,10 +2800,10 @@ in
   cc-sdd = nodeEnv.buildNodePackage {
     name = "cc-sdd";
     packageName = "cc-sdd";
-    version = "2.0.1";
+    version = "2.0.3";
     src = fetchurl {
-      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.1.tgz";
-      sha512 = "bvATtnU+9/p2k398joQc/wG8m7qHu73yj5io6gyorwPN7SiOWsN3gr0/mcbEdxhYskKR/em1FWJwfdGCfOTq4A==";
+      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.3.tgz";
+      sha512 = "UmST/LceYNH44gpaF/b9IsGipCtC0eGZGYv/p+HMi+6hwneKol2jZ3Vub+LnrCwJ9Z4raBI/SZAHJeIwtZ89YA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
