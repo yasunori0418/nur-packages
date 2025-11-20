@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.2.5" = {
+    "@types/react-19.2.6" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.2.5";
+      version = "19.2.6";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.2.5.tgz";
-        sha512 = "keKxkZMqnDicuvFoJbzrhbtdLSPhj/rZThDlKWCDbgXmUg0rEUFtRssDXKYmtXluZlIqiC5VqkCgRwzuyLHKHw==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.6.tgz";
+        sha512 = "p/jUvulfgU7oKtj6Xpk8cA2Y1xKTtICGpJYeJXz2YVO2UcvjQgeRMLDGfDeqeRW2Ta+0QNFwcc8X3GH8SxZz6w==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -453,13 +453,13 @@ let
         sha512 = "uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==";
       };
     };
-    "csstype-3.2.2" = {
+    "csstype-3.2.3" = {
       name = "csstype";
       packageName = "csstype";
-      version = "3.2.2";
+      version = "3.2.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/csstype/-/csstype-3.2.2.tgz";
-        sha512 = "D80T+tiqkd/8B0xNlbstWDG4x6aqVfO52+OlSUNIdkTvmNw0uQpJLeos2J/2XvpyidAFuTPmpad+tUxLndwj6g==";
+        url = "https://registry.npmjs.org/csstype/-/csstype-3.2.3.tgz";
+        sha512 = "z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==";
       };
     };
     "debug-4.4.3" = {
@@ -588,13 +588,13 @@ let
         sha512 = "2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==";
       };
     };
-    "es-toolkit-1.41.0" = {
+    "es-toolkit-1.42.0" = {
       name = "es-toolkit";
       packageName = "es-toolkit";
-      version = "1.41.0";
+      version = "1.42.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.41.0.tgz";
-        sha512 = "bDd3oRmbVgqZCJS6WmeQieOrzpl3URcWBUVDXxOELlUW2FuW+0glPOz1n0KnRie+PdyvUZcXz2sOn00c6pPRIA==";
+        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.42.0.tgz";
+        sha512 = "SLHIyY7VfDJBM8clz4+T2oquwTQxEzu263AyhVK4jREOAwJ+8eebaa4wM3nlvnAqhDrMm2EsA6hWHaQsMPQ1nA==";
       };
     };
     "escalade-3.2.0" = {
@@ -732,13 +732,13 @@ let
         sha512 = "kVCxPF3vQM/N0B1PmoqVUqgHP+EeVjmZSQn+1oCRPxd2P21P2F19lIgbR3HBosbB1PUhOAoctJnfEn2GbN2eZA==";
       };
     };
-    "glob-10.4.5" = {
+    "glob-10.5.0" = {
       name = "glob";
       packageName = "glob";
-      version = "10.4.5";
+      version = "10.5.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/glob/-/glob-10.4.5.tgz";
-        sha512 = "7Bv8RF0k6xjo7d4A/PxYLbUCfb6c+Vpd2/mB2yRDlew7Jb5hEXiCD9ibfO7wpk8i4sevK6DFny9h7EYbM3/sHg==";
+        url = "https://registry.npmjs.org/glob/-/glob-10.5.0.tgz";
+        sha512 = "DfXN8DfhJ7NH3Oe7cFmu3NCu1wKbkReJ8TorzSAFbSKrlNaQSKfIzqYqVY8zlbs2NLBbWpRiU52GX2PbaBVNkg==";
       };
     };
     "gradient-string-2.0.2" = {
@@ -858,13 +858,13 @@ let
         sha512 = "m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==";
       };
     };
-    "ink-6.5.0" = {
+    "ink-6.5.1" = {
       name = "ink";
       packageName = "ink";
-      version = "6.5.0";
+      version = "6.5.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ink/-/ink-6.5.0.tgz";
-        sha512 = "abn3rYIxepGKD/h4ZH6sQHgJxBi/EISY/1fIxHODlF5LPvw0wKv2S2uOMIMTfJdBwy9DsWndCfKDCcWSRclp/w==";
+        url = "https://registry.npmjs.org/ink/-/ink-6.5.1.tgz";
+        sha512 = "wF3j/DmkM8q5E+OtfdQhCRw8/0ahkc8CUTgEddxZzpEWPslu7YPL3t64MWRoI9m6upVGpfAg4ms2BBvxCdKRLQ==";
       };
     };
     "ink-big-text-2.0.0" = {
@@ -2277,10 +2277,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.42";
+    version = "2.0.47";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.42.tgz";
-      sha512 = "poK4Z+mviehjjCIQe+KTU40kSTgnUitxROg79rAwN3L3A7FyvQE8v6jdakvtxYb452/8qBSf+FbvImHvuXn0rw==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.47.tgz";
+      sha512 = "mF9J8zZkgzlMXHDtHnQciMjswrP+GxvNLTm4IVKs8cIbbHZqEJonIwHDkh3QeZd2bDso+1/DO41RcVm6ghsmNA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2295,10 +2295,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.1.5";
+    version = "17.1.6";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.5.tgz";
-      sha512 = "ljzdAffDSxKbIMcn2/Nmi4lOWMiRmeB+U9oG+4aMAUjSs2Fg7K7onYTJBbdxa6yTxcX7KHq/VaW2o9faQD4o+A==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.6.tgz";
+      sha512 = "hWeOpAQi4lPEbI7XYXNHabFMAmSUhT3Sv3GB9v1sPAX3FOAj3NLZaiq2K6wspdg0ShsbjhChQdzJ4bYzsyu2aA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2344,7 +2344,7 @@ in
       sources."foreground-child-3.3.1"
       sources."fs-minipass-3.0.3"
       sources."get-east-asian-width-1.4.0"
-      sources."glob-10.4.5"
+      sources."glob-10.5.0"
       sources."hosted-git-info-8.1.0"
       sources."http-cache-semantics-4.2.0"
       sources."http-proxy-agent-7.0.2"
@@ -2495,7 +2495,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.2.5"
+      sources."@types/react-19.2.6"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.2.0"
       sources."ansi-regex-6.2.2"
@@ -2555,7 +2555,7 @@ in
       sources."commander-14.0.2"
       sources."convert-to-spaces-2.0.1"
       sources."cross-spawn-7.0.6"
-      sources."csstype-3.2.2"
+      sources."csstype-3.2.3"
       sources."deepmerge-4.3.1"
       sources."default-browser-5.4.0"
       sources."default-browser-id-5.0.1"
@@ -2565,7 +2565,7 @@ in
       sources."emojilib-2.4.0"
       sources."env-editor-1.3.0"
       sources."environment-1.1.0"
-      sources."es-toolkit-1.41.0"
+      sources."es-toolkit-1.42.0"
       sources."escalade-3.2.0"
       sources."escape-string-regexp-2.0.0"
       sources."esprima-4.0.1"
@@ -2594,7 +2594,7 @@ in
       sources."human-signals-5.0.0"
       sources."indent-string-5.0.0"
       (
-        sources."ink-6.5.0"
+        sources."ink-6.5.1"
         // {
           dependencies = [
             sources."signal-exit-3.0.7"
