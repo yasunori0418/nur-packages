@@ -56,15 +56,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "477b43aa7ff7ef081f9552f59caf344f23102000";
+    version = "01a9765035372830fa97b87f93c6aca72bd99494";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "477b43aa7ff7ef081f9552f59caf344f23102000";
+      rev = "01a9765035372830fa97b87f93c6aca72bd99494";
       fetchSubmodules = false;
-      sha256 = "sha256-4Nlr+0bdaexPQ0u0EMnFc8zoP3vMpjL7qO4VddqJ9XE=";
+      sha256 = "sha256-mbC4oUTvSPc93C/ImbIjzTuu57RP0ayU/y00dxgN78s=";
     };
-    date = "2025-11-22";
+    date = "2025-11-24";
   };
   tree-sitter = {
     pname = "tree-sitter";
@@ -79,14 +79,14 @@
   };
   vim = {
     pname = "vim";
-    version = "48940d94f6ce5862e4d2c5f5169d290bc300afde";
+    version = "23d4e496f6e15773cd66080bb77ecde2a3f1a2ab";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "48940d94f6ce5862e4d2c5f5169d290bc300afde";
+      rev = "23d4e496f6e15773cd66080bb77ecde2a3f1a2ab";
       fetchSubmodules = false;
-      sha256 = "sha256-dnoLsw9aAtfil7HpSDXd6OMTgrivo9L3205zsdp8c3c=";
+      sha256 = "sha256-00HHPjZpzgvDoQhzsHCt8PVEdRY9LG9OGjXBCaiThms=";
     };
-    date = "2025-11-21";
+    date = "2025-11-23";
   };
 }
