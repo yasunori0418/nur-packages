@@ -2,17 +2,20 @@
   lib,
   stdenv,
   cmake,
+  perl,
   sources,
 }:
 stdenv.mkDerivation {
   inherit (sources.pict) pname version src;
 
-  nativeBuildInputs = [ cmake ];
+  nativeBuildInputs = [
+    cmake
+    perl
+  ];
 
   cmakeFlags = [ "-DCMAKE_BUILD_TYPE=Release" ];
 
-  # Tests require Perl and may have platform-specific issues
-  doCheck = false;
+  doCheck = true;
 
   installPhase = ''
     mkdir -p $out/bin
