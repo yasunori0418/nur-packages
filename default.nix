@@ -35,4 +35,5 @@ in
   vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
   neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
   nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };
+  pict = pkgs.callPackage ./pkgs/pict { inherit sources; };
 }

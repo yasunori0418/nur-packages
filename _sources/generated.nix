@@ -32,15 +32,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "7951c93927671fcfec77710fa580114fad716788";
+    version = "6d1a5950219b9066ef186742d2d9cf8620692279";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "7951c93927671fcfec77710fa580114fad716788";
+      rev = "6d1a5950219b9066ef186742d2d9cf8620692279";
       fetchSubmodules = false;
-      sha256 = "sha256-Vru5QELMXQ1fNcaB7VDBp0Y3xFdQTbjCP3NvInKu1Ew=";
+      sha256 = "sha256-Cy/OgjtBW9V1itDa1eIvBlcNR0YWoECwbdO5Rs8MQMI=";
     };
-    date = "2025-11-21";
+    date = "2025-11-25";
   };
   laminate = {
     pname = "laminate";
@@ -56,15 +56,27 @@
   };
   neovim = {
     pname = "neovim";
-    version = "01a9765035372830fa97b87f93c6aca72bd99494";
+    version = "0a0c349b6fee01a8365e13e5a9dc194fcad4fd0a";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "01a9765035372830fa97b87f93c6aca72bd99494";
+      rev = "0a0c349b6fee01a8365e13e5a9dc194fcad4fd0a";
       fetchSubmodules = false;
-      sha256 = "sha256-mbC4oUTvSPc93C/ImbIjzTuu57RP0ayU/y00dxgN78s=";
+      sha256 = "sha256-7To+NK6cr1Q3th89cqraXEF93IDLxFRXlYacT3gQoWs=";
     };
-    date = "2025-11-24";
+    date = "2025-11-25";
+  };
+  pict = {
+    pname = "pict";
+    version = "0dc3a595f70c841a70287bf17281f66a28155ec4";
+    src = fetchFromGitHub {
+      owner = "microsoft";
+      repo = "pict";
+      rev = "0dc3a595f70c841a70287bf17281f66a28155ec4";
+      fetchSubmodules = false;
+      sha256 = "sha256-aBGwoPKp0VGxKsKhmSO0dr/mNLPMO4kq9InAgk9CLvQ=";
+    };
+    date = "2025-04-23";
   };
   tree-sitter = {
     pname = "tree-sitter";
@@ -79,14 +91,14 @@
   };
   vim = {
     pname = "vim";
-    version = "23d4e496f6e15773cd66080bb77ecde2a3f1a2ab";
+    version = "efa3b1f86d0985a5a1c5b87981c2b7dcaca0815e";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "23d4e496f6e15773cd66080bb77ecde2a3f1a2ab";
+      rev = "efa3b1f86d0985a5a1c5b87981c2b7dcaca0815e";
       fetchSubmodules = false;
-      sha256 = "sha256-00HHPjZpzgvDoQhzsHCt8PVEdRY9LG9OGjXBCaiThms=";
+      sha256 = "sha256-DU9u6NKisfg7TCcS7zpg5m+RgLOxAZoaxg2nyPS4Xd4=";
     };
-    date = "2025-11-23";
+    date = "2025-11-25";
   };
 }

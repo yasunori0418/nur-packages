@@ -43,7 +43,7 @@
   },
   "k1Low-deck": {
     "cargoLocks": null,
-    "date": "2025-11-21",
+    "date": "2025-11-25",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "7951c93927671fcfec77710fa580114fad716788",
-      "sha256": "sha256-Vru5QELMXQ1fNcaB7VDBp0Y3xFdQTbjCP3NvInKu1Ew=",
+      "rev": "6d1a5950219b9066ef186742d2d9cf8620692279",
+      "sha256": "sha256-Cy/OgjtBW9V1itDa1eIvBlcNR0YWoECwbdO5Rs8MQMI=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "7951c93927671fcfec77710fa580114fad716788"
+    "version": "6d1a5950219b9066ef186742d2d9cf8620692279"
   },
   "laminate": {
     "cargoLocks": null,
@@ -85,7 +85,7 @@
   },
   "neovim": {
     "cargoLocks": null,
-    "date": "2025-11-24",
+    "date": "2025-11-25",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -97,12 +97,33 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "01a9765035372830fa97b87f93c6aca72bd99494",
-      "sha256": "sha256-mbC4oUTvSPc93C/ImbIjzTuu57RP0ayU/y00dxgN78s=",
+      "rev": "0a0c349b6fee01a8365e13e5a9dc194fcad4fd0a",
+      "sha256": "sha256-7To+NK6cr1Q3th89cqraXEF93IDLxFRXlYacT3gQoWs=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "01a9765035372830fa97b87f93c6aca72bd99494"
+    "version": "0a0c349b6fee01a8365e13e5a9dc194fcad4fd0a"
+  },
+  "pict": {
+    "cargoLocks": null,
+    "date": "2025-04-23",
+    "extract": null,
+    "name": "pict",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "microsoft",
+      "repo": "pict",
+      "rev": "0dc3a595f70c841a70287bf17281f66a28155ec4",
+      "sha256": "sha256-aBGwoPKp0VGxKsKhmSO0dr/mNLPMO4kq9InAgk9CLvQ=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "0dc3a595f70c841a70287bf17281f66a28155ec4"
   },
   "tree-sitter": {
     "cargoLocks": null,
@@ -127,7 +148,7 @@
   },
   "vim": {
     "cargoLocks": null,
-    "date": "2025-11-23",
+    "date": "2025-11-25",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -139,11 +160,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "23d4e496f6e15773cd66080bb77ecde2a3f1a2ab",
-      "sha256": "sha256-00HHPjZpzgvDoQhzsHCt8PVEdRY9LG9OGjXBCaiThms=",
+      "rev": "efa3b1f86d0985a5a1c5b87981c2b7dcaca0815e",
+      "sha256": "sha256-DU9u6NKisfg7TCcS7zpg5m+RgLOxAZoaxg2nyPS4Xd4=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "23d4e496f6e15773cd66080bb77ecde2a3f1a2ab"
+    "version": "efa3b1f86d0985a5a1c5b87981c2b7dcaca0815e"
   }
 }
