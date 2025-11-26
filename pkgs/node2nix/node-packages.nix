@@ -255,6 +255,15 @@ let
         sha512 = "hdsUxulXCi5STId78vRVYEtDAjq99ICAUktLTeTYsLoTE6Z8dS0c8pWNCxwdrk9YfJeobDZc2Y186hD/5ZQgFQ==";
       };
     };
+    "certifi-14.5.15" = {
+      name = "certifi";
+      packageName = "certifi";
+      version = "14.5.15";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/certifi/-/certifi-14.5.15.tgz";
+        sha512 = "NeLXuKCqSzwQNjpJ+WaSp5m8ntdTKJ8HnBu+eA7DxHfgzU7F1sjwrJFang+4U38+vmWbiFUpPZMV3uwwnHAisQ==";
+      };
+    };
     "cfonts-3.3.1" = {
       name = "cfonts";
       packageName = "cfonts";
@@ -856,6 +865,15 @@ let
       src = fetchurl {
         url = "https://registry.npmjs.org/indent-string/-/indent-string-5.0.0.tgz";
         sha512 = "m6FAo/spmsW2Ab2fU35JTYwtOKa2yAwXSwgjSv1TJzh4Mh7mC3lzAOVLBprb72XsTrgkEIsl7YrFNAiDiRhIGg==";
+      };
+    };
+    "ini-6.0.0" = {
+      name = "ini";
+      packageName = "ini";
+      version = "6.0.0";
+      src = fetchurl {
+        url = "https://registry.npmjs.org/ini/-/ini-6.0.0.tgz";
+        sha512 = "IBTdIkzZNOpqm7q3dRqJvMaldXjDHWkEDfrwGEQTs5eaQMWV+djAhR+wahyNNMAa+qpbDUhBMVt4ZKNwpPm7xQ==";
       };
     };
     "ink-6.5.1" = {
@@ -2277,10 +2295,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.50";
+    version = "2.0.54";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.50.tgz";
-      sha512 = "zT4vSFr3wSY1XuQHTBbtMyxcv87Al25Icrv7ASnpJTgmXR2MoIcs3dyfoQGUzAHnnAymEVSSQxeX+DgnTvOUDg==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.54.tgz";
+      sha512 = "6quQRZ3Zxb4nxzVfG0BDBffrGXKqCdnkw/9BUUkCxQhlbCSdxVZr7pZoJq/0HG8QiJkRdm5KoIsESC8exsCrSg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2313,10 +2331,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.1.7";
+    version = "1.1.9";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.7.tgz";
-      sha512 = "U6cshGzFVM48XIgpqvnP3WnLWhgX5zCVt0aAxKx/5vzMnTfxtaZaPhXr7OCwstb25t5Q5uzTBci5shHbH+NZow==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.1.9.tgz";
+      sha512 = "rpb2mwFDKgfFiP1qpdCejcqKLZpaVPwjASxUsoFR+ytjVg6qoRH3lS8E8D5sF6YWjJgwC1gcNCw+wWd1OqsSGw==";
     };
     dependencies = [
       sources."@isaacs/cliui-8.0.2"
@@ -2330,6 +2348,7 @@ in
       sources."balanced-match-1.0.2"
       sources."brace-expansion-2.0.2"
       sources."cacache-19.0.1"
+      sources."certifi-14.5.15"
       sources."chalk-5.4.1"
       sources."chownr-3.0.0"
       sources."cli-cursor-5.0.0"
@@ -2350,6 +2369,7 @@ in
       sources."http-proxy-agent-7.0.2"
       sources."https-proxy-agent-7.0.6"
       sources."imurmurhash-0.1.4"
+      sources."ini-6.0.0"
       sources."ip-address-10.1.0"
       sources."is-fullwidth-code-point-3.0.0"
       sources."is-interactive-2.0.0"
