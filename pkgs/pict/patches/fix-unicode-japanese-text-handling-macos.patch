@@ -1,0 +1,220 @@
+From ff738a7a3cea75b9a7994369dcb00201703b7216 Mon Sep 17 00:00:00 2001
+From: ishikawa096 <98593352+ishikawa096@users.noreply.github.com>
+Date: Thu, 28 Aug 2025 18:42:50 +0900
+Subject: [PATCH] Fix Unicode/Japanese text handling on macOS
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 8bit
+
+- Add cross-platform UTF-8 locale handling with createUtf8Locale() helper
+- Improve wideCharToAnsi function to properly encode UTF-8 (1-4 bytes)
+- Support both 16-bit (Windows) and 32-bit (Unix/macOS) wchar_t
+- Add proper multibyte character conversion in argument handling
+- Add comprehensive error handling and invalid Unicode replacement
+- Maintain full backward compatibility with ASCII-only input
+
+This resolves issues where Japanese and other Unicode characters
+were not processed or displayed correctly on macOS and other
+Unix-like systems, while preserving functionality on Windows.
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>
+---
+ cli/mparser.cpp |  4 +++
+ cli/pict.cpp    | 33 +++++++++++++++++++-----
+ cli/strings.cpp | 67 ++++++++++++++++++++++++++++++++++++++++++++++---
+ cli/strings.h   | 10 +++++++-
+ 4 files changed, 104 insertions(+), 10 deletions(-)
+
+diff --git a/cli/mparser.cpp b/cli/mparser.cpp
+index d4e649c..943ac82 100644
+--- a/cli/mparser.cpp
++++ b/cli/mparser.cpp
+@@ -442,6 +442,10 @@ bool CModelData::readModel( const wstring& filePath )
+         PrintMessage( InputDataError, L"Couldn't open file:", filePath.data() );
+         return( false );
+     }
++
++    // Set UTF-8 locale for proper Unicode handling (cross-platform compatible)
++    std::locale utf8_locale = createUtf8Locale();
++    file.imbue( utf8_locale );
+
+     wstring line;
+
+diff --git a/cli/pict.cpp b/cli/pict.cpp
+index 8219d23..0c26488 100644
+--- a/cli/pict.cpp
++++ b/cli/pict.cpp
+@@ -11,6 +11,7 @@ using namespace std;
+
+ #include "cmdline.h"
+ #include "gcd.h"
++#include "strings.h"
+ using namespace pictcli_gcd;
+
+ //
+@@ -119,6 +120,11 @@ int __cdecl wmain
+     IN wchar_t* args[]
+     )
+ {
++    // Set locale for proper Unicode output (cross-platform compatible)
++    std::locale utf8_locale = createUtf8Locale();
++    std::locale::global(utf8_locale);
++    wcout.imbue(utf8_locale);
++
+     wstring output;
+     int ret = execute( argc, args, output );
+     wcout << output;
+@@ -150,18 +156,33 @@ int main
+     }
+     std::locale::global(loc);
+
+-    // convert all args to wchar_t's
++    // Convert all args to wchar_t's with proper multibyte character handling
+     wchar_t** wargs = new wchar_t*[ argc ];
+     for ( int ii = 0; ii < argc; ++ii )
+     {
+         size_t len = strlen( args[ ii ] );
+-        wargs[ ii ] = new wchar_t[ len + 1 ];
+-        size_t jj;
+-        for( jj = 0; jj < len; ++jj )
++        // Allocate enough space for potential multibyte expansion
++        size_t bufSize = len * 2 + 1;
++        wargs[ ii ] = new wchar_t[ bufSize ];
++
++        // Try to convert using the current locale's multibyte conversion
++        size_t converted = mbstowcs( wargs[ ii ], args[ ii ], bufSize - 1 );
++        if( converted == (size_t)-1 )
++        {
++            // Conversion failed - fallback to simple ASCII assumption
++            // This preserves backward compatibility for ASCII-only arguments
++            for( size_t jj = 0; jj < len; ++jj )
++            {
++                wargs[ ii ][ jj ] = static_cast< wchar_t >(
++                    static_cast< unsigned char >( args[ ii ][ jj ] ) );
++            }
++            wargs[ ii ][ len ] = L'\0';
++        }
++        else
+         {
+-            wargs[ ii ][ jj ] = (wchar_t) args[ ii ][ jj ];
++            // Ensure null termination
++            wargs[ ii ][ converted ] = L'\0';
+         }
+-        wargs[ ii ][ jj ] = L'\0';
+     }
+
+     // invoke wmain
+diff --git a/cli/strings.cpp b/cli/strings.cpp
+index a251da1..56ef2ed 100644
+--- a/cli/strings.cpp
++++ b/cli/strings.cpp
+@@ -242,15 +242,76 @@ wstring charArrToStr( const wchar_t* c )
+ }
+
+ //
++// Creates a UTF-8 compatible locale with proper fallback handling
++// Tries multiple locale names for cross-platform compatibility
+ //
++std::locale createUtf8Locale()
++{
++    // Try different locale names for cross-platform compatibility
++    try {
++        return std::locale("en_US.UTF-8");
++    } catch( const std::exception& ) {
++        try {
++            return std::locale("UTF-8");
++        } catch( const std::exception& ) {
++            try {
++                return std::locale("C.UTF-8");
++            } catch( const std::exception& ) {
++                try {
++                    return std::locale("");  // Use system default
++                } catch( const std::exception& ) {
++                    return std::locale::classic();  // Final fallback
++                }
++            }
++        }
++    }
++}
++
++//
++// Converts a wide-char string to UTF-8 encoded string
++// Despite the function name, this outputs UTF-8 for Unicode compatibility
++// Handles both 16-bit (Windows) and 32-bit (Unix/macOS) wchar_t properly
+ //
+ string wideCharToAnsi( const wstring& text )
+ {
+     string ansiText;
+-    ansiText.reserve( text.size() );
+-    for( auto c : text )
++    ansiText.reserve( text.size() * 4 ); // UTF-8 can use up to 4 bytes per character
++
++    for( wchar_t wc : text )
+     {
+-        ansiText += static_cast< char > (c);
++        // Handle different Unicode ranges with proper UTF-8 encoding
++        if( wc <= 0x7F )
++        {
++            // ASCII characters (0-127) - single byte
++            ansiText += static_cast< char >( wc );
++        }
++        else if( wc <= 0x7FF )
++        {
++            // 2-byte UTF-8 sequence (covers Latin extended, Greek, Cyrillic, etc.)
++            ansiText += static_cast< char >( 0xC0 | ( wc >> 6 ) );
++            ansiText += static_cast< char >( 0x80 | ( wc & 0x3F ) );
++        }
++        else if( wc <= 0xFFFF )
++        {
++            // 3-byte UTF-8 sequence (covers CJK unified ideographs, including Japanese)
++            ansiText += static_cast< char >( 0xE0 | ( wc >> 12 ) );
++            ansiText += static_cast< char >( 0x80 | ( ( wc >> 6 ) & 0x3F ) );
++            ansiText += static_cast< char >( 0x80 | ( wc & 0x3F ) );
++        }
++        else if( wc <= 0x10FFFF )
++        {
++            // 4-byte UTF-8 sequence (for supplementary planes, rare characters)
++            // This handles wchar_t > 16 bits (typical on Unix/macOS systems)
++            ansiText += static_cast< char >( 0xF0 | ( wc >> 18 ) );
++            ansiText += static_cast< char >( 0x80 | ( ( wc >> 12 ) & 0x3F ) );
++            ansiText += static_cast< char >( 0x80 | ( ( wc >> 6 ) & 0x3F ) );
++            ansiText += static_cast< char >( 0x80 | ( wc & 0x3F ) );
++        }
++        else
++        {
++            // Invalid Unicode code point - replace with UTF-8 replacement character (U+FFFD)
++            ansiText += "\xEF\xBF\xBD";
++        }
+     }
+     return( ansiText );
+ }
+diff --git a/cli/strings.h b/cli/strings.h
+index aef9f2c..394b4a9 100644
+--- a/cli/strings.h
++++ b/cli/strings.h
+@@ -114,7 +114,9 @@ std::wstring charArrToStr
+     );
+
+ //
+-// Converts a wide-char string to ANSI
++// Converts a wide-char string to UTF-8 encoded string
++// Note: Despite the name 'wideCharToAnsi', this function now outputs UTF-8
++// to maintain Unicode compatibility across platforms
+ //
+ std::string wideCharToAnsi
+     (
+@@ -152,6 +154,12 @@ void setEncodingType
+     IN OUT std::wstring& text
+     );
+
++//
++// Utility function to create a UTF-8 compatible locale with fallback
++// Returns the best available locale for Unicode handling
++//
++std::locale createUtf8Locale();
++
+ //
+ //
+ //
