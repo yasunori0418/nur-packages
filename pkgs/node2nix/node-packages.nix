@@ -624,13 +624,13 @@ let
         sha512 = "VyhnebXciFV2DESc+p6B+y0LjSm0krU4OgJN44qFAhBY0TJ+1V61tYD2+wHusZ6F9n5K+vl8k0sTy7PEfV4qpg==";
       };
     };
-    "execa-9.6.0" = {
+    "execa-9.6.1" = {
       name = "execa";
       packageName = "execa";
-      version = "9.6.0";
+      version = "9.6.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/execa/-/execa-9.6.0.tgz";
-        sha512 = "jpWzZ1ZhwUmeWRhS7Qv3mhpOhLfwI+uAX4e5fOcXqwMR7EcJ0pj2kV1CVzHVMX/LphnKWD3LObjZCoJ71lKpHw==";
+        url = "https://registry.npmjs.org/execa/-/execa-9.6.1.tgz";
+        sha512 = "9Be3ZoN4LmYR90tUoVu2te2BsbzHfhJyfEiAVfz7N5/zv+jduIfLrV2xdQXOHbaD6KgpGdO9PRPM1Y4Q9QkPkA==";
       };
     };
     "extend-shallow-2.0.1" = {
@@ -2571,7 +2571,7 @@ in
         sources."open-editor-5.1.0"
         // {
           dependencies = [
-            sources."execa-9.6.0"
+            sources."execa-9.6.1"
             sources."get-stream-9.0.1"
             sources."human-signals-8.0.1"
             sources."is-stream-4.0.1"
