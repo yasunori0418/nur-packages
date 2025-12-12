@@ -534,13 +534,13 @@ let
         sha512 = "2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==";
       };
     };
-    "es-toolkit-1.42.0" = {
+    "es-toolkit-1.43.0" = {
       name = "es-toolkit";
       packageName = "es-toolkit";
-      version = "1.42.0";
+      version = "1.43.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.42.0.tgz";
-        sha512 = "SLHIyY7VfDJBM8clz4+T2oquwTQxEzu263AyhVK4jREOAwJ+8eebaa4wM3nlvnAqhDrMm2EsA6hWHaQsMPQ1nA==";
+        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.43.0.tgz";
+        sha512 = "SKCT8AsWvYzBBuUqMk4NPwFlSdqLpJwmy6AP322ERn8W2YLIB6JBXnwMI2Qsh2gfphT3q7EKAxKb23cvFHFwKA==";
       };
     };
     "escalade-3.2.0" = {
@@ -1479,13 +1479,13 @@ let
         sha512 = "oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==";
       };
     };
-    "react-19.2.1" = {
+    "react-19.2.3" = {
       name = "react";
       packageName = "react";
-      version = "19.2.1";
+      version = "19.2.3";
       src = fetchurl {
-        url = "https://registry.npmjs.org/react/-/react-19.2.1.tgz";
-        sha512 = "DGrYcCWK7tvYMnWh79yrPHt+vdx9tY+1gPZa7nJQtO/p8bLTDaHp4dzwEhQB7pZ4Xe3ok4XKuEPrVuc+wlpkmw==";
+        url = "https://registry.npmjs.org/react/-/react-19.2.3.tgz";
+        sha512 = "Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==";
       };
     };
     "react-devtools-core-6.1.5" = {
@@ -2070,10 +2070,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.64";
+    version = "2.0.67";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.64.tgz";
-      sha512 = "ey4f2xNUnYGJk8CNmLk4467m7FxDIfdB7X8ohiDDVciaAwSxW97ymF5c3cdHGazn9dUg1lNPfwSo3KAOWw1Q2A==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.67.tgz";
+      sha512 = "ze3/6SekyAUE+onUjYAKuF/7Qv/FVdOCtnQfT6IpURwf/sWYPIvtbtwYTE9QXROxKHMSj57nWIe/bI3eWGgKfA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2088,10 +2088,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.1.8";
+    version = "17.2.0";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.1.8.tgz";
-      sha512 = "2IAdGnY98bIFNYG7p07GC3sWnq31rgJzZmSdNcCrvJ9ylUKgIimbechNAUUH+DXA8Kq+muUdWxaTvBCvtHGquw==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.2.0.tgz";
+      sha512 = "drWnQz/V27w00eHsEKD1DMKhWPTS2S+gPGynteKvdrcvSHeilzcN4d7uOPADR4c32oBlciBaBKSG5zWD1zha1A==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2279,7 +2279,7 @@ in
       sources."emojilib-2.4.0"
       sources."env-editor-1.3.0"
       sources."environment-1.1.0"
-      sources."es-toolkit-1.42.0"
+      sources."es-toolkit-1.43.0"
       sources."escalade-3.2.0"
       sources."escape-string-regexp-2.0.0"
       sources."esprima-4.0.1"
@@ -2406,7 +2406,7 @@ in
       sources."picomatch-4.0.3"
       sources."pretty-ms-9.3.0"
       sources."prop-types-15.8.1"
-      sources."react-19.2.1"
+      sources."react-19.2.3"
       (
         sources."react-devtools-core-6.1.5"
         // {
