@@ -43,7 +43,7 @@
   },
   "k1Low-deck": {
     "cargoLocks": null,
-    "date": "2025-12-01",
+    "date": "2025-12-14",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "1b5315303e980f0889e476b654b354be899a4c2b",
-      "sha256": "sha256-Om6IWci8uT+6ATuA0j4q8YFtazD35JH+826vTI2PbWA=",
+      "rev": "2ac731437a8925528a1e3569937e1889a1e00448",
+      "sha256": "sha256-sNVNAsEafNggzMxh5IZLqBvhCQA/S1LaPCrytl3inkg=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1b5315303e980f0889e476b654b354be899a4c2b"
+    "version": "2ac731437a8925528a1e3569937e1889a1e00448"
   },
   "laminate": {
     "cargoLocks": null,
@@ -85,7 +85,7 @@
   },
   "neovim": {
     "cargoLocks": null,
-    "date": "2025-12-12",
+    "date": "2025-12-14",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -97,12 +97,12 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "05de0377951c4f2e21bb8f5fef39cbb78035959f",
-      "sha256": "sha256-3duIlyVx1LbVRImI97zhCJ531Ic3qD4esPaG1JXjb34=",
+      "rev": "8c7023b7b3c29ab3d4ae585a6bcbb4298587ceee",
+      "sha256": "sha256-9A3obz4rHgT6IfLYvm76XwjRNyAtb17njBvkPxuwfTw=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "05de0377951c4f2e21bb8f5fef39cbb78035959f"
+    "version": "8c7023b7b3c29ab3d4ae585a6bcbb4298587ceee"
   },
   "pict": {
     "cargoLocks": null,
@@ -148,7 +148,7 @@
   },
   "vim": {
     "cargoLocks": null,
-    "date": "2025-12-12",
+    "date": "2025-12-13",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -160,11 +160,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "3d06113c8c9628a478b0cf6c85248ff6ec5fac3a",
-      "sha256": "sha256-8/xtpRQU/IKu98HSHBNdKzOsv7wDcUi2Z8k+WW5k7Fs=",
+      "rev": "b5cf53b8b145a20de1b01023fa0f440b677d4c45",
+      "sha256": "sha256-hlhzdL4hq/Atc1ulfAKMrTCP8UY8KsS1BLvhUJnjQjc=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "3d06113c8c9628a478b0cf6c85248ff6ec5fac3a"
+    "version": "b5cf53b8b145a20de1b01023fa0f440b677d4c45"
   }
 }
