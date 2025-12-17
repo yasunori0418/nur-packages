@@ -2055,13 +2055,13 @@ let
         sha512 = "0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==";
       };
     };
-    "zod-4.1.13" = {
+    "zod-4.2.1" = {
       name = "zod";
       packageName = "zod";
-      version = "4.1.13";
+      version = "4.2.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/zod/-/zod-4.1.13.tgz";
-        sha512 = "AvvthqfqrAhNH9dnfmrfKzX5upOdjUVJYFqNSlkmGf64gRaTzlPwz99IHYnVs28qYAybvAlBV+H7pn0saFY4Ig==";
+        url = "https://registry.npmjs.org/zod/-/zod-4.2.1.tgz";
+        sha512 = "0wZ1IRqGGhMP76gLqz8EyfBXKk0J2qo2+H3fi4mcUP/KtTocoX08nmIAHl1Z2kJIZbZee8KOpBCSNPRgauucjw==";
       };
     };
   };
@@ -2070,10 +2070,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.69";
+    version = "2.0.71";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.69.tgz";
-      sha512 = "uuW3M4j3gN9kus0QH/3wEZq+JS3B0YJWzwlX2FqD421eeFVHhauN2HduO99vryHDFvtp8rH9TLKKuythBbNFHA==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.71.tgz";
+      sha512 = "3Fmawv2dapRd7jXDkrbx7HCTSJ4q7kelAPTwpul0yihzLBjCaqXwy7P2laBoS7SuIzixnyb/AfnlgdqxkDcfyQ==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2106,10 +2106,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.2.2";
+    version = "1.3.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.2.2.tgz";
-      sha512 = "j5NbhTJ7Bv559HBeI+jDtZiTbiAXqss10PaqFGpFIHKwfKJMco/s1vxxpKorcf/PkAWMQNcJOCxJW/yJ/o9p3A==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.3.2.tgz";
+      sha512 = "s4NfApyauSZEi3dOEXJKBgpxsLdk4vSrFjrar8UEkp607HG4Lly+Rw64XU8phoglQ79ELYDWhD8Ijfc1LmL+1Q==";
     };
     dependencies = [
       sources."@isaacs/balanced-match-4.0.1"
@@ -2499,7 +2499,7 @@ in
       sources."yargs-parser-20.2.9"
       sources."yoctocolors-2.1.2"
       sources."yoga-layout-3.2.1"
-      sources."zod-4.1.13"
+      sources."zod-4.2.1"
     ];
     buildInputs = globalBuildInputs;
     meta = {
