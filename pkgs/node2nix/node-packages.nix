@@ -210,13 +210,13 @@ let
         sha512 = "ooviqdwwgfIfNmDwo94wlshcdzfO64XV0Cg6oDsDYBJfITDz1EngD2z7DkbvCWn+XIMsIqW27sEVF6qcpJrRcg==";
       };
     };
-    "bufferutil-4.0.9" = {
+    "bufferutil-4.1.0" = {
       name = "bufferutil";
       packageName = "bufferutil";
-      version = "4.0.9";
+      version = "4.1.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/bufferutil/-/bufferutil-4.0.9.tgz";
-        sha512 = "WDtdLmJvAuNNPzByAYpRo2rF1Mmradw6gvWsQKf63476DDXmomT9zUiGypLcG4ibIM67vhAj8jJRdbmEws2Aqw==";
+        url = "https://registry.npmjs.org/bufferutil/-/bufferutil-4.1.0.tgz";
+        sha512 = "ZMANVnAixE6AWWnPzlW2KpUrxhm9woycYvPOo67jWHyFowASTEd9s+QN1EIMsSDtwhIxN4sWE1jotpuDUIgyIw==";
       };
     };
     "bundle-name-4.1.0" = {
@@ -804,13 +804,13 @@ let
         sha512 = "IBTdIkzZNOpqm7q3dRqJvMaldXjDHWkEDfrwGEQTs5eaQMWV+djAhR+wahyNNMAa+qpbDUhBMVt4ZKNwpPm7xQ==";
       };
     };
-    "ink-6.5.1" = {
+    "ink-6.6.0" = {
       name = "ink";
       packageName = "ink";
-      version = "6.5.1";
+      version = "6.6.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ink/-/ink-6.5.1.tgz";
-        sha512 = "wF3j/DmkM8q5E+OtfdQhCRw8/0ahkc8CUTgEddxZzpEWPslu7YPL3t64MWRoI9m6upVGpfAg4ms2BBvxCdKRLQ==";
+        url = "https://registry.npmjs.org/ink/-/ink-6.6.0.tgz";
+        sha512 = "QDt6FgJxgmSxAelcOvOHUvFxbIUjVpCH5bx+Slvc5m7IEcpGt3dYwbz/L+oRnqEGeRvwy1tineKK4ect3nW1vQ==";
       };
     };
     "ink-big-text-2.0.0" = {
@@ -1911,22 +1911,22 @@ let
         sha512 = "Z6czzLq4u8fPOyx7TU6X3dvUZVvoJmxSQ+IcrlmagKhilxlhZgxPK6C5Jqbkw1IDUmFTM+cz9QDnnLTwDz/2gQ==";
       };
     };
-    "utf-8-validate-6.0.5" = {
+    "utf-8-validate-6.0.6" = {
       name = "utf-8-validate";
       packageName = "utf-8-validate";
-      version = "6.0.5";
+      version = "6.0.6";
       src = fetchurl {
-        url = "https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-6.0.5.tgz";
-        sha512 = "EYZR+OpIXp9Y1eG1iueg8KRsY8TuT8VNgnanZ0uA3STqhHQTLwbl+WX76/9X5OY12yQubymBpaBSmMPkSTQcKA==";
+        url = "https://registry.npmjs.org/utf-8-validate/-/utf-8-validate-6.0.6.tgz";
+        sha512 = "q3l3P9UtEEiAHcsgsqTgf9PPjctrDWoIXW3NpOHFdRDbLvu4DLIcxHangJ4RLrWkBcKjmcs/6NkerI8T/rE4LA==";
       };
     };
-    "validate-npm-package-name-7.0.0" = {
+    "validate-npm-package-name-7.0.1" = {
       name = "validate-npm-package-name";
       packageName = "validate-npm-package-name";
-      version = "7.0.0";
+      version = "7.0.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-7.0.0.tgz";
-        sha512 = "bwVk/OK+Qu108aJcMAEiU4yavHUI7aN20TgZNBj9MR2iU1zPUl1Z1Otr7771ExfYTPTvfN8ZJ1pbr5Iklgt4xg==";
+        url = "https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-7.0.1.tgz";
+        sha512 = "BM0Upcemlce8/9+HE+/VpWqn3u3mYh6Om/FEC8yPMnEHwf710fW5Q6fhjT1SQyRlZD1G9CJbgfH+rWgAcIvjlQ==";
       };
     };
     "which-2.0.2" = {
@@ -2070,10 +2070,10 @@ in
   "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
     name = "_at_anthropic-ai_slash_claude-code";
     packageName = "@anthropic-ai/claude-code";
-    version = "2.0.72";
+    version = "2.0.76";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.72.tgz";
-      sha512 = "ysJYyeyqePMUUL2/6j6yOpowk+9qhL7AaW9Betmt4K+MrK42tvNdOXLUlvxdMs05CCbvuCRqzVll4SNVQealmg==";
+      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.76.tgz";
+      sha512 = "BVwPez7Pst729gxHZNb7iUdjrn4UAzO49zC+Bxlyf0fMe3SsutxEhKTT16VMs2qInE9xhEBCxajCCa888mFPBg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2106,10 +2106,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.3.2";
+    version = "1.3.3";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.3.2.tgz";
-      sha512 = "s4NfApyauSZEi3dOEXJKBgpxsLdk4vSrFjrar8UEkp607HG4Lly+Rw64XU8phoglQ79ELYDWhD8Ijfc1LmL+1Q==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.3.3.tgz";
+      sha512 = "1e+WVMf6E590q8jDCwo4aqvSfUFWrwHnAjJKdfPJDU3RzEZUb5sGUAWb8GNfRf+o17p7ZHA3Vc6l+VKZF3Wh5g==";
     };
     dependencies = [
       sources."@isaacs/balanced-match-4.0.1"
@@ -2181,7 +2181,7 @@ in
       sources."ssri-13.0.0"
       sources."unique-filename-5.0.0"
       sources."unique-slug-6.0.0"
-      sources."validate-npm-package-name-7.0.0"
+      sources."validate-npm-package-name-7.0.1"
       sources."yallist-4.0.0"
     ];
     buildInputs = globalBuildInputs;
@@ -2217,7 +2217,7 @@ in
       sources."any-promise-1.3.0"
       sources."argparse-1.0.10"
       sources."auto-bind-5.0.1"
-      sources."bufferutil-4.0.9"
+      sources."bufferutil-4.1.0"
       sources."bundle-name-4.1.0"
       sources."cfonts-3.3.1"
       sources."chalk-5.6.2"
@@ -2308,7 +2308,7 @@ in
       sources."human-signals-5.0.0"
       sources."indent-string-5.0.0"
       (
-        sources."ink-6.5.1"
+        sources."ink-6.6.0"
         // {
           dependencies = [
             sources."signal-exit-3.0.7"
@@ -2462,7 +2462,7 @@ in
       sources."type-fest-4.41.0"
       sources."unicode-emoji-modifier-base-1.0.0"
       sources."unicorn-magic-0.3.0"
-      sources."utf-8-validate-6.0.5"
+      sources."utf-8-validate-6.0.6"
       sources."which-2.0.2"
       (
         sources."widest-line-5.0.0"
