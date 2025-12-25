@@ -56,15 +56,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "ce7ed53fbae3ebc643bce5ad8aa94c20ebc19b25";
+    version = "5a1a92cc7a3d3a338fe5f610190910e220f074f6";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "ce7ed53fbae3ebc643bce5ad8aa94c20ebc19b25";
+      rev = "5a1a92cc7a3d3a338fe5f610190910e220f074f6";
       fetchSubmodules = false;
-      sha256 = "sha256-hlpyP59PTtQmyCDRX+XCYReXOBtfUSkX88A5nlfmu6g=";
+      sha256 = "sha256-kTaJ3AQ+yPvk1vs5wNHaw8uNxLKp4e2t49ZM7t4QZuE=";
     };
-    date = "2025-12-24";
+    date = "2025-12-25";
   };
   pict = {
     pname = "pict";
