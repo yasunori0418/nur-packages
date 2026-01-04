@@ -2055,13 +2055,13 @@ let
         sha512 = "0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==";
       };
     };
-    "zod-4.3.4" = {
+    "zod-4.3.5" = {
       name = "zod";
       packageName = "zod";
-      version = "4.3.4";
+      version = "4.3.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/zod/-/zod-4.3.4.tgz";
-        sha512 = "Zw/uYiiyF6pUT1qmKbZziChgNPRu+ZRneAsMUDU6IwmXdWt5JwcUfy2bvLOCUtz5UniaN/Zx5aFttZYbYc7O/A==";
+        url = "https://registry.npmjs.org/zod/-/zod-4.3.5.tgz";
+        sha512 = "k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==";
       };
     };
   };
@@ -2088,10 +2088,10 @@ in
   ccusage = nodeEnv.buildNodePackage {
     name = "ccusage";
     packageName = "ccusage";
-    version = "17.2.0";
+    version = "17.2.1";
     src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.2.0.tgz";
-      sha512 = "drWnQz/V27w00eHsEKD1DMKhWPTS2S+gPGynteKvdrcvSHeilzcN4d7uOPADR4c32oBlciBaBKSG5zWD1zha1A==";
+      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.2.1.tgz";
+      sha512 = "++F9rwk7EHsNyuCfs0D2vHyT/G0kaS3GVHhyh4BJ+dVKm0W4a/Mkld9lXGesgQzMnI6uE0V5RgmB/2Jf8zR7yg==";
     };
     buildInputs = globalBuildInputs;
     meta = {
@@ -2499,7 +2499,7 @@ in
       sources."yargs-parser-20.2.9"
       sources."yoctocolors-2.1.2"
       sources."yoga-layout-3.2.1"
-      sources."zod-4.3.4"
+      sources."zod-4.3.5"
     ];
     buildInputs = globalBuildInputs;
     meta = {
