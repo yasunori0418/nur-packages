@@ -23,8 +23,6 @@ in
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  claude-code = nodePkgs."@anthropic-ai/claude-code";
-  ccusage = nodePkgs."ccusage";
   safe-chain = nodePkgs."@aikidosec/safe-chain";
   ccexp = nodePkgs."ccexp";
   cc-sdd = nodePkgs."cc-sdd";

@@ -1920,13 +1920,13 @@ let
         sha512 = "q3l3P9UtEEiAHcsgsqTgf9PPjctrDWoIXW3NpOHFdRDbLvu4DLIcxHangJ4RLrWkBcKjmcs/6NkerI8T/rE4LA==";
       };
     };
-    "validate-npm-package-name-7.0.1" = {
+    "validate-npm-package-name-7.0.2" = {
       name = "validate-npm-package-name";
       packageName = "validate-npm-package-name";
-      version = "7.0.1";
+      version = "7.0.2";
       src = fetchurl {
-        url = "https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-7.0.1.tgz";
-        sha512 = "BM0Upcemlce8/9+HE+/VpWqn3u3mYh6Om/FEC8yPMnEHwf710fW5Q6fhjT1SQyRlZD1G9CJbgfH+rWgAcIvjlQ==";
+        url = "https://registry.npmjs.org/validate-npm-package-name/-/validate-npm-package-name-7.0.2.tgz";
+        sha512 = "hVDIBwsRruT73PbK7uP5ebUt+ezEtCmzZz3F59BSr2F6OVFnJ/6h8liuvdLrQ88Xmnk6/+xGGuq+pG9WwTuy3A==";
       };
     };
     "which-2.0.2" = {
@@ -1983,13 +1983,13 @@ let
         sha512 = "+dbF1tHwZpXcbOJdVOkzLDxZP1ailvSxM6ZweXTegylPny803bFhA+vqBYw4s31NSAk4S2Qz+AKXK9a4wkdjcQ==";
       };
     };
-    "ws-8.18.3" = {
+    "ws-8.19.0" = {
       name = "ws";
       packageName = "ws";
-      version = "8.18.3";
+      version = "8.19.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/ws/-/ws-8.18.3.tgz";
-        sha512 = "PEIGCY5tSlUt50cqyMXfCzX+oOPqN0vuGqWzbcJ2xvnkzkq46oOpz7dQaTDBdfICb4N14+GARUDw2XV2N4tvzg==";
+        url = "https://registry.npmjs.org/ws/-/ws-8.19.0.tgz";
+        sha512 = "blAT2mjOEIi0ZzruJfIhb3nps74PRWTCz1IjglWEEpQl5XS/UNama6u2/rjFkDDouqr4L67ry+1aGIALViWjDg==";
       };
     };
     "wsl-utils-0.1.0" = {
@@ -2067,49 +2067,13 @@ let
   };
 in
 {
-  "@anthropic-ai/claude-code" = nodeEnv.buildNodePackage {
-    name = "_at_anthropic-ai_slash_claude-code";
-    packageName = "@anthropic-ai/claude-code";
-    version = "2.0.76";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/@anthropic-ai/claude-code/-/claude-code-2.0.76.tgz";
-      sha512 = "BVwPez7Pst729gxHZNb7iUdjrn4UAzO49zC+Bxlyf0fMe3SsutxEhKTT16VMs2qInE9xhEBCxajCCa888mFPBg==";
-    };
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "Use Claude, Anthropic's AI assistant, right from your terminal. Claude can understand your codebase, edit files, run terminal commands, and handle entire workflows for you.";
-      homepage = "https://github.com/anthropics/claude-code";
-      license = "SEE LICENSE IN README.md";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
-  ccusage = nodeEnv.buildNodePackage {
-    name = "ccusage";
-    packageName = "ccusage";
-    version = "17.2.1";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/ccusage/-/ccusage-17.2.1.tgz";
-      sha512 = "++F9rwk7EHsNyuCfs0D2vHyT/G0kaS3GVHhyh4BJ+dVKm0W4a/Mkld9lXGesgQzMnI6uE0V5RgmB/2Jf8zR7yg==";
-    };
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "Usage analysis tool for Claude Code";
-      homepage = "https://github.com/ryoppippi/ccusage#readme";
-      license = "MIT";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.3.3";
+    version = "1.4.1";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.3.3.tgz";
-      sha512 = "1e+WVMf6E590q8jDCwo4aqvSfUFWrwHnAjJKdfPJDU3RzEZUb5sGUAWb8GNfRf+o17p7ZHA3Vc6l+VKZF3Wh5g==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.4.1.tgz";
+      sha512 = "OxY5oYON6ilFGEpiAoDrwBaspi0nic8rI6Wrrys2nFR2CEgqh6r6eaP7YlhMilmsXQDZWQ3Vvgv7BumneWu+5g==";
     };
     dependencies = [
       sources."@isaacs/balanced-match-4.0.1"
@@ -2181,7 +2145,7 @@ in
       sources."ssri-13.0.0"
       sources."unique-filename-5.0.0"
       sources."unique-slug-6.0.0"
-      sources."validate-npm-package-name-7.0.1"
+      sources."validate-npm-package-name-7.0.2"
       sources."yallist-4.0.0"
     ];
     buildInputs = globalBuildInputs;
@@ -2481,7 +2445,7 @@ in
           ];
         }
       )
-      sources."ws-8.18.3"
+      sources."ws-8.19.0"
       sources."wsl-utils-0.1.0"
       sources."y18n-5.0.8"
       (
@@ -2514,10 +2478,10 @@ in
   cc-sdd = nodeEnv.buildNodePackage {
     name = "cc-sdd";
     packageName = "cc-sdd";
-    version = "2.0.3";
+    version = "2.0.5";
     src = fetchurl {
-      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.3.tgz";
-      sha512 = "UmST/LceYNH44gpaF/b9IsGipCtC0eGZGYv/p+HMi+6hwneKol2jZ3Vub+LnrCwJ9Z4raBI/SZAHJeIwtZ89YA==";
+      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.5.tgz";
+      sha512 = "aFMFIa63CC7pOlGcI1zKa2XCaLGJRaRwXW29wQ8PwhHUgGT0MhaDUtNBVbE1riAjuqMwNgX+efF6fpOapMATaA==";
     };
     buildInputs = globalBuildInputs;
     meta = {
