@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.2.7" = {
+    "@types/react-19.2.8" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.2.7";
+      version = "19.2.8";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.2.7.tgz";
-        sha512 = "MWtvHrGZLFttgeEj28VXHxpmwYbor/ATPYbBfSFZEIRK0ecCFLl2Qo55z52Hss+UV9CRN7trSeq1zbgx7YDWWg==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.8.tgz";
+        sha512 = "3MbSL37jEchWZz2p2mjntRZtPt837ij10ApxKfgmXCTuHWagYg7iA5bqPw6C8BMPfwidlvfPI/fxOc42HLhcyg==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -2173,7 +2173,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.2.7"
+      sources."@types/react-19.2.8"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.2.0"
       sources."ansi-regex-6.2.2"
@@ -2469,24 +2469,6 @@ in
     meta = {
       description = "CLI tool for exploring and managing Claude Code settings and slash commands";
       homepage = "https://github.com/nyatinte/ccexp#readme";
-      license = "MIT";
-    };
-    production = true;
-    bypassCache = true;
-    reconstructLock = true;
-  };
-  cc-sdd = nodeEnv.buildNodePackage {
-    name = "cc-sdd";
-    packageName = "cc-sdd";
-    version = "2.0.5";
-    src = fetchurl {
-      url = "https://registry.npmjs.org/cc-sdd/-/cc-sdd-2.0.5.tgz";
-      sha512 = "aFMFIa63CC7pOlGcI1zKa2XCaLGJRaRwXW29wQ8PwhHUgGT0MhaDUtNBVbE1riAjuqMwNgX+efF6fpOapMATaA==";
-    };
-    buildInputs = globalBuildInputs;
-    meta = {
-      description = "Transform your coding workflow with AI-DLC and Spec-Driven Development. One command installs 11 powerful slash commands, Project Memory, and structured development workflows for 7 AI coding agents.";
-      homepage = "https://github.com/gotalab/cc-sdd#readme";
       license = "MIT";
     };
     production = true;

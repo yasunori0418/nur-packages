@@ -25,7 +25,6 @@ in
 
   safe-chain = nodePkgs."@aikidosec/safe-chain";
   ccexp = nodePkgs."ccexp";
-  cc-sdd = nodePkgs."cc-sdd";
   cchook = pkgs.callPackage ./pkgs/cchook { inherit sources; };
   gwq = pkgs.callPackage ./pkgs/gwq { inherit sources; };
   k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck { inherit sources; };

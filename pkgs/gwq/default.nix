@@ -6,7 +6,7 @@
 buildGoModule {
   inherit (sources.gwq) pname version src;
 
-  vendorHash = "sha256-gUtRhIwwccCIXfG11F6bl/hhy1Dtdpkwzcenk985LAU=";
+  vendorHash = "sha256-c1vq9yETUYfY2BoXSEmRZj/Ceetu0NkIoVCM3wYy5iY=";
 
   # Tests may require external tools, disable for now
   doCheck = false;
