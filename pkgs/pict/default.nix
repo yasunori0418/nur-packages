@@ -8,11 +8,11 @@
 stdenv.mkDerivation {
   inherit (sources.pict) pname version src;
 
-  patches = [
-    # Fix Unicode/Japanese text handling on macOS
-    # https://github.com/ishikawa096/pict-fix/commit/ff738a7a3cea75b9a7994369dcb00201703b7216
-    ./patches/fix-unicode-japanese-text-handling-macos.patch
-  ];
+  # patches = [
+  #   # Fix Unicode/Japanese text handling on macOS
+  #   # https://github.com/ishikawa096/pict-fix/commit/ff738a7a3cea75b9a7994369dcb00201703b7216
+  #   ./patches/fix-unicode-japanese-text-handling-macos.patch
+  # ];
 
   nativeBuildInputs = [
     cmake

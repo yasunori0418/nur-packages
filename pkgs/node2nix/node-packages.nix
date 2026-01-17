@@ -318,13 +318,13 @@ let
         sha512 = "9KDcoEVwyUXrjcJNvHD0NFc/hiwe/WPVYIleQh2O1N2Zro5gWJZ/K+3DGn8w8P/F6FxOgzyC5bxDyHIgCSPhGg==";
       };
     };
-    "cli-spinners-3.3.0" = {
+    "cli-spinners-3.4.0" = {
       name = "cli-spinners";
       packageName = "cli-spinners";
-      version = "3.3.0";
+      version = "3.4.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/cli-spinners/-/cli-spinners-3.3.0.tgz";
-        sha512 = "/+40ljC3ONVnYIttjMWrlL51nItDAbBrq2upN8BPyvGU/2n5Oxw3tbNwORCaNuNqLJnxGqOfjUuhsv7l5Q4IsQ==";
+        url = "https://registry.npmjs.org/cli-spinners/-/cli-spinners-3.4.0.tgz";
+        sha512 = "bXfOC4QcT1tKXGorxL3wbJm6XJPDqEnij2gQ2m7ESQuE+/z9YFIWnl/5RpTiKWbMq3EVKR4fRLJGn6DVfu0mpw==";
       };
     };
     "cli-table3-0.6.5" = {
@@ -534,13 +534,13 @@ let
         sha512 = "2bmlRpNKBxT/CRmPOlyISQpNj+qSeYvcym/uT0Jx2bMOlKLtSy1ZmLuVxSEKKyor/N5yhvp/ZiG1oE3DEYMSFA==";
       };
     };
-    "es-toolkit-1.43.0" = {
+    "es-toolkit-1.44.0" = {
       name = "es-toolkit";
       packageName = "es-toolkit";
-      version = "1.43.0";
+      version = "1.44.0";
       src = fetchurl {
-        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.43.0.tgz";
-        sha512 = "SKCT8AsWvYzBBuUqMk4NPwFlSdqLpJwmy6AP322ERn8W2YLIB6JBXnwMI2Qsh2gfphT3q7EKAxKb23cvFHFwKA==";
+        url = "https://registry.npmjs.org/es-toolkit/-/es-toolkit-1.44.0.tgz";
+        sha512 = "6penXeZalaV88MM3cGkFZZfOoLGWshWWfdy0tWw/RlVVyhvMaWSBTOvXNeiW3e5FwdS5ePW0LGEu17zT139ktg==";
       };
     };
     "escalade-3.2.0" = {
@@ -2070,10 +2070,10 @@ in
   "@aikidosec/safe-chain" = nodeEnv.buildNodePackage {
     name = "_at_aikidosec_slash_safe-chain";
     packageName = "@aikidosec/safe-chain";
-    version = "1.4.1";
+    version = "1.4.2";
     src = fetchurl {
-      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.4.1.tgz";
-      sha512 = "OxY5oYON6ilFGEpiAoDrwBaspi0nic8rI6Wrrys2nFR2CEgqh6r6eaP7YlhMilmsXQDZWQ3Vvgv7BumneWu+5g==";
+      url = "https://registry.npmjs.org/@aikidosec/safe-chain/-/safe-chain-1.4.2.tgz";
+      sha512 = "s0dFOdhSd937MeRDJNi2eUOBauv4fj4kQ29bWZJtTU/fmc55YDB4qhjU4jh+vxiQaoSUWZF0U55xNipalWLE+w==";
     };
     dependencies = [
       sources."@isaacs/balanced-match-4.0.1"
@@ -2198,7 +2198,7 @@ in
           ];
         }
       )
-      sources."cli-spinners-3.3.0"
+      sources."cli-spinners-3.4.0"
       (
         sources."cli-table3-0.6.5"
         // {
@@ -2243,7 +2243,7 @@ in
       sources."emojilib-2.4.0"
       sources."env-editor-1.3.0"
       sources."environment-1.1.0"
-      sources."es-toolkit-1.43.0"
+      sources."es-toolkit-1.44.0"
       sources."escalade-3.2.0"
       sources."escape-string-regexp-2.0.0"
       sources."esprima-4.0.1"
