@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.2.8" = {
+    "@types/react-19.2.9" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.2.8";
+      version = "19.2.9";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.2.8.tgz";
-        sha512 = "3MbSL37jEchWZz2p2mjntRZtPt837ij10ApxKfgmXCTuHWagYg7iA5bqPw6C8BMPfwidlvfPI/fxOc42HLhcyg==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.9.tgz";
+        sha512 = "Lpo8kgb/igvMIPeNV2rsYKTgaORYdO1XGVZ4Qz3akwOj0ySGYMPlQWa8BaLn0G63D1aSaAQ5ldR06wCpChQCjA==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -2055,13 +2055,13 @@ let
         sha512 = "0LPOt3AxKqMdFBZA3HBAt/t/8vIKq7VaQYbuA8WxCgung+p9TVyKRYdpvCb80HcdTN2NkbIKbhNwKUfm3tQywQ==";
       };
     };
-    "zod-4.3.5" = {
+    "zod-4.3.6" = {
       name = "zod";
       packageName = "zod";
-      version = "4.3.5";
+      version = "4.3.6";
       src = fetchurl {
-        url = "https://registry.npmjs.org/zod/-/zod-4.3.5.tgz";
-        sha512 = "k7Nwx6vuWx1IJ9Bjuf4Zt1PEllcwe7cls3VNzm4CQ1/hgtFUK2bRNG3rvnpPUhFjmqJKAKtjV576KnUkHocg/g==";
+        url = "https://registry.npmjs.org/zod/-/zod-4.3.6.tgz";
+        sha512 = "rftlrkhHZOcjDwkGlnUtZZkvaPHCsDATp4pGpuOOMDaTdDDXF91wuVDJoWoPsKX/3YPQ5fHuF3STjcYyKr+Qhg==";
       };
     };
   };
@@ -2173,7 +2173,7 @@ in
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.2.8"
+      sources."@types/react-19.2.9"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.2.0"
       sources."ansi-regex-6.2.2"
@@ -2463,7 +2463,7 @@ in
       sources."yargs-parser-20.2.9"
       sources."yoctocolors-2.1.2"
       sources."yoga-layout-3.2.1"
-      sources."zod-4.3.5"
+      sources."zod-4.3.6"
     ];
     buildInputs = globalBuildInputs;
     meta = {
