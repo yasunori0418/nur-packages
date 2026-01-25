@@ -1,6 +1,6 @@
 {
   "cchook": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": "2026-01-21",
     "extract": null,
     "name": "cchook",
@@ -21,7 +21,7 @@
     "version": "ea2285cdd1734a84d13cb78d0608d46920b1af46"
   },
   "gwq": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": "2026-01-19",
     "extract": null,
     "name": "gwq",
@@ -42,7 +42,7 @@
     "version": "69af2f13bf9bffbecedb29da977ad1a42b3d7ca0"
   },
   "k1Low-deck": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": "2026-01-19",
     "extract": null,
     "name": "k1Low-deck",
@@ -63,7 +63,7 @@
     "version": "d7be8697e911ae792b7d47d58e66df9f97b869f9"
   },
   "laminate": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": "2025-09-05",
     "extract": null,
     "name": "laminate",
@@ -84,8 +84,8 @@
     "version": "1580b51f607bca5ded2a0d1d9e9ae1e156fb5eb9"
   },
   "neovim": {
-    "cargoLocks": null,
-    "date": "2026-01-24",
+    "cargoLock": null,
+    "date": "2026-01-25",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -97,15 +97,15 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "72ac9ac9a1085d6f9bba64e49dd5afd500199aef",
-      "sha256": "sha256-Pnx13dtZxmSZuDEHHiAuzSnyg76qXKYAnssgUL0027M=",
+      "rev": "d93e150888558ddab1722a81427c5943c5be87df",
+      "sha256": "sha256-qbajxV0FWmC6f/m1gUpmOLWDOBA6gau4ZH+eSjUw5Mc=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "72ac9ac9a1085d6f9bba64e49dd5afd500199aef"
+    "version": "d93e150888558ddab1722a81427c5943c5be87df"
   },
   "pict": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": "2026-01-13",
     "extract": null,
     "name": "pict",
@@ -126,7 +126,7 @@
     "version": "c3dad2bb24d08c9967565e0ca48e1a152216d1d4"
   },
   "tree-sitter": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": null,
     "extract": null,
     "name": "tree-sitter",
@@ -147,7 +147,7 @@
     "version": "v0.25.10"
   },
   "vim": {
-    "cargoLocks": null,
+    "cargoLock": null,
     "date": "2026-01-23",
     "extract": null,
     "name": "vim",
