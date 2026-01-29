@@ -12,13 +12,13 @@
 
 let
   sources = {
-    "@alcalzone/ansi-tokenize-0.2.3" = {
+    "@alcalzone/ansi-tokenize-0.2.4" = {
       name = "_at_alcalzone_slash_ansi-tokenize";
       packageName = "@alcalzone/ansi-tokenize";
-      version = "0.2.3";
+      version = "0.2.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@alcalzone/ansi-tokenize/-/ansi-tokenize-0.2.3.tgz";
-        sha512 = "jsElTJ0sQ4wHRz+C45tfect76BwbTbgkgKByOzpCN9xG61N5V6u/glvg1CsNJhq2xJIFpKHSwG3D2wPPuEYOrQ==";
+        url = "https://registry.npmjs.org/@alcalzone/ansi-tokenize/-/ansi-tokenize-0.2.4.tgz";
+        sha512 = "HTgrrTgZ9Jgeo6Z3oqbQ7lifOVvRR14vaDuBGPPUxk9Thm+vObaO4QfYYYWw4Zo5CWQDBEfsinFA6Gre+AqwNQ==";
       };
     };
     "@inkjs/ui-2.0.0" = {
@@ -111,13 +111,13 @@ let
         sha512 = "LkaYxluY4G5wR1M4AKQUal2q61Di1yVVCw42ImFTuaIoQVgmV0WP1xUaLB8zwb47mp82vWTpePI9JmrjEnJ7nQ==";
       };
     };
-    "@types/react-19.2.9" = {
+    "@types/react-19.2.10" = {
       name = "_at_types_slash_react";
       packageName = "@types/react";
-      version = "19.2.9";
+      version = "19.2.10";
       src = fetchurl {
-        url = "https://registry.npmjs.org/@types/react/-/react-19.2.9.tgz";
-        sha512 = "Lpo8kgb/igvMIPeNV2rsYKTgaORYdO1XGVZ4Qz3akwOj0ySGYMPlQWa8BaLn0G63D1aSaAQ5ldR06wCpChQCjA==";
+        url = "https://registry.npmjs.org/@types/react/-/react-19.2.10.tgz";
+        sha512 = "WPigyYuGhgZ/cTPRXB2EwUw+XvsRA3GqHlsP4qteqrnnjDrApbS7MxcGr/hke5iUoeB7E/gQtrs9I37zAJ0Vjw==";
       };
     };
     "@types/tinycolor2-1.4.6" = {
@@ -1065,13 +1065,13 @@ let
         sha512 = "lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==";
       };
     };
-    "lru-cache-11.2.4" = {
+    "lru-cache-11.2.5" = {
       name = "lru-cache";
       packageName = "lru-cache";
-      version = "11.2.4";
+      version = "11.2.5";
       src = fetchurl {
-        url = "https://registry.npmjs.org/lru-cache/-/lru-cache-11.2.4.tgz";
-        sha512 = "B5Y16Jr9LB9dHVkh6ZevG+vAbOsNOYCX+sXvFWFu7B3Iz5mijW3zdbMyhsh8ANd2mSWBYdJgnqi+mL7/LrOPYg==";
+        url = "https://registry.npmjs.org/lru-cache/-/lru-cache-11.2.5.tgz";
+        sha512 = "vFrFJkWtJvJnD5hg+hJvVE8Lh/TcMzKnTgCWmtBipwI5yLX/iX+5UB2tfuyODF5E7k9xEzMdYgGqaSb1c0c5Yw==";
       };
     };
     "make-fetch-happen-15.0.3" = {
@@ -1479,13 +1479,13 @@ let
         sha512 = "oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==";
       };
     };
-    "react-19.2.3" = {
+    "react-19.2.4" = {
       name = "react";
       packageName = "react";
-      version = "19.2.3";
+      version = "19.2.4";
       src = fetchurl {
-        url = "https://registry.npmjs.org/react/-/react-19.2.3.tgz";
-        sha512 = "Ku/hhYbVjOQnXDZFv2+RibmLFGwFdeeKHFcOTlrt7xplBnya5OGn/hIRDsqDiSUcfORsDC7MPxwork8jBwsIWA==";
+        url = "https://registry.npmjs.org/react/-/react-19.2.4.tgz";
+        sha512 = "9nfp2hYpCwOjAN+8TZFGhtWEwgvWHXqESH8qT89AT/lWklpLON22Lc8pEtnpsZz7VmawabSU0gCjnj8aC0euHQ==";
       };
     };
     "react-devtools-core-6.1.5" = {
@@ -1713,13 +1713,13 @@ let
         sha512 = "tsaTIkKW9b4N+AEj+SVA+WhJzV7/zMhcSu78mLKWSk7cXMOSHsBKFWUs0fWwq8QyK3MgJBQRX6Gbi4kYbdvGkQ==";
       };
     };
-    "string-width-8.1.0" = {
+    "string-width-8.1.1" = {
       name = "string-width";
       packageName = "string-width";
-      version = "8.1.0";
+      version = "8.1.1";
       src = fetchurl {
-        url = "https://registry.npmjs.org/string-width/-/string-width-8.1.0.tgz";
-        sha512 = "Kxl3KJGb/gxkaUMOjRsQ8IrXiGW75O4E3RPjFIINOVH8AMl2SQ/yWdTzWwF3FevIX9LcMAjJW+GRwAlAbTSXdg==";
+        url = "https://registry.npmjs.org/string-width/-/string-width-8.1.1.tgz";
+        sha512 = "KpqHIdDL9KwYk22wEOg/VIqYbrnLeSApsKT/bSj6Ez7pn3CftUiLAv2Lccpq1ALcpLV9UX1Ppn92npZWu2w/aw==";
       };
     };
     "strip-ansi-6.0.1" = {
@@ -2097,7 +2097,7 @@ in
       sources."ini-6.0.0"
       sources."ip-address-10.1.0"
       sources."jsonparse-1.3.1"
-      sources."lru-cache-11.2.4"
+      sources."lru-cache-11.2.5"
       sources."make-fetch-happen-15.0.3"
       sources."minimatch-10.1.1"
       sources."minipass-7.1.2"
@@ -2167,13 +2167,13 @@ in
       sha512 = "jTyGUYLXL7seqqdnPLvSNYDWRqwJtNCXG/9SsMRkHMY1JhoezLy3ouNTHt5ts1+SEno5wR42XhpIU6I3fhuoMQ==";
     };
     dependencies = [
-      sources."@alcalzone/ansi-tokenize-0.2.3"
+      sources."@alcalzone/ansi-tokenize-0.2.4"
       sources."@inkjs/ui-2.0.0"
       sources."@sec-ant/readable-stream-0.4.1"
       sources."@sindresorhus/is-4.6.0"
       sources."@sindresorhus/merge-streams-4.0.0"
       sources."@types/gradient-string-1.1.6"
-      sources."@types/react-19.2.9"
+      sources."@types/react-19.2.10"
       sources."@types/tinycolor2-1.4.6"
       sources."ansi-escapes-7.2.0"
       sources."ansi-regex-6.2.2"
@@ -2370,7 +2370,7 @@ in
       sources."picomatch-4.0.3"
       sources."pretty-ms-9.3.0"
       sources."prop-types-15.8.1"
-      sources."react-19.2.3"
+      sources."react-19.2.4"
       (
         sources."react-devtools-core-6.1.5"
         // {
@@ -2404,7 +2404,7 @@ in
       sources."slice-ansi-7.1.2"
       sources."sprintf-js-1.0.3"
       sources."stack-utils-2.0.6"
-      sources."string-width-8.1.0"
+      sources."string-width-8.1.1"
       sources."strip-ansi-7.1.2"
       sources."strip-bom-string-1.0.0"
       sources."strip-final-newline-3.0.0"
