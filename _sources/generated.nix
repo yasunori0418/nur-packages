@@ -8,39 +8,39 @@
 {
   cchook = {
     pname = "cchook";
-    version = "ea2285cdd1734a84d13cb78d0608d46920b1af46";
+    version = "356108d95da2a68339b1e3e7b45b8c8612a6cd16";
     src = fetchFromGitHub {
       owner = "syou6162";
       repo = "cchook";
-      rev = "ea2285cdd1734a84d13cb78d0608d46920b1af46";
+      rev = "356108d95da2a68339b1e3e7b45b8c8612a6cd16";
       fetchSubmodules = false;
-      sha256 = "sha256-fAbdmK94tDrbUuTij7H0RanAAlq1D1wpIOlhQ/oQIiA=";
+      sha256 = "sha256-uKfFagFIsY+FRSx9bwHl2E56e34LQXFzEHqhjz/BQaQ=";
     };
-    date = "2026-01-21";
+    date = "2026-02-15";
   };
   gwq = {
     pname = "gwq";
-    version = "ed36fcbaef1896b40bef9364ac2d5a562611d83e";
+    version = "84cffa589608122cae7d41eefa7277c5399703c0";
     src = fetchFromGitHub {
       owner = "d-kuro";
       repo = "gwq";
-      rev = "ed36fcbaef1896b40bef9364ac2d5a562611d83e";
+      rev = "84cffa589608122cae7d41eefa7277c5399703c0";
       fetchSubmodules = false;
-      sha256 = "sha256-BZybSswZFMqmbMgditMaSbk7S8ZJHMFU7LSLw8RzocQ=";
+      sha256 = "sha256-f42mxmpwReSRLYIuRYzQeBF954Y4s76vUvcGRu9Kf1c=";
     };
-    date = "2026-01-29";
+    date = "2026-02-14";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "19582636e14b8ba760addb7c1b5d5dd408ca3f5c";
+    version = "6ab3821e00f141c4d4bd064ca854cee0c7e0e433";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "19582636e14b8ba760addb7c1b5d5dd408ca3f5c";
+      rev = "6ab3821e00f141c4d4bd064ca854cee0c7e0e433";
       fetchSubmodules = false;
-      sha256 = "sha256-Bdf20/vBjr0g1D4w5LrYJuQpwkwxUr97WJL9orqG6V4=";
+      sha256 = "sha256-3vmoocZrI04tFlUtOKA8KyX5tHr4oTgy7coEI1lVsxU=";
     };
-    date = "2026-01-29";
+    date = "2026-02-09";
   };
   laminate = {
     pname = "laminate";
@@ -56,15 +56,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "19a3b6778979e0b328f9a791a9f92296fd406690";
+    version = "501a21f3339025f7afabc2ae29ae485cce9d64e5";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "19a3b6778979e0b328f9a791a9f92296fd406690";
+      rev = "501a21f3339025f7afabc2ae29ae485cce9d64e5";
       fetchSubmodules = false;
-      sha256 = "sha256-j9aX0TJ5rK4v+XupUjbk8WLV0LdFXpyL1hw99oH/1lg=";
+      sha256 = "sha256-gD8+tn86WsVNs7IKkDEQa+8Zt1HokpLE6RlKGBvRkMI=";
     };
-    date = "2026-01-29";
+    date = "2026-02-16";
   };
   pict = {
     pname = "pict";
@@ -91,14 +91,14 @@
   };
   vim = {
     pname = "vim";
-    version = "7599a1899750b42273747cf97c5a4d3719079b19";
+    version = "ac9426bf549a5dea853ae02fa6c5dba0ef3beb95";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "7599a1899750b42273747cf97c5a4d3719079b19";
+      rev = "ac9426bf549a5dea853ae02fa6c5dba0ef3beb95";
       fetchSubmodules = false;
-      sha256 = "sha256-OIsIA0g1KvZcDH7IRR6i+8ZKzuKwm3GdshaaKlaTCVI=";
+      sha256 = "sha256-29dSi9KRs45xc+ZGnLeRPG5x9y8PXSi9XrWH2bNBk6g=";
     };
-    date = "2026-01-28";
+    date = "2026-02-15";
   };
 }
