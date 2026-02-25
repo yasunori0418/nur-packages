@@ -42,7 +42,6 @@
             [
               nvfetcher
               cachix
-              node2nix
               nix-unit
             ];
         };

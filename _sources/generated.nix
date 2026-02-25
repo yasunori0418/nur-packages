@@ -20,27 +20,27 @@
   };
   gwq = {
     pname = "gwq";
-    version = "84cffa589608122cae7d41eefa7277c5399703c0";
+    version = "6fcb77cad185fa1e55b54b1fa5fd29a763457674";
     src = fetchFromGitHub {
       owner = "d-kuro";
       repo = "gwq";
-      rev = "84cffa589608122cae7d41eefa7277c5399703c0";
+      rev = "6fcb77cad185fa1e55b54b1fa5fd29a763457674";
       fetchSubmodules = false;
-      sha256 = "sha256-f42mxmpwReSRLYIuRYzQeBF954Y4s76vUvcGRu9Kf1c=";
+      sha256 = "sha256-lph6PybFlCZeAW81DypcZpCvC7miIWQFTRF2XM0S4tU=";
     };
-    date = "2026-02-14";
+    date = "2026-02-22";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "6ab3821e00f141c4d4bd064ca854cee0c7e0e433";
+    version = "2879bf3e44781cf8e4c7831e009a7b9185eaa30a";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "6ab3821e00f141c4d4bd064ca854cee0c7e0e433";
+      rev = "2879bf3e44781cf8e4c7831e009a7b9185eaa30a";
       fetchSubmodules = false;
-      sha256 = "sha256-3vmoocZrI04tFlUtOKA8KyX5tHr4oTgy7coEI1lVsxU=";
+      sha256 = "sha256-fr7o1DmXGrdXRX0gptSTF/JR3FS4hlvEYNN8AUbWm3g=";
     };
-    date = "2026-02-09";
+    date = "2026-02-23";
   };
   laminate = {
     pname = "laminate";
@@ -56,15 +56,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "9567fb050795409f15b022a3c3cb8f54d8e2fea5";
+    version = "39769b4ac2e88690e9be0f817f8e60e55bd6c461";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "9567fb050795409f15b022a3c3cb8f54d8e2fea5";
+      rev = "39769b4ac2e88690e9be0f817f8e60e55bd6c461";
       fetchSubmodules = false;
-      sha256 = "sha256-y1UZ+VB/BeF4qorg1+bEsS/U80COlvcvoy49n9jXIp4=";
+      sha256 = "sha256-u3Sgo9h3SnS9x80y2A2HodGnvyog8J0YCycStxHiiEU=";
     };
-    date = "2026-02-19";
+    date = "2026-02-25";
   };
   pict = {
     pname = "pict";
@@ -77,6 +77,17 @@
       sha256 = "sha256-asUqPGjAQxVcvPXxYM3EnG7M0TjZ2vseIJmEHMo3T2k=";
     };
     date = "2026-01-13";
+  };
+  safe-chain = {
+    pname = "safe-chain";
+    version = "1.4.4";
+    src = fetchFromGitHub {
+      owner = "AikidoSec";
+      repo = "safe-chain";
+      rev = "1.4.4";
+      fetchSubmodules = false;
+      sha256 = "sha256-tXQCYLi/EhSaQ0QvKlCjK1LfcRQL0Gt+t4JS1YmOl5w=";
+    };
   };
   tree-sitter = {
     pname = "tree-sitter";
@@ -91,14 +102,14 @@
   };
   vim = {
     pname = "vim";
-    version = "2e9e7cb8e0959441215fbddbeeed6dbd9c6e11b9";
+    version = "6eb0bfd5bbf48ff4dc1d1bbf647dc6c9b96a6eed";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "2e9e7cb8e0959441215fbddbeeed6dbd9c6e11b9";
+      rev = "6eb0bfd5bbf48ff4dc1d1bbf647dc6c9b96a6eed";
       fetchSubmodules = false;
-      sha256 = "sha256-6PLQe/dzxtCfcSpD9ZsISBOruX94TqQv3XKAlevvahQ=";
+      sha256 = "sha256-ANJTmUfFpPqkTz8LlpE0qJqie2qj0fWfZ19m/Qyi5eQ=";
     };
-    date = "2026-02-19";
+    date = "2026-02-24";
   };
 }

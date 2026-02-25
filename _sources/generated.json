@@ -22,7 +22,7 @@
   },
   "gwq": {
     "cargoLock": null,
-    "date": "2026-02-14",
+    "date": "2026-02-22",
     "extract": null,
     "name": "gwq",
     "passthru": null,
@@ -34,16 +34,16 @@
       "name": null,
       "owner": "d-kuro",
       "repo": "gwq",
-      "rev": "84cffa589608122cae7d41eefa7277c5399703c0",
-      "sha256": "sha256-f42mxmpwReSRLYIuRYzQeBF954Y4s76vUvcGRu9Kf1c=",
+      "rev": "6fcb77cad185fa1e55b54b1fa5fd29a763457674",
+      "sha256": "sha256-lph6PybFlCZeAW81DypcZpCvC7miIWQFTRF2XM0S4tU=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "84cffa589608122cae7d41eefa7277c5399703c0"
+    "version": "6fcb77cad185fa1e55b54b1fa5fd29a763457674"
   },
   "k1Low-deck": {
     "cargoLock": null,
-    "date": "2026-02-09",
+    "date": "2026-02-23",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "6ab3821e00f141c4d4bd064ca854cee0c7e0e433",
-      "sha256": "sha256-3vmoocZrI04tFlUtOKA8KyX5tHr4oTgy7coEI1lVsxU=",
+      "rev": "2879bf3e44781cf8e4c7831e009a7b9185eaa30a",
+      "sha256": "sha256-fr7o1DmXGrdXRX0gptSTF/JR3FS4hlvEYNN8AUbWm3g=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "6ab3821e00f141c4d4bd064ca854cee0c7e0e433"
+    "version": "2879bf3e44781cf8e4c7831e009a7b9185eaa30a"
   },
   "laminate": {
     "cargoLock": null,
@@ -85,7 +85,7 @@
   },
   "neovim": {
     "cargoLock": null,
-    "date": "2026-02-19",
+    "date": "2026-02-25",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -97,12 +97,12 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "9567fb050795409f15b022a3c3cb8f54d8e2fea5",
-      "sha256": "sha256-y1UZ+VB/BeF4qorg1+bEsS/U80COlvcvoy49n9jXIp4=",
+      "rev": "39769b4ac2e88690e9be0f817f8e60e55bd6c461",
+      "sha256": "sha256-u3Sgo9h3SnS9x80y2A2HodGnvyog8J0YCycStxHiiEU=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "9567fb050795409f15b022a3c3cb8f54d8e2fea5"
+    "version": "39769b4ac2e88690e9be0f817f8e60e55bd6c461"
   },
   "pict": {
     "cargoLock": null,
@@ -124,6 +124,27 @@
       "type": "github"
     },
     "version": "c3dad2bb24d08c9967565e0ca48e1a152216d1d4"
+  },
+  "safe-chain": {
+    "cargoLock": null,
+    "date": null,
+    "extract": null,
+    "name": "safe-chain",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "AikidoSec",
+      "repo": "safe-chain",
+      "rev": "1.4.4",
+      "sha256": "sha256-tXQCYLi/EhSaQ0QvKlCjK1LfcRQL0Gt+t4JS1YmOl5w=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "1.4.4"
   },
   "tree-sitter": {
     "cargoLock": null,
@@ -148,7 +169,7 @@
   },
   "vim": {
     "cargoLock": null,
-    "date": "2026-02-19",
+    "date": "2026-02-24",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -160,11 +181,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "2e9e7cb8e0959441215fbddbeeed6dbd9c6e11b9",
-      "sha256": "sha256-6PLQe/dzxtCfcSpD9ZsISBOruX94TqQv3XKAlevvahQ=",
+      "rev": "6eb0bfd5bbf48ff4dc1d1bbf647dc6c9b96a6eed",
+      "sha256": "sha256-ANJTmUfFpPqkTz8LlpE0qJqie2qj0fWfZ19m/Qyi5eQ=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "2e9e7cb8e0959441215fbddbeeed6dbd9c6e11b9"
+    "version": "6eb0bfd5bbf48ff4dc1d1bbf647dc6c9b96a6eed"
   }
 }

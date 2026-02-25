@@ -30,3 +30,7 @@ fetch.github = "tree-sitter/tree-sitter"
 [pict]
 src.git = "https://github.com/microsoft/pict"
 fetch.github = "microsoft/pict"
+
+[safe-chain]
+src.github = "AikidoSec/safe-chain"
+fetch.github = "AikidoSec/safe-chain"

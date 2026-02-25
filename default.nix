@@ -10,11 +10,6 @@
   pkgs ? import <nixpkgs> { },
 }:
 let
-  nodePkgs = pkgs.callPackage ./pkgs/node2nix {
-    inherit pkgs;
-    inherit (pkgs) system;
-    nodejs = pkgs.nodejs_24;
-  };
   sources = pkgs.callPackage ./_sources/generated.nix { };
 in
 {
@@ -23,8 +18,7 @@ in
   modules = import ./modules; # NixOS modules
   overlays = import ./overlays; # nixpkgs overlays
 
-  safe-chain = nodePkgs."@aikidosec/safe-chain";
-  ccexp = nodePkgs."ccexp";
+  safe-chain = pkgs.callPackage ./pkgs/safe-chain { inherit sources; };
   cchook = pkgs.callPackage ./pkgs/cchook { inherit sources; };
   gwq = pkgs.callPackage ./pkgs/gwq { inherit sources; };
   k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck { inherit sources; };
