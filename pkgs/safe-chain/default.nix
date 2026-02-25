@@ -35,6 +35,9 @@ buildNpmPackage {
       rm "$ws_link"
       ln -s ../../ "$ws_link"
     fi
+
+    # safe-chain以外の不要なラッパーバイナリを削除
+    find $out/bin -type f -name 'aikido-*' -delete
   '';
 
   meta = {
