@@ -31,6 +31,11 @@ fetch.github = "tree-sitter/tree-sitter"
 src.git = "https://github.com/microsoft/pict"
 fetch.github = "microsoft/pict"
 
+[gws]
+src.github_tag = "googleworkspace/cli"
+src.include_regex = "v.*"
+fetch.github = "googleworkspace/cli"
+
 [safe-chain]
 src.github = "AikidoSec/safe-chain"
 fetch.github = "AikidoSec/safe-chain"

@@ -30,6 +30,17 @@
     };
     date = "2026-02-22";
   };
+  gws = {
+    pname = "gws";
+    version = "v0.3.4";
+    src = fetchFromGitHub {
+      owner = "googleworkspace";
+      repo = "cli";
+      rev = "v0.3.4";
+      fetchSubmodules = false;
+      sha256 = "sha256-xPKxsMr0klLeOcfbgtgPCvzAryiOWXhZy2TUU7DrHHQ=";
+    };
+  };
   k1Low-deck = {
     pname = "k1Low-deck";
     version = "15b675a48700ce352980683017c0e337d791450b";
