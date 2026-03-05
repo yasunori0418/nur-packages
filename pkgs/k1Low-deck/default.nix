@@ -6,7 +6,7 @@
 buildGoModule {
   inherit (sources.k1Low-deck) pname version src;
 
-  vendorHash = "sha256-L5AsYAkJsbjrq3cvMW4853FKqay3qaJX4ylgFQCp70M=";
+  vendorHash = "sha256-4D+IEa65nci2suryksjWXpDnNKpeViYYBWdNYbH8YAw=";
 
   ldflags = [
     "-s"
