@@ -1,7 +1,7 @@
 {
   "cchook": {
     "cargoLock": null,
-    "date": "2026-02-15",
+    "date": "2026-03-08",
     "extract": null,
     "name": "cchook",
     "passthru": null,
@@ -13,12 +13,12 @@
       "name": null,
       "owner": "syou6162",
       "repo": "cchook",
-      "rev": "356108d95da2a68339b1e3e7b45b8c8612a6cd16",
-      "sha256": "sha256-uKfFagFIsY+FRSx9bwHl2E56e34LQXFzEHqhjz/BQaQ=",
+      "rev": "be29a3da1e8ecc20597763e48429fab251ef9547",
+      "sha256": "sha256-WLsGAmSJyidE/S+jj2fsSf2GqaHYtdyNOd9eXFAg2qE=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "356108d95da2a68339b1e3e7b45b8c8612a6cd16"
+    "version": "be29a3da1e8ecc20597763e48429fab251ef9547"
   },
   "gwq": {
     "cargoLock": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "googleworkspace",
       "repo": "cli",
-      "rev": "v0.8.0",
-      "sha256": "sha256-0G40XB6d+ST2O64KuXZrgnm1mxvEtXUM3XCqKuKjfhQ=",
+      "rev": "v0.8.1",
+      "sha256": "sha256-GIp/2TV2Vo1YQH39YGmOToGPdgdeduleaJiDLcThd0A=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "v0.8.0"
+    "version": "v0.8.1"
   },
   "k1Low-deck": {
     "cargoLock": null,
@@ -106,7 +106,7 @@
   },
   "neovim": {
     "cargoLock": null,
-    "date": "2026-03-07",
+    "date": "2026-03-08",
     "extract": null,
     "name": "neovim",
     "passthru": null,
@@ -118,12 +118,12 @@
       "name": null,
       "owner": "neovim",
       "repo": "neovim",
-      "rev": "60389e1c0e005c44fde941ca9fda49057275654d",
-      "sha256": "sha256-qbJhVaDOwlnX2UNXqg9sAMgjjRyIt+9ptj2Z1f9pn8A=",
+      "rev": "61f166ec409b7621fcc42e4da40d6ccb19973749",
+      "sha256": "sha256-JLAIrpQTp8u6blb5iZrAx36fNe65LT+JOUvxiLxlN+8=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "60389e1c0e005c44fde941ca9fda49057275654d"
+    "version": "61f166ec409b7621fcc42e4da40d6ccb19973749"
   },
   "pict": {
     "cargoLock": null,
@@ -190,7 +190,7 @@
   },
   "vim": {
     "cargoLock": null,
-    "date": "2026-03-07",
+    "date": "2026-03-08",
     "extract": null,
     "name": "vim",
     "passthru": null,
@@ -202,11 +202,11 @@
       "name": null,
       "owner": "vim",
       "repo": "vim",
-      "rev": "f3b566481c39b6c5fbbe96a93432d526bc76ab32",
-      "sha256": "sha256-DsYr8vbE57U22FuaZ6YOaqzilT6JRQxiNLBqZtnUFK4=",
+      "rev": "bab761960408a81ea9a21d8af573a8de4f7290f1",
+      "sha256": "sha256-sMjIb6UdlM7F3wCxmVkiEEeVe9dc66KL4xWSVKB0vIo=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "f3b566481c39b6c5fbbe96a93432d526bc76ab32"
+    "version": "bab761960408a81ea9a21d8af573a8de4f7290f1"
   }
 }

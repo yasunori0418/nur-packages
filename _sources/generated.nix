@@ -8,15 +8,15 @@
 {
   cchook = {
     pname = "cchook";
-    version = "356108d95da2a68339b1e3e7b45b8c8612a6cd16";
+    version = "be29a3da1e8ecc20597763e48429fab251ef9547";
     src = fetchFromGitHub {
       owner = "syou6162";
       repo = "cchook";
-      rev = "356108d95da2a68339b1e3e7b45b8c8612a6cd16";
+      rev = "be29a3da1e8ecc20597763e48429fab251ef9547";
       fetchSubmodules = false;
-      sha256 = "sha256-uKfFagFIsY+FRSx9bwHl2E56e34LQXFzEHqhjz/BQaQ=";
+      sha256 = "sha256-WLsGAmSJyidE/S+jj2fsSf2GqaHYtdyNOd9eXFAg2qE=";
     };
-    date = "2026-02-15";
+    date = "2026-03-08";
   };
   gwq = {
     pname = "gwq";
@@ -32,13 +32,13 @@
   };
   gws = {
     pname = "gws";
-    version = "v0.8.0";
+    version = "v0.8.1";
     src = fetchFromGitHub {
       owner = "googleworkspace";
       repo = "cli";
-      rev = "v0.8.0";
+      rev = "v0.8.1";
       fetchSubmodules = false;
-      sha256 = "sha256-0G40XB6d+ST2O64KuXZrgnm1mxvEtXUM3XCqKuKjfhQ=";
+      sha256 = "sha256-GIp/2TV2Vo1YQH39YGmOToGPdgdeduleaJiDLcThd0A=";
     };
   };
   k1Low-deck = {
@@ -67,15 +67,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "60389e1c0e005c44fde941ca9fda49057275654d";
+    version = "61f166ec409b7621fcc42e4da40d6ccb19973749";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "60389e1c0e005c44fde941ca9fda49057275654d";
+      rev = "61f166ec409b7621fcc42e4da40d6ccb19973749";
       fetchSubmodules = false;
-      sha256 = "sha256-qbJhVaDOwlnX2UNXqg9sAMgjjRyIt+9ptj2Z1f9pn8A=";
+      sha256 = "sha256-JLAIrpQTp8u6blb5iZrAx36fNe65LT+JOUvxiLxlN+8=";
     };
-    date = "2026-03-07";
+    date = "2026-03-08";
   };
   pict = {
     pname = "pict";
@@ -113,14 +113,14 @@
   };
   vim = {
     pname = "vim";
-    version = "f3b566481c39b6c5fbbe96a93432d526bc76ab32";
+    version = "bab761960408a81ea9a21d8af573a8de4f7290f1";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "f3b566481c39b6c5fbbe96a93432d526bc76ab32";
+      rev = "bab761960408a81ea9a21d8af573a8de4f7290f1";
       fetchSubmodules = false;
-      sha256 = "sha256-DsYr8vbE57U22FuaZ6YOaqzilT6JRQxiNLBqZtnUFK4=";
+      sha256 = "sha256-sMjIb6UdlM7F3wCxmVkiEEeVe9dc66KL4xWSVKB0vIo=";
     };
-    date = "2026-03-07";
+    date = "2026-03-08";
   };
 }
