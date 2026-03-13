@@ -11,7 +11,7 @@
 rustPlatform.buildRustPackage {
   inherit (sources.gws) pname version src;
 
-  cargoHash = "sha256-aLCQnEhGXt/x5uMNOBxpIdshN388W0HMYn+oOYBjE9g=";
+  cargoHash = "sha256-M3ggdsgsvlO5ZPnfvF5EXWtZwYGG0fWt72TLqFZenH0=";
 
   nativeBuildInputs = [
     pkg-config
