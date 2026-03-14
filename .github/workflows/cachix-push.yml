@@ -26,4 +26,4 @@ jobs:
 
       - name: Build packages
         run: |
-          nix-build
+          nix build $(nix eval --json .#packages.${{ matrix.system }} --apply 'builtins.attrNames' | jq -r 'map(".#" + .) | join(" ")')
