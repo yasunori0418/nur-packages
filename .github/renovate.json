@@ -1,0 +1,28 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended"],
+  "nix": {
+    "enabled": true
+  },
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 5am on monday"]
+  },
+  "enabledManagers": ["nix", "github-actions"],
+  "packageRules": [
+    {
+      "description": "Group flake.nix inputs together",
+      "matchManagers": ["nix"],
+      "matchFileNames": ["flake.nix"],
+      "matchUpdateTypes": ["digest", "pin", "pinDigest"],
+      "groupName": "nix flake inputs"
+    },
+    {
+      "description": "Descriptive PR title for flake.lock maintenance",
+      "matchManagers": ["nix"],
+      "matchFileNames": ["flake.nix"],
+      "matchUpdateTypes": ["lockFileMaintenance"],
+      "commitMessageExtra": "(flake.lock)"
+    }
+  ]
+}
