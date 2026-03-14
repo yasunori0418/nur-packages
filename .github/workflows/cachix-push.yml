@@ -2,6 +2,9 @@ name: Cachix Push
 
 on:
   push:
+    paths:
+      - "flake.lock"
+      - "**.nix"
   workflow_dispatch:
 
 jobs:
