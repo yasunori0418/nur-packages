@@ -8,9 +8,11 @@
 
 {
   pkgs ? import <nixpkgs> { },
+  inputs,
 }:
 let
   sources = pkgs.callPackage ./_sources/generated.nix { };
+  system = pkgs.stdenv.hostPlatform.system;
 in
 {
   # The `lib`, `modules`, and `overlays` names are special
@@ -25,6 +27,9 @@ in
   laminate = pkgs.callPackage ./pkgs/laminate { inherit sources; };
   vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
   neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
+  neovim-overlay = inputs.neovim-nightly-overlay.packages.${system}.neovim.overrideAttrs (prev: {
+    treesitter-parsers = { };
+  });
   nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };
   pict = pkgs.callPackage ./pkgs/pict { inherit sources; };
   gws = pkgs.callPackage ./pkgs/gws { inherit sources; };

@@ -28,7 +28,7 @@
       treefmtEval = forAllSystems (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
     in
     {
-      legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs; });
+      legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs inputs; });
       packages = forAllSystems (
         pkgs:
         pkgs.lib.filterAttrs (
