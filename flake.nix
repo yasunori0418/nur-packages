@@ -10,7 +10,10 @@
       url = "github:numtide/treefmt-nix";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
+    vim-overlay.url = "github:kawarimidoll/vim-overlay";
   };
+
   outputs =
     { self, nixpkgs, ... }@inputs:
     let
