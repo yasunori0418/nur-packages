@@ -25,4 +25,4 @@ jobs:
           cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
 
       - name: Run nix-unit
-        run: nix develop '.#' -c nix-unit lib/default_test.nix
+        run: nix build .#checks.${{ matrix.system }}.default
