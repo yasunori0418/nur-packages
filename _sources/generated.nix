@@ -32,13 +32,13 @@
   };
   gws = {
     pname = "gws";
-    version = "v0.13.2";
+    version = "v0.16.0";
     src = fetchFromGitHub {
       owner = "googleworkspace";
       repo = "cli";
-      rev = "v0.13.2";
+      rev = "v0.16.0";
       fetchSubmodules = false;
-      sha256 = "sha256-jtigtoppWeurNbxFebpZNmnj45AtLvdn9nxxds/OlKo=";
+      sha256 = "sha256-yirGdRHIexO9I0KLyU5jnNqWUG7Xw/iQ0F93SkkzNi0=";
     };
   };
   k1Low-deck = {
@@ -67,15 +67,15 @@
   };
   neovim = {
     pname = "neovim";
-    version = "911337eb3c4cdb4b5747109d078b1e4a13f3b53b";
+    version = "747da13f44ef895e51081065546f3c465637a615";
     src = fetchFromGitHub {
       owner = "neovim";
       repo = "neovim";
-      rev = "911337eb3c4cdb4b5747109d078b1e4a13f3b53b";
+      rev = "747da13f44ef895e51081065546f3c465637a615";
       fetchSubmodules = false;
-      sha256 = "sha256-BOP21h7jiSYb8sJ40H4sfUM85dgRHSSq89FEsOd+8WI=";
+      sha256 = "sha256-qEVD/J8+veXAkwy3p1z4yr3oS6XJFmeV9DYex7uFyIg=";
     };
-    date = "2026-03-13";
+    date = "2026-03-15";
   };
   pict = {
     pname = "pict";
@@ -113,14 +113,14 @@
   };
   vim = {
     pname = "vim";
-    version = "9f983a95605b42dbdc4a8c0f95584a72fc33deeb";
+    version = "e21c4a649a830716599eadebad04ddf2393230bc";
     src = fetchFromGitHub {
       owner = "vim";
       repo = "vim";
-      rev = "9f983a95605b42dbdc4a8c0f95584a72fc33deeb";
+      rev = "e21c4a649a830716599eadebad04ddf2393230bc";
       fetchSubmodules = false;
-      sha256 = "sha256-cpcHKP8Dd0yJJPkwxuT7C7JQYU8VPvu6Q68V5C1XnpI=";
+      sha256 = "sha256-0NO0L09VYlCKreEP/J16V8TKsGVwXalS0odpKIWEsxs=";
     };
-    date = "2026-03-12";
+    date = "2026-03-15";
   };
 }

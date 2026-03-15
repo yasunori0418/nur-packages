@@ -1,11 +1,11 @@
-name: 'Setup Nix'
-description: 'Install Nix and configure Cachix'
+name: "Setup Nix"
+description: "Install Nix and configure Cachix"
 inputs:
   cachix-auth-token:
-    description: 'Cachix authentication token'
+    description: "Cachix authentication token"
     required: false
 runs:
-  using: 'composite'
+  using: "composite"
   steps:
     - name: Install Nix
       uses: cachix/install-nix-action@1ca7d21a94afc7c957383a2d217460d980de4934 # v31.10.1
