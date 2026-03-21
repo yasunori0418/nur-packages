@@ -2,6 +2,11 @@
 # src.git = "https://github.com/neovim/neovim"
 # fetch.github = "neovim/neovim"
 
+# [tree-sitter]
+# src.github_tag = "tree-sitter/tree-sitter"
+# src.include_regex = "v0.25.10"
+# fetch.github = "tree-sitter/tree-sitter"
+
 # [vim]
 # src.git = "https://github.com/vim/vim"
 # fetch.github = "vim/vim"
@@ -21,11 +26,6 @@ fetch.github = "Songmu/laminate"
 [gwq]
 src.git = "https://github.com/d-kuro/gwq"
 fetch.github = "d-kuro/gwq"
-
-# [tree-sitter]
-# src.github_tag = "tree-sitter/tree-sitter"
-# src.include_regex = "v0.25.10"
-# fetch.github = "tree-sitter/tree-sitter"
 
 [pict]
 src.git = "https://github.com/microsoft/pict"
