@@ -25,7 +25,7 @@ in
   gwq = pkgs.callPackage ./pkgs/gwq { inherit sources; };
   k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck { inherit sources; };
   laminate = pkgs.callPackage ./pkgs/laminate { inherit sources; };
-  vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
+  # vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
   vim-overlay =
     (pkgs.extend (
       inputs.vim-overlay.lib.features {
@@ -36,7 +36,7 @@ in
         sodium = true;
       }
     )).vim;
-  neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
+  # neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
   neovim-overlay = inputs.neovim-nightly-overlay.packages.${system}.neovim.overrideAttrs (prev: {
     treesitter-parsers = { };
   });

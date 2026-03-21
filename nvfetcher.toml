@@ -1,10 +1,10 @@
-[neovim]
-src.git = "https://github.com/neovim/neovim"
-fetch.github = "neovim/neovim"
+# [neovim]
+# src.git = "https://github.com/neovim/neovim"
+# fetch.github = "neovim/neovim"
 
-[vim]
-src.git = "https://github.com/vim/vim"
-fetch.github = "vim/vim"
+# [vim]
+# src.git = "https://github.com/vim/vim"
+# fetch.github = "vim/vim"
 
 [cchook]
 src.git = "https://github.com/syou6162/cchook"
@@ -22,10 +22,10 @@ fetch.github = "Songmu/laminate"
 src.git = "https://github.com/d-kuro/gwq"
 fetch.github = "d-kuro/gwq"
 
-[tree-sitter]
-src.github_tag = "tree-sitter/tree-sitter"
-src.include_regex = "v0.25.10"
-fetch.github = "tree-sitter/tree-sitter"
+# [tree-sitter]
+# src.github_tag = "tree-sitter/tree-sitter"
+# src.include_regex = "v0.25.10"
+# fetch.github = "tree-sitter/tree-sitter"
 
 [pict]
 src.git = "https://github.com/microsoft/pict"
