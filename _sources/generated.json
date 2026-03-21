@@ -22,7 +22,7 @@
   },
   "gwq": {
     "cargoLock": null,
-    "date": "2026-03-20",
+    "date": "2026-03-21",
     "extract": null,
     "name": "gwq",
     "passthru": null,
@@ -34,12 +34,12 @@
       "name": null,
       "owner": "d-kuro",
       "repo": "gwq",
-      "rev": "ad3e050def901e2a2f2e43a9305b340f7cc1ecce",
-      "sha256": "sha256-OeyUPXWEP0o6yk1yrj4zKD09q4iJNu0Xy9O42QlhFi0=",
+      "rev": "01a8aa12e36a6ca3c569d3d56bc10883a59e0ff4",
+      "sha256": "sha256-A7CUzLhhjKRhiL88l8j3xCmKrRDk+KOhdbaow8FAlCo=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "ad3e050def901e2a2f2e43a9305b340f7cc1ecce"
+    "version": "01a8aa12e36a6ca3c569d3d56bc10883a59e0ff4"
   },
   "k1Low-deck": {
     "cargoLock": null,
@@ -83,27 +83,6 @@
     },
     "version": "1580b51f607bca5ded2a0d1d9e9ae1e156fb5eb9"
   },
-  "neovim": {
-    "cargoLock": null,
-    "date": "2026-03-20",
-    "extract": null,
-    "name": "neovim",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "neovim",
-      "repo": "neovim",
-      "rev": "24684f90eac23a54d63c4d636ad0e6f2ddf3e9c4",
-      "sha256": "sha256-RTMDNVOtwb5rw56m+243TVYVHje2YZFs11r6bkHyXQ0=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "24684f90eac23a54d63c4d636ad0e6f2ddf3e9c4"
-  },
   "pict": {
     "cargoLock": null,
     "date": "2026-01-13",
@@ -145,47 +124,5 @@
       "type": "github"
     },
     "version": "1.4.4"
-  },
-  "tree-sitter": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "tree-sitter",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "tree-sitter",
-      "repo": "tree-sitter",
-      "rev": "v0.25.10",
-      "sha256": "sha256-aHszbvLCLqCwAS4F4UmM3wbSb81QuG9FM7BDHTu1ZvM=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "v0.25.10"
-  },
-  "vim": {
-    "cargoLock": null,
-    "date": "2026-03-19",
-    "extract": null,
-    "name": "vim",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "vim",
-      "repo": "vim",
-      "rev": "332dd22ed48244d67524933453049c6c866bcabf",
-      "sha256": "sha256-XTvBbeyrHy4W57ChipJgfDwm4j1I6urLdKzCsXlSYLI=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "332dd22ed48244d67524933453049c6c866bcabf"
   }
 }
