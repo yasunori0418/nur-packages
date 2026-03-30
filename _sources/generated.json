@@ -43,7 +43,7 @@
   },
   "k1Low-deck": {
     "cargoLock": null,
-    "date": "2026-03-23",
+    "date": "2026-03-30",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "0211db184f79d07e4a15304d525c21c25341f557",
-      "sha256": "sha256-69diemLM4oOsRO7Xptpl/ZmKE3Idm/3XzOkFFPffizI=",
+      "rev": "76023c2cffc9c8b9c7d423e120589cc98a504aa5",
+      "sha256": "sha256-sp2FpsMm3H3c/fmDHbhQ2B12KDfNjZa/4k+SmCmKgeU=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "0211db184f79d07e4a15304d525c21c25341f557"
+    "version": "76023c2cffc9c8b9c7d423e120589cc98a504aa5"
   },
   "laminate": {
     "cargoLock": null,
