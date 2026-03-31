@@ -42,4 +42,5 @@ in
   });
   nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };
   pict = pkgs.callPackage ./pkgs/pict { inherit sources; };
+  kotlin-lsp = pkgs.callPackage ./pkgs/kotlin-lsp { };
 }
