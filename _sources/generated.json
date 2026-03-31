@@ -118,11 +118,11 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.4.5",
-      "sha256": "sha256-uF0VTBhfhUitz5GzFXp8MJw3j0+2LDdxL5WbOKfSFuc=",
+      "rev": "1.4.6",
+      "sha256": "sha256-7wef9/Jm2MGR0ZGVjox0mpHFnOvA9RvMMBjeekm+kYQ=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.4.5"
+    "version": "1.4.6"
   }
 }
