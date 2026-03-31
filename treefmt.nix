@@ -16,6 +16,7 @@
     };
     prettier = {
       enable = true;
+      package = pkgs.prettier;
     };
   };
 }
