@@ -3,9 +3,12 @@
   buildNpmPackage,
   sources,
 }:
+let
+  inherit (sources.safe-chain) version src;
+in
 buildNpmPackage {
   pname = "safe-chain";
-  inherit (sources.safe-chain) version src;
+  inherit version src;
 
   # postPatchはnpm deps FODでも実行されるため、stdenvに含まれるsedのみ使用
   # (nativeBuildInputsのツールはFODでは利用不可)
@@ -17,6 +20,8 @@ buildNpmPackage {
     # ルートdevDependenciesを除去（不要なプリビルドバイナリの混入防止）
     sed -i '/"devDependencies"/,/^  }/d' package.json
     sed -i 's/"AGPL-3.0-or-later",/"AGPL-3.0-or-later"/' package.json
+    # packages/safe-chain/package.jsonのversionが常に1.0.0のため、実際のバージョンに書き換え
+    sed -i 's/"version": "1.0.0"/"version": "${version}"/' packages/safe-chain/package.json
   '';
 
   npmDepsHash = "sha256-QsFKw5ZWlL0uabDAUlOglxsicBaW79ImK/7iGI6re24=";
