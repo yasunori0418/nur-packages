@@ -43,4 +43,7 @@ in
   nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };
   pict = pkgs.callPackage ./pkgs/pict { inherit sources; };
   kotlin-lsp = pkgs.callPackage ./pkgs/kotlin-lsp { };
+  # Linux専用。nullはlib.isDerivationフィルタで除外される
+  xremap-wlroots =
+    if pkgs.stdenv.isLinux then inputs.xremap-flake.packages.${system}.xremap-wlroots else null;
 }

@@ -12,6 +12,7 @@
     };
     neovim-nightly-overlay.url = "github:nix-community/neovim-nightly-overlay";
     vim-overlay.url = "github:kawarimidoll/vim-overlay";
+    xremap-flake.url = "github:xremap/nix-flake";
   };
 
   nixConfig = {
