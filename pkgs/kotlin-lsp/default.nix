@@ -44,11 +44,17 @@ mkDerivation {
     stdenv.cc.cc.lib
   ];
 
-  # LSPサーバーにGUI関連ライブラリは不要
+  # LSPサーバーにGUI/音声関連ライブラリは不要
   autoPatchelfIgnoreMissingDeps = [
-    "libwayland-cursor.so.0"
     "libX11.so.6"
     "libXext.so.6"
+    "libXi.so.6"
+    "libXrender.so.1"
+    "libXtst.so.6"
+    "libasound.so.2"
+    "libfreetype.so.6"
+    "libwayland-client.so.0"
+    "libwayland-cursor.so.0"
   ];
 
   dontConfigure = true;
