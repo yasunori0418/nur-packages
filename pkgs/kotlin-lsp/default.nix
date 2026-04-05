@@ -1,8 +1,10 @@
 {
   lib,
   stdenvNoCC,
+  stdenv,
   fetchzip,
   autoPatchelfHook,
+  zlib,
 }:
 let
   inherit (stdenvNoCC) mkDerivation;
@@ -35,6 +37,18 @@ mkDerivation {
 
   nativeBuildInputs = lib.optionals isLinux [
     autoPatchelfHook
+  ];
+
+  buildInputs = lib.optionals isLinux [
+    zlib
+    stdenv.cc.cc.lib
+  ];
+
+  # LSPサーバーにGUI関連ライブラリは不要
+  autoPatchelfIgnoreMissingDeps = [
+    "libwayland-cursor.so.0"
+    "libX11.so.6"
+    "libXext.so.6"
   ];
 
   dontConfigure = true;
