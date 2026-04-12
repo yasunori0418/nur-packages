@@ -1,7 +1,7 @@
 {
   "cchook": {
     "cargoLock": null,
-    "date": "2026-03-28",
+    "date": "2026-04-11",
     "extract": null,
     "name": "cchook",
     "passthru": null,
@@ -13,12 +13,12 @@
       "name": null,
       "owner": "syou6162",
       "repo": "cchook",
-      "rev": "eadf6a648d55bd75279925a55550f8f8186b55bd",
-      "sha256": "sha256-guTX+70MAExfo1nejr2ubxI60HaCCarKW7lwZB4tAI4=",
+      "rev": "2d59b93c600a4651c2828e4bf06f2693799eefdc",
+      "sha256": "sha256-BVm4oTIFsW8P3gWKbgBzCWTgrFTeDOnZ09bSAuHBtvM=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "eadf6a648d55bd75279925a55550f8f8186b55bd"
+    "version": "2d59b93c600a4651c2828e4bf06f2693799eefdc"
   },
   "gwq": {
     "cargoLock": null,

@@ -8,15 +8,15 @@
 {
   cchook = {
     pname = "cchook";
-    version = "eadf6a648d55bd75279925a55550f8f8186b55bd";
+    version = "2d59b93c600a4651c2828e4bf06f2693799eefdc";
     src = fetchFromGitHub {
       owner = "syou6162";
       repo = "cchook";
-      rev = "eadf6a648d55bd75279925a55550f8f8186b55bd";
+      rev = "2d59b93c600a4651c2828e4bf06f2693799eefdc";
       fetchSubmodules = false;
-      sha256 = "sha256-guTX+70MAExfo1nejr2ubxI60HaCCarKW7lwZB4tAI4=";
+      sha256 = "sha256-BVm4oTIFsW8P3gWKbgBzCWTgrFTeDOnZ09bSAuHBtvM=";
     };
-    date = "2026-03-28";
+    date = "2026-04-11";
   };
   gwq = {
     pname = "gwq";
