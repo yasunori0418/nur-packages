@@ -20,27 +20,27 @@
   };
   gwq = {
     pname = "gwq";
-    version = "01a8aa12e36a6ca3c569d3d56bc10883a59e0ff4";
+    version = "97e5739264f9a4a3fb26feaeb518b4faa0524346";
     src = fetchFromGitHub {
       owner = "d-kuro";
       repo = "gwq";
-      rev = "01a8aa12e36a6ca3c569d3d56bc10883a59e0ff4";
+      rev = "97e5739264f9a4a3fb26feaeb518b4faa0524346";
       fetchSubmodules = false;
-      sha256 = "sha256-A7CUzLhhjKRhiL88l8j3xCmKrRDk+KOhdbaow8FAlCo=";
+      sha256 = "sha256-2uE04frxfvQBlrOg5d0hPzGE9sbpzxHEiCeJX1ilG2M=";
     };
-    date = "2026-03-21";
+    date = "2026-04-18";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "f37f3839e50973073bad20ec379eaeee02609635";
+    version = "38d7305f3cbe9bb23c87fd1025bebf0388f67e0d";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "f37f3839e50973073bad20ec379eaeee02609635";
+      rev = "38d7305f3cbe9bb23c87fd1025bebf0388f67e0d";
       fetchSubmodules = false;
-      sha256 = "sha256-4MzDWDAjtN3vwFltIwsb2CaOLBdD15kQxUbkcIj10Rc=";
+      sha256 = "sha256-AuzUo3oiG43B/91CuoxjMmui5p6UuTlUISSxOcoZCPM=";
     };
-    date = "2026-04-06";
+    date = "2026-04-13";
   };
   laminate = {
     pname = "laminate";
