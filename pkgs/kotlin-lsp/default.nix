@@ -9,31 +9,53 @@
 let
   inherit (stdenvNoCC) mkDerivation;
   inherit (stdenvNoCC.hostPlatform) system isLinux;
-  version = "262.2310.0";
+  version = "262.4739.0";
 
   selectSystem = attrs: attrs.${system} or (throw "kotlin-lsp: unsupported platform ${system}");
 
-  platform = selectSystem {
-    aarch64-darwin = "mac-aarch64";
-    x86_64-darwin = "mac-x64";
-    aarch64-linux = "linux-aarch64";
-    x86_64-linux = "linux-x64";
+  # v262.4739.0 以降、配布物の命名と形式が変更された
+  # macOS は .sit (実体は ZIP)、Linux は .tar.gz
+  archiveInfo = selectSystem {
+    aarch64-darwin = {
+      suffix = "-aarch64";
+      ext = "sit";
+      extension = "zip";
+    };
+    x86_64-darwin = {
+      suffix = "";
+      ext = "sit";
+      extension = "zip";
+    };
+    aarch64-linux = {
+      suffix = "-aarch64";
+      ext = "tar.gz";
+      extension = null;
+    };
+    x86_64-linux = {
+      suffix = "";
+      ext = "tar.gz";
+      extension = null;
+    };
   };
 in
 mkDerivation {
   pname = "kotlin-lsp";
   inherit version;
 
-  src = fetchzip {
-    url = "https://download-cdn.jetbrains.com/kotlin-lsp/${version}/kotlin-lsp-${version}-${platform}.zip";
-    stripRoot = false;
-    hash = selectSystem {
-      aarch64-darwin = "sha256-d9jImEUN4Np6PY7uczB5hIE89bq9O+hV+Ww1F8WLe68=";
-      x86_64-darwin = "sha256-VoDpfxzLBCvZcJlHmC0yp174s4Urc+cEGw0YA4ctRdE=";
-      aarch64-linux = "sha256-uyTVY4TX6YCv3/qow+CQeTRpez3PLegDX3OscpKPCUM=";
-      x86_64-linux = "sha256-Bf2qkFpNhQC/Mz563OapmCXeKN+dTrYyQbOcF6z6b48=";
-    };
-  };
+  src = fetchzip (
+    {
+      url = "https://download-cdn.jetbrains.com/kotlin-lsp/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
+      hash = selectSystem {
+        aarch64-darwin = "sha256-/Wzvp0vbw8UQfCsHcT5SPLFYxo5clMy86Iy3uGDPOYQ=";
+        x86_64-darwin = "sha256-glBgiXGfiKHH9rb65eFWgmFsEycei6ZAVa0s/ButYaw=";
+        aarch64-linux = "sha256-/h51KBr1ob5RHyVlcdx0YBYYblPGlc+KxVG6y9HdqGs=";
+        x86_64-linux = "sha256-I1K/ypOnAtzHJ1btYur/SYAm7FLU2QzKcMjmeFXC+2c=";
+      };
+    }
+    // lib.optionalAttrs (archiveInfo.extension != null) {
+      inherit (archiveInfo) extension;
+    }
+  );
 
   nativeBuildInputs = lib.optionals isLinux [
     autoPatchelfHook
@@ -67,13 +89,10 @@ mkDerivation {
     cp -r . $out/lib/kotlin-lsp/
 
     chmod +x $out/lib/kotlin-lsp/kotlin-lsp.sh
-    find $out/lib/kotlin-lsp/jre -type f -name "*.sh" -exec chmod +x {} +
-    find $out/lib/kotlin-lsp/jre -type f -path "*/bin/*" -exec chmod +x {} +
+    chmod +x $out/lib/kotlin-lsp/bin/intellij-server
+    find $out/lib/kotlin-lsp/jbr -type f -path "*/bin/*" -exec chmod +x {} +
 
-    sed -i 's/chmod +x "$LOCAL_JRE_PATH\/bin\/java"/# permissions set at install time/' \
-      $out/lib/kotlin-lsp/kotlin-lsp.sh
-
-    ln -s $out/lib/kotlin-lsp/kotlin-lsp.sh $out/bin/kotlin-lsp
+    ln -s $out/lib/kotlin-lsp/bin/intellij-server $out/bin/kotlin-lsp
 
     runHook postInstall
   '';
