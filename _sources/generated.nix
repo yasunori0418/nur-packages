@@ -20,15 +20,15 @@
   };
   gwq = {
     pname = "gwq";
-    version = "97e5739264f9a4a3fb26feaeb518b4faa0524346";
+    version = "230ebc91dac811e596a1cb64d727bc56cb08a438";
     src = fetchFromGitHub {
       owner = "d-kuro";
       repo = "gwq";
-      rev = "97e5739264f9a4a3fb26feaeb518b4faa0524346";
+      rev = "230ebc91dac811e596a1cb64d727bc56cb08a438";
       fetchSubmodules = false;
-      sha256 = "sha256-2uE04frxfvQBlrOg5d0hPzGE9sbpzxHEiCeJX1ilG2M=";
+      sha256 = "sha256-EfkaJH2tQ+qfPGoxfTOUKHsLPLV4GVI7ua9ttx1tRIc=";
     };
-    date = "2026-04-18";
+    date = "2026-04-30";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
