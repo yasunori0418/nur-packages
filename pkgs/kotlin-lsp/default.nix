@@ -67,7 +67,10 @@ mkDerivation {
   ];
 
   # LSPサーバーにGUI/音声関連ライブラリは不要
+  # libc.musl-x86_64.so.1: libgcompat-ext.soはmusl互換レイヤーでglibc環境には不要
+  # libxkbcommon.so.0: Wayland GUI用でLSPサーバーには不要
   autoPatchelfIgnoreMissingDeps = [
+    "libc.musl-x86_64.so.1"
     "libX11.so.6"
     "libXext.so.6"
     "libXi.so.6"
@@ -77,6 +80,7 @@ mkDerivation {
     "libfreetype.so.6"
     "libwayland-client.so.0"
     "libwayland-cursor.so.0"
+    "libxkbcommon.so.0"
   ];
 
   dontConfigure = true;
