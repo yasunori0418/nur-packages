@@ -70,6 +70,7 @@ mkDerivation {
   # libc.musl-x86_64.so.1: libgcompat-ext.soはmusl互換レイヤーでglibc環境には不要
   # libxkbcommon.so.0: Wayland GUI用でLSPサーバーには不要
   autoPatchelfIgnoreMissingDeps = [
+    "libc.musl-aarch64.so.1"
     "libc.musl-x86_64.so.1"
     "libX11.so.6"
     "libXext.so.6"
