@@ -34,3 +34,7 @@ fetch.github = "microsoft/pict"
 [safe-chain]
 src.github = "AikidoSec/safe-chain"
 fetch.github = "AikidoSec/safe-chain"
+
+[roots]
+src.github = "k1LoW/roots"
+fetch.github = "k1LoW/roots"

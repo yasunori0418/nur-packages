@@ -20,15 +20,15 @@
   };
   gwq = {
     pname = "gwq";
-    version = "230ebc91dac811e596a1cb64d727bc56cb08a438";
+    version = "c4247734968bc3f66addd1e088c19b962c27cfc1";
     src = fetchFromGitHub {
       owner = "d-kuro";
       repo = "gwq";
-      rev = "230ebc91dac811e596a1cb64d727bc56cb08a438";
+      rev = "c4247734968bc3f66addd1e088c19b962c27cfc1";
       fetchSubmodules = false;
-      sha256 = "sha256-EfkaJH2tQ+qfPGoxfTOUKHsLPLV4GVI7ua9ttx1tRIc=";
+      sha256 = "sha256-MfCYFbODWnfPxx+6sLlcMT6tqghgILHB13+ccYqVjBA=";
     };
-    date = "2026-04-30";
+    date = "2026-05-02";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
@@ -65,6 +65,17 @@
       sha256 = "sha256-asUqPGjAQxVcvPXxYM3EnG7M0TjZ2vseIJmEHMo3T2k=";
     };
     date = "2026-01-13";
+  };
+  roots = {
+    pname = "roots";
+    version = "v0.4.1";
+    src = fetchFromGitHub {
+      owner = "k1LoW";
+      repo = "roots";
+      rev = "v0.4.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-ACMRfWY/lhc3C/KVhuUyS1rgkSHGWPxZrmYt+pXupJI=";
+    };
   };
   safe-chain = {
     pname = "safe-chain";
