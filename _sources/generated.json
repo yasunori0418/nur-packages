@@ -43,7 +43,7 @@
   },
   "k1Low-deck": {
     "cargoLock": null,
-    "date": "2026-04-13",
+    "date": "2026-05-04",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -55,12 +55,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "38d7305f3cbe9bb23c87fd1025bebf0388f67e0d",
-      "sha256": "sha256-AuzUo3oiG43B/91CuoxjMmui5p6UuTlUISSxOcoZCPM=",
+      "rev": "3724296380afb5b7365661d18f5df28ef55dfb4b",
+      "sha256": "sha256-idiUHLX9kP2fKIKq9LALXfjIbGbIlFGJBFFvWP1V9tM=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "38d7305f3cbe9bb23c87fd1025bebf0388f67e0d"
+    "version": "3724296380afb5b7365661d18f5df28ef55dfb4b"
   },
   "laminate": {
     "cargoLock": null,
@@ -139,11 +139,11 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.5.1",
-      "sha256": "sha256-h+O+MI9l1dPeFc1s77R4qmXwu8Kzc415yIAz2i6re5E=",
+      "rev": "1.5.2",
+      "sha256": "sha256-tt+N9sc6nfKpDJd+3UxhiIJWcUdAAzkLv77b4BmDi4s=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.5.1"
+    "version": "1.5.2"
   }
 }

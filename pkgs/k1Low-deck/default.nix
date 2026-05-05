@@ -7,7 +7,7 @@
 (buildGoModule.override { go = go_1_26; }) {
   inherit (sources.k1Low-deck) pname version src;
 
-  vendorHash = "sha256-9dUlBLD4WMX+7BzxoBZNVMVD7WyciFQxda3cRW0itJs=";
+  vendorHash = "sha256-Bs/ziDohpBg+VQwznC/ygbHhsEyPl9N8dmhfEuQOzJU=";
 
   ldflags = [
     "-s"
