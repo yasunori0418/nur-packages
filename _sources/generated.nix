@@ -88,4 +88,15 @@
       sha256 = "sha256-tt+N9sc6nfKpDJd+3UxhiIJWcUdAAzkLv77b4BmDi4s=";
     };
   };
+  secretlint = {
+    pname = "secretlint";
+    version = "v13.0.0";
+    src = fetchFromGitHub {
+      owner = "secretlint";
+      repo = "secretlint";
+      rev = "v13.0.0";
+      fetchSubmodules = false;
+      sha256 = "sha256-fxBXVhtQfi8J3SSf98k3wgSWuZ9Ih6k/qYLJLqzVVrI=";
+    };
+  };
 }

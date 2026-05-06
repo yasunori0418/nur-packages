@@ -145,5 +145,26 @@
       "type": "github"
     },
     "version": "1.5.2"
+  },
+  "secretlint": {
+    "cargoLock": null,
+    "date": null,
+    "extract": null,
+    "name": "secretlint",
+    "passthru": null,
+    "pinned": false,
+    "src": {
+      "deepClone": false,
+      "fetchSubmodules": false,
+      "leaveDotGit": false,
+      "name": null,
+      "owner": "secretlint",
+      "repo": "secretlint",
+      "rev": "v13.0.0",
+      "sha256": "sha256-fxBXVhtQfi8J3SSf98k3wgSWuZ9Ih6k/qYLJLqzVVrI=",
+      "sparseCheckout": [],
+      "type": "github"
+    },
+    "version": "v13.0.0"
   }
 }
