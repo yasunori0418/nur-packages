@@ -20,27 +20,6 @@
     },
     "version": "2d59b93c600a4651c2828e4bf06f2693799eefdc"
   },
-  "gwq": {
-    "cargoLock": null,
-    "date": "2026-05-02",
-    "extract": null,
-    "name": "gwq",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "d-kuro",
-      "repo": "gwq",
-      "rev": "c4247734968bc3f66addd1e088c19b962c27cfc1",
-      "sha256": "sha256-MfCYFbODWnfPxx+6sLlcMT6tqghgILHB13+ccYqVjBA=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "c4247734968bc3f66addd1e088c19b962c27cfc1"
-  },
   "k1Low-deck": {
     "cargoLock": null,
     "date": "2026-05-04",

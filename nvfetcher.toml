@@ -23,10 +23,6 @@ fetch.github = "k1LoW/deck"
 src.git = "https://github.com/Songmu/laminate"
 fetch.github = "Songmu/laminate"
 
-[gwq]
-src.git = "https://github.com/d-kuro/gwq"
-fetch.github = "d-kuro/gwq"
-
 [pict]
 src.git = "https://github.com/microsoft/pict"
 fetch.github = "microsoft/pict"
