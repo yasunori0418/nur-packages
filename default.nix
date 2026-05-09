@@ -36,7 +36,6 @@ in
       }
     )).vim;
   # neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
-  neovim-overlay = inputs.neovim-nightly-overlay.packages.${system}.neovim;
   nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };
   pict = pkgs.callPackage ./pkgs/pict { inherit sources; };
   kotlin-lsp = pkgs.callPackage ./pkgs/kotlin-lsp { };
