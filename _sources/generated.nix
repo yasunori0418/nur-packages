@@ -20,15 +20,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "3724296380afb5b7365661d18f5df28ef55dfb4b";
+    version = "066e3355a8afb6c23c081aef9997c19d08fb3113";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "3724296380afb5b7365661d18f5df28ef55dfb4b";
+      rev = "066e3355a8afb6c23c081aef9997c19d08fb3113";
       fetchSubmodules = false;
-      sha256 = "sha256-idiUHLX9kP2fKIKq9LALXfjIbGbIlFGJBFFvWP1V9tM=";
+      sha256 = "sha256-29CwFEuuvTv9n9z6YHEOkX7cEM+m9HXVzxc3jxjcm+8=";
     };
-    date = "2026-05-04";
+    date = "2026-05-11";
   };
   laminate = {
     pname = "laminate";
@@ -67,13 +67,13 @@
   };
   safe-chain = {
     pname = "safe-chain";
-    version = "1.5.2";
+    version = "1.5.3";
     src = fetchFromGitHub {
       owner = "AikidoSec";
       repo = "safe-chain";
-      rev = "1.5.2";
+      rev = "1.5.3";
       fetchSubmodules = false;
-      sha256 = "sha256-tt+N9sc6nfKpDJd+3UxhiIJWcUdAAzkLv77b4BmDi4s=";
+      sha256 = "sha256-4u94eA8o5XxBnhxjxxcyEJlLpiIrUaISxkOzCzyxD0Q=";
     };
   };
   secretlint = {

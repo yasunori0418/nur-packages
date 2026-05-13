@@ -24,7 +24,7 @@ buildNpmPackage {
     sed -i 's/"version": "1.0.0"/"version": "${version}"/' packages/safe-chain/package.json
   '';
 
-  npmDepsHash = "sha256-00SJRRYLlDaoAJXvCCxEbNTEE9Zq+aolRilKOsHaNFo=";
+  npmDepsHash = "sha256-OIPdWib4FaIFVEq3+wPeTbwzzRyRBtycwjLXAbBDuoM=";
 
   npmWorkspace = "packages/safe-chain";
 
