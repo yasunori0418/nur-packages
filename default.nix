@@ -44,4 +44,5 @@ in
     if pkgs.stdenv.isLinux then inputs.xremap-flake.packages.${system}.xremap-wlroots else null;
   roots = pkgs.callPackage ./pkgs/roots { inherit sources; };
   secretlint = pkgs.callPackage ./pkgs/secretlint { inherit sources; };
+  worktrunk = inputs.worktrunk.packages.${system}.default;
 }

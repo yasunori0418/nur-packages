@@ -12,6 +12,7 @@
     };
     vim-overlay.url = "github:kawarimidoll/vim-overlay";
     xremap-flake.url = "github:xremap/nix-flake";
+    worktrunk.url = "github:max-sixty/worktrunk";
   };
 
   nixConfig = {
