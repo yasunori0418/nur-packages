@@ -44,15 +44,15 @@
   };
   pict = {
     pname = "pict";
-    version = "c3dad2bb24d08c9967565e0ca48e1a152216d1d4";
+    version = "a096eaf237abcc50fdc48b0dc2d468622083a33d";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "pict";
-      rev = "c3dad2bb24d08c9967565e0ca48e1a152216d1d4";
+      rev = "a096eaf237abcc50fdc48b0dc2d468622083a33d";
       fetchSubmodules = false;
-      sha256 = "sha256-asUqPGjAQxVcvPXxYM3EnG7M0TjZ2vseIJmEHMo3T2k=";
+      sha256 = "sha256-GS2/IhCAtgT79Lk2v6xxGx6WVzrbxUXtQIYPeRyzyyI=";
     };
-    date = "2026-01-13";
+    date = "2026-05-13";
   };
   roots = {
     pname = "roots";
