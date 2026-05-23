@@ -18,17 +18,29 @@
     };
     date = "2026-04-11";
   };
+  deno-overlay = {
+    pname = "deno-overlay";
+    version = "e60a42abce39c375ae70d3144bcca96ee091b9a1";
+    src = fetchFromGitHub {
+      owner = "haruki7049";
+      repo = "deno-overlay";
+      rev = "e60a42abce39c375ae70d3144bcca96ee091b9a1";
+      fetchSubmodules = false;
+      sha256 = "sha256-3RXsruJDzCIZnBUSPpXx7wGR19ZeYpjRypWhTNJlAEw=";
+    };
+    date = "2026-05-23";
+  };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "066e3355a8afb6c23c081aef9997c19d08fb3113";
+    version = "f9697fd14929b0f813d5e46c9681268b64018900";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "066e3355a8afb6c23c081aef9997c19d08fb3113";
+      rev = "f9697fd14929b0f813d5e46c9681268b64018900";
       fetchSubmodules = false;
-      sha256 = "sha256-29CwFEuuvTv9n9z6YHEOkX7cEM+m9HXVzxc3jxjcm+8=";
+      sha256 = "sha256-Hm/m14XMyWDV+ZhFwTx1l62MxJaiWxatNjWNReC7jLU=";
     };
-    date = "2026-05-11";
+    date = "2026-05-22";
   };
   laminate = {
     pname = "laminate";
