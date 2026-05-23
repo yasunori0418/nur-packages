@@ -52,7 +52,7 @@ jobs:
 
       - name: Build ${{ matrix.package }}
         run: |
-          AVAILABLE=$(nix eval --json .#packages.${{ matrix.system }} --apply 'builtins.attrNames' | jq -e --arg pkg "${{ matrix.package }}" 'contains([$pkg])')
+          AVAILABLE=$(nix eval --json .#packages.${{ matrix.system }} --apply 'builtins.attrNames' | jq --arg pkg "${{ matrix.package }}" 'contains([$pkg])')
           if [ "$AVAILABLE" = "true" ]; then
             nix build ".#packages.${{ matrix.system }}.${{ matrix.package }}"
           else
