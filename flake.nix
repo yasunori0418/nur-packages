@@ -12,8 +12,17 @@
     };
     vim-overlay.url = "github:kawarimidoll/vim-overlay";
     xremap-flake.url = "github:xremap/nix-flake";
-    worktrunk.url = "github:max-sixty/worktrunk/ace32e0e2c2ddc73231bea3d525ad853ebac0291";
-    deno.url = "github:denoland/deno";
+    rust-overlay.url = "github:oxalica/rust-overlay";
+    worktrunk = {
+      url = "github:max-sixty/worktrunk/ace32e0e2c2ddc73231bea3d525ad853ebac0291";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
+    deno = {
+      url = "github:denoland/deno";
+      inputs.nixpkgs.follows = "nixpkgs";
+      inputs.rust-overlay.follows = "rust-overlay";
+    };
   };
 
   nixConfig = {
