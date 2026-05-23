@@ -40,8 +40,8 @@ if source == null then
   null
 else
   mkBinaryInstall {
-    version = source.version;
-    url = source.url;
-    arch = source.arch;
-    sha256 = source.sha256;
+    inherit (source) version;
+    inherit (source) url;
+    inherit (source) arch;
+    inherit (source) sha256;
   }
