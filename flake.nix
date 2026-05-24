@@ -14,7 +14,7 @@
     xremap-flake.url = "github:xremap/nix-flake";
     rust-overlay.url = "github:oxalica/rust-overlay";
     worktrunk = {
-      url = "github:max-sixty/worktrunk/ace32e0e2c2ddc73231bea3d525ad853ebac0291";
+      url = "github:max-sixty/worktrunk/bd4c399c652d493b1fa0a78b3ce330ea5518fc41";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
