@@ -46,6 +46,14 @@
           "x86_64-linux"
         ] (system: f nixpkgs.legacyPackages.${system});
       treefmtEval = forAllSystems (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
+      # nix-unit 上流の default.nix が nativeBuildInputs にネストリストを含み、
+      # nixpkgs 26.05 の deprecation 警告を出すため flatten で回避する。
+      # stdenv は元々ネストを平坦化するため drvPath は変わらない（リビルドなし）。
+      nixUnitFor =
+        pkgs:
+        inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (old: {
+          nativeBuildInputs = pkgs.lib.flatten old.nativeBuildInputs;
+        });
     in
     {
       legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs inputs; });
@@ -59,7 +67,7 @@
         default = pkgs.mkShell {
           packages =
             let
-              nix-unit = inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default;
+              nix-unit = nixUnitFor pkgs;
             in
             with pkgs;
             [
@@ -75,7 +83,7 @@
       checks = forAllSystems (pkgs: {
         default =
           let
-            nix-unit = inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default;
+            nix-unit = nixUnitFor pkgs;
           in
           pkgs.runCommand "tests"
             {
