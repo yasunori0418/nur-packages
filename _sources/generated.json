@@ -22,7 +22,7 @@
   },
   "deno-overlay": {
     "cargoLock": null,
-    "date": "2026-05-23",
+    "date": "2026-05-28",
     "extract": null,
     "name": "deno-overlay",
     "passthru": null,
@@ -34,12 +34,12 @@
       "name": null,
       "owner": "haruki7049",
       "repo": "deno-overlay",
-      "rev": "e60a42abce39c375ae70d3144bcca96ee091b9a1",
-      "sha256": "sha256-3RXsruJDzCIZnBUSPpXx7wGR19ZeYpjRypWhTNJlAEw=",
+      "rev": "d8f328c344708557b7e3f0ee887f1d10d7e19ff8",
+      "sha256": "sha256-Xs0XdOmsXYhA8Bju99sgEJgZmVFRqBGLR3cIgfhOCjA=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "e60a42abce39c375ae70d3144bcca96ee091b9a1"
+    "version": "d8f328c344708557b7e3f0ee887f1d10d7e19ff8"
   },
   "k1Low-deck": {
     "cargoLock": null,
