@@ -10,31 +10,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  setup:
-    runs-on: ubuntu-latest
-    outputs:
-      packages: ${{ steps.list.outputs.packages }}
-    steps:
-      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
-
-      - name: Setup Nix
-        uses: ./.github/actions/setup-nix
-        with:
-          cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
-          nix-access-token: ${{ secrets.NIX_ACCESS_TOKEN }}
-
-      - name: Generate package list
-        id: list
-        run: |
-          echo "packages=$(nix eval --json .#packages.x86_64-linux --apply 'builtins.attrNames')" >> $GITHUB_OUTPUT
-
-  build-and-push:
-    needs: setup
+  plan:
     strategy:
       fail-fast: false
       matrix:
-        package: ${{ fromJSON(needs.setup.outputs.packages) }}
-        os: [ubuntu-latest, ubuntu-24.04-arm, macos-latest]
         include:
           - os: ubuntu-latest
             system: x86_64-linux
@@ -52,11 +31,51 @@ jobs:
           cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
           nix-access-token: ${{ secrets.NIX_ACCESS_TOKEN }}
 
+      # この system でキャッシュ未登録のパッケージだけを matrix フラグメントに出力
+      # （system はネイティブランナーの app に固定されるため os のみ渡す）
+      - name: Compute matrix fragment (skip cached)
+        run: nix run ".#ci-matrix" -- "${{ matrix.os }}" > "frag-${{ matrix.system }}.json"
+
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: ci-matrix-frag-${{ matrix.system }}
+          path: frag-${{ matrix.system }}.json
+          retention-days: 1
+
+  collect:
+    needs: plan
+    runs-on: ubuntu-latest
+    outputs:
+      matrix: ${{ steps.merge.outputs.matrix }}
+    steps:
+      - uses: actions/download-artifact@d3f86a106a0bac45b974a628896c90dbdf5c8093 # v4.3.0
+        with:
+          pattern: ci-matrix-frag-*
+          merge-multiple: true
+          path: frags
+
+      # 各 system のフラグメント配列を 1 つの matrix(include) に集約
+      - name: Merge fragments
+        id: merge
+        run: echo "matrix={\"include\":$(jq -c -s 'add' frags/*.json)}" >> "$GITHUB_OUTPUT"
+
+  build-and-push:
+    needs: collect
+    # 全てキャッシュ済なら include が空配列になり matrix がエラーになるためガードする
+    if: ${{ fromJSON(needs.collect.outputs.matrix).include[0] != null }}
+    strategy:
+      fail-fast: false
+      matrix: ${{ fromJSON(needs.collect.outputs.matrix) }}
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@df4cb1c069e1874edd31b4311f1884172cec0e10 # v6.0.3
+
+      - name: Setup Nix
+        uses: ./.github/actions/setup-nix
+        with:
+          cachix-auth-token: ${{ secrets.CACHIX_AUTH_TOKEN }}
+          nix-access-token: ${{ secrets.NIX_ACCESS_TOKEN }}
+
       - name: Build ${{ matrix.package }}
         run: |
-          AVAILABLE=$(nix eval --json .#packages.${{ matrix.system }} --apply 'builtins.attrNames' | jq --arg pkg "${{ matrix.package }}" 'contains([$pkg])')
-          if [ "$AVAILABLE" = "true" ]; then
-            nix build ".#packages.${{ matrix.system }}.${{ matrix.package }}"
-          else
-            echo "Skipping: ${{ matrix.package }} is not available for ${{ matrix.system }}"
-          fi
+          nix build ".#packages.${{ matrix.system }}.${{ matrix.package }}"
