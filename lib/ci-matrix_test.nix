@@ -68,6 +68,21 @@ in
       ];
     };
   };
+  computeFragmentFromJSON = {
+    testParsesJsonAndDelegates = {
+      description = "JSON 文字列を fromJSON して computeFragment と同じ結果を返す";
+      expr = lib.computeFragmentFromJSON ''
+        {"narinfoHashes":{"a":["h1"],"b":["h2","h3"]},"presentHashes":["h1","h2"],"system":"x86_64-linux","os":"ubuntu-latest"}
+      '';
+      expected = [
+        {
+          package = "b";
+          system = "x86_64-linux";
+          os = "ubuntu-latest";
+        }
+      ];
+    };
+  };
   narinfoHashes = {
     testSingleOutput = {
       description = "単一出力: ストアパス basename の先頭32文字をハッシュとして返す";

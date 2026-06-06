@@ -7,7 +7,7 @@ let
     genAttrs
     ;
 in
-{
+rec {
   /**
     パッケージ集合から、各パッケージの全出力の narinfo ハッシュ
     （ストアパス basename の先頭 32 文字）を求める関数。
@@ -110,4 +110,34 @@ in
     map (package: { inherit package system os; }) (
       filter (pkg: needsBuild narinfoHashes.${pkg}) (attrNames narinfoHashes)
     );
+
+  /**
+    JSON 文字列を受け取り、fromJSON でパースしてから computeFragment に委譲する
+    ラッパー。shell ↔ nix の境界を「構造化データ」ではなく「JSON 文字列」にできる
+    ため、shell からは JSON 文字列を1つ渡すだけで matrix フラグメントを得られる。
+    computeFragment 自体は構造化データを受け取る純粋関数のまま保たれる。
+
+    # Example
+
+    ```nix
+    computeFragmentFromJSON ''
+      {"narinfoHashes":{"b":["h2","h3"]},"presentHashes":["h2"],
+       "system":"x86_64-linux","os":"ubuntu-latest"}
+    ''
+    => [ { package = "b"; system = "x86_64-linux"; os = "ubuntu-latest"; } ]
+    ```
+
+    # Type
+
+    ```
+    computeFragmentFromJSON :: String -> [AttrSet]
+    ```
+
+    # Arguments
+
+    json
+    : computeFragment の引数（narinfoHashes/presentHashes/system/os）を
+      表す JSON 文字列
+  */
+  computeFragmentFromJSON = json: computeFragment (builtins.fromJSON json);
 }
