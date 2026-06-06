@@ -54,6 +54,79 @@
         inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (old: {
           nativeBuildInputs = pkgs.lib.flatten old.nativeBuildInputs;
         });
+
+      # narinfo が未登録のパッケージだけを含む matrix フラグメント
+      # （[{package,system,os}]）を stdout に出力する app。
+      # ログは stderr に出すため stdout は JSON のみ。
+      # 使い方: ci-matrix <os>   （system は app がビルドされた環境に固定）
+      #
+      # 役割分担:
+      #   - 不純なネットワーク I/O（各 narinfo の有無を curl で確認）だけを shell が担当。
+      #   - 「どのパッケージをビルド対象にするか」「matrix エントリの生成」という
+      #     判定ロジックは lib.ci-matrix.computeFragment（純粋関数・nix-unit で
+      #     テスト可能）に委譲する。curl の結果を引数として渡すことで関数を純粋に保つ。
+      #
+      # narinfoHashes は「この app が動く system（= ネイティブ）」の self.packages
+      # だけを純粋に評価して baked する。foreign system を評価しないため他
+      # アーキテクチャの IFD（apple-sdk/llvm 等）を誘発せず、エミュレーションに
+      # よる長時間化が起きない。各 plan ジョブはネイティブランナーで動くので
+      # baked される system はランナーの system と一致する。
+      # unsafeDiscardStringContext で string-context を捨て、app のビルドが
+      # 全パッケージのビルドを誘発しないようにする。
+      ciMatrixApp =
+        pkgs:
+        let
+          system = pkgs.stdenv.hostPlatform.system;
+          ciLib = import ./lib/ci-matrix.nix pkgs;
+          # narinfo ハッシュ（= ストアパス basename の先頭 32 文字）を lib 関数で算出。
+          narinfoHashes = ciLib.narinfoHashes self.packages.${system};
+        in
+        pkgs.writeShellApplication {
+          name = "ci-matrix";
+          runtimeInputs = with pkgs; [
+            jq
+            curl
+          ];
+          # jq フィルタは単一引用符で囲うためシェル変数展開させない意図。
+          # SC2016 はその誤検知なので除外する。
+          excludeShellChecks = [ "SC2016" ];
+          text = ''
+            set -euo pipefail
+            os="''${1:?usage: ci-matrix <os>}"
+            system='${system}'
+            cache="''${CACHIX_CACHE:-yasunori0418}"
+            hashes='${builtins.toJSON narinfoHashes}'
+            # 不純なネットワーク I/O のみ shell が担当：
+            # 全ユニークハッシュについて narinfo の有無を確認する。
+            present=()
+            while read -r hash; do
+              code="$(curl -s -o /dev/null -w '%{http_code}' \
+                "https://''${cache}.cachix.org/''${hash}.narinfo")"
+              if [ "$code" = "200" ]; then
+                present+=("$hash")
+              else
+                echo "missing $hash" >&2
+              fi
+            done < <(jq -r '[.[][]] | unique | .[]' <<<"$hashes")
+            present_json="$(printf '%s\n' "''${present[@]:-}" \
+              | jq -R -s 'split("\n") | map(select(length > 0))')"
+            # 判定・matrix 生成は lib の純粋関数に委譲。curl 結果を含む入力を
+            # JSON 文字列にし、JSON 文字列を受け取る computeFragmentFromJSON へ渡す。
+            payload="$(jq -c -n \
+              --argjson narinfoHashes "$hashes" \
+              --argjson presentHashes "$present_json" \
+              --arg system "$system" \
+              --arg os "$os" \
+              '{ narinfoHashes: $narinfoHashes, presentHashes: $presentHashes, system: $system, os: $os }')"
+            # 判定は flake の lib 属性を参照して評価する。flake 属性アクセスは
+            # pure 評価で許可されるため --impure 不要で、pkgs も flake 側が供給する。
+            # 三連シングルクォートは nix 複数行文字列中で 2連シングルクォートを
+            # 出力するエスケープで、生成シェルでは payload を nix 文字列として渡す。
+            nix eval --json \
+              "${self}#legacyPackages.${system}.lib.ci-matrix.computeFragmentFromJSON" \
+              --apply "f: f '''$payload'''"
+          '';
+        };
     in
     {
       legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs inputs; });
@@ -75,6 +148,13 @@
               cachix
               nix-unit
             ];
+        };
+      });
+      apps = forAllSystems (pkgs: {
+        ci-matrix = {
+          type = "app";
+          program = "${ciMatrixApp pkgs}/bin/ci-matrix";
+          meta.description = "Emit a GitHub Actions build matrix, skipping packages already on the cachix cache";
         };
       });
       formatter = forAllSystems (
