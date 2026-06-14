@@ -20,15 +20,15 @@
   };
   deno-overlay = {
     pname = "deno-overlay";
-    version = "a394689f6c9a14bd8fd22b7a8163b6734429b560";
+    version = "7882fdfdb02a4a4af49158c10b639f5ec47d8507";
     src = fetchFromGitHub {
       owner = "haruki7049";
       repo = "deno-overlay";
-      rev = "a394689f6c9a14bd8fd22b7a8163b6734429b560";
+      rev = "7882fdfdb02a4a4af49158c10b639f5ec47d8507";
       fetchSubmodules = false;
-      sha256 = "sha256-kcvI+lmG1aBacHTZH8k0NGZfxkHM+4Zd7aMTJkqbnIc=";
+      sha256 = "sha256-W5LEAEcB/72sUaTwRbS+2dzFzm0xObQw2A0M3UI+P2g=";
     };
-    date = "2026-06-04";
+    date = "2026-06-12";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
