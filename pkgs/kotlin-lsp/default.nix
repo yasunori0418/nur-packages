@@ -9,7 +9,7 @@
 let
   inherit (stdenvNoCC) mkDerivation;
   inherit (stdenvNoCC.hostPlatform) system isLinux;
-  version = "262.4739.0";
+  version = "262.7569.0";
 
   selectSystem = attrs: attrs.${system} or (throw "kotlin-lsp: unsupported platform ${system}");
 
@@ -46,10 +46,10 @@ mkDerivation {
     {
       url = "https://download-cdn.jetbrains.com/kotlin-lsp/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
       hash = selectSystem {
-        aarch64-darwin = "sha256-/Wzvp0vbw8UQfCsHcT5SPLFYxo5clMy86Iy3uGDPOYQ=";
-        x86_64-darwin = "sha256-glBgiXGfiKHH9rb65eFWgmFsEycei6ZAVa0s/ButYaw=";
-        aarch64-linux = "sha256-/h51KBr1ob5RHyVlcdx0YBYYblPGlc+KxVG6y9HdqGs=";
-        x86_64-linux = "sha256-I1K/ypOnAtzHJ1btYur/SYAm7FLU2QzKcMjmeFXC+2c=";
+        aarch64-darwin = "sha256-2joLFpUOWHx36pIv98/aHigAjqMkbjGeqXYo20GLxok=";
+        x86_64-darwin = "sha256-4AB41QwRlJiW5SGMQZpZGPucg7lmOiqWlW6WWwF4Yng=";
+        aarch64-linux = "sha256-nV4q64DG3P7/84YMjJbNYfLFkezNrrTPvuIyb5Yr+DQ=";
+        x86_64-linux = "sha256-u2IcSjMCAukvcDEZdvfyT6hWJJ+e5O49/SAWbqlXJyo=";
       };
     }
     // lib.optionalAttrs (archiveInfo.extension != null) {
