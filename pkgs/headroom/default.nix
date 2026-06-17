@@ -58,7 +58,7 @@ pp.buildPythonPackage rec {
   cargoDeps = rustPlatform.fetchCargoVendor {
     inherit src;
     name = "${pname}-${version}-cargo-deps";
-    hash = "sha256-IHOwRVnhLMSdvu+0F44j1gqqZyL65vHaXM7x6PvlxU8=";
+    hash = "sha256-gd5eh1gL2wJTjKMQN2DSjSGFfDiUzC+jIJVjBYU+mJ8=";
   };
 
   # crates/headroom-core は fastembed v5 → ort (ONNX Runtime) を

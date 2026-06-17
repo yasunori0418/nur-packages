@@ -32,13 +32,13 @@
   };
   headroom = {
     pname = "headroom";
-    version = "v0.25.0";
+    version = "v0.26.0";
     src = fetchFromGitHub {
       owner = "chopratejas";
       repo = "headroom";
-      rev = "v0.25.0";
+      rev = "v0.26.0";
       fetchSubmodules = false;
-      sha256 = "sha256-OAjP+EQF2JHiuE6BsyxHPqP7ojSOavQua91M5KrMGZY=";
+      sha256 = "sha256-HLLElwmKe0KYH6qh5VeJvUPy6iLh8Va8hJ8xDt8xPAA=";
     };
   };
   k1Low-deck = {
