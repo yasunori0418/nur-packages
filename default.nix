@@ -46,5 +46,9 @@ in
   secretlint = pkgs.callPackage ./pkgs/secretlint { inherit sources; };
   worktrunk = inputs.worktrunk.packages.${system}.default;
   deno = pkgs.callPackage ./pkgs/deno-overlay { inherit sources; };
-  headroom = pkgs.callPackage ./pkgs/headroom { inherit sources; };
+  # headroom の [relevance] 依存 fastembed は nixpkgs で aarch64-linux が
+  # badPlatforms 指定 (onnxruntime が実行時例外を投げる) のため、headroom 全体が
+  # aarch64-linux では評価不能。nullはlib.isDerivationフィルタで除外される
+  headroom =
+    if system == "aarch64-linux" then null else pkgs.callPackage ./pkgs/headroom { inherit sources; };
 }
