@@ -3,6 +3,7 @@
   stdenv,
   sources,
   python3,
+  fetchFromGitHub,
   rustPlatform,
   cargo,
   rustc,
@@ -12,18 +13,32 @@
   ast-grep,
 }:
 let
-  # sentence-transformers は darwin のバイナリキャッシュに無く(ソースビルドになる)、
-  # その nativeCheckInputs が transformers[audio] → phonemizer → dlinfo を含む。
-  # dlinfo は darwin で実際にテストが失敗して `broken` 指定されており、phonemizer ごと
-  # darwin ではビルド不能。テスト用の入力に過ぎないため、sentence-transformers の
-  # チェックを無効化して phonemizer 連鎖を切り、ソースビルドを通す。
-  # (他の直接依存はすべて darwin キャッシュ済みで、この問題は起きない)
-  # この問題は darwin 限定 (linux では dlinfo が壊れず sentence-transformers は
-  # キャッシュ済み)。linux で override してキャッシュを外さないよう darwin だけ適用する。
   python = python3.override {
     packageOverrides =
       self: super:
-      lib.optionalAttrs stdenv.hostPlatform.isDarwin {
+      {
+        # nixpkgs の litellm は 1.86.0 だが headroom は >=1.86.2 を要求する。
+        # 上流フロアを厳守するため src ごと 1.86.2 に引き上げる。
+        # (1.86.0→1.86.2 で [project] dependencies は不変、nixpkgs 側は doCheck=false
+        #  かつ postPatch の uv_build ピンも 1.86.2 で一致するため安全に差し替え可能)
+        litellm = super.litellm.overridePythonAttrs (_: rec {
+          version = "1.86.2";
+          src = fetchFromGitHub {
+            owner = "BerriAI";
+            repo = "litellm";
+            tag = "v${version}";
+            hash = "sha256-ykF2mueHLfaMmT0iGCLxGcHR5QASh6itcihbrbU+pTk=";
+          };
+        });
+      }
+      # sentence-transformers は darwin のバイナリキャッシュに無く(ソースビルドになる)、
+      # その nativeCheckInputs が transformers[audio] → phonemizer → dlinfo を含む。
+      # dlinfo は darwin で実際にテストが失敗して `broken` 指定されており、phonemizer ごと
+      # darwin ではビルド不能。テスト用の入力に過ぎないため、sentence-transformers の
+      # チェックを無効化して phonemizer 連鎖を切り、ソースビルドを通す。
+      # この問題は darwin 限定 (linux では dlinfo が壊れず sentence-transformers は
+      # キャッシュ済み) なので、linux でキャッシュを外さないよう darwin だけ適用する。
+      // lib.optionalAttrs stdenv.hostPlatform.isDarwin {
         sentence-transformers = super.sentence-transformers.overridePythonAttrs (_: {
           doCheck = false;
           nativeCheckInputs = [ ];
@@ -132,8 +147,6 @@ pp.buildPythonPackage rec {
       lm-eval
     ];
 
-  # nixpkgs の litellm は 1.86.0 で、headroom の要件 >=1.86.2 に僅かに満たないため緩和。
-  pythonRelaxDeps = [ "litellm" ];
   # ast-grep-cli は nixpkgs に Python パッケージとして存在しない。実体は ast-grep/sg
   # バイナリを提供する wheel なので、依存指定を外し ast-grep バイナリを PATH に注入する。
   pythonRemoveDeps = [ "ast-grep-cli" ];
