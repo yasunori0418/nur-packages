@@ -46,4 +46,5 @@ in
   secretlint = pkgs.callPackage ./pkgs/secretlint { inherit sources; };
   worktrunk = inputs.worktrunk.packages.${system}.default;
   deno = pkgs.callPackage ./pkgs/deno-overlay { inherit sources; };
+  headroom = pkgs.callPackage ./pkgs/headroom { inherit sources; };
 }
