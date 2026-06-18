@@ -19,12 +19,12 @@ buildNpmPackage {
     rm -rf test/e2e
     # ルートdevDependenciesを除去（不要なプリビルドバイナリの混入防止）
     sed -i '/"devDependencies"/,/^  }/d' package.json
-    sed -i 's/"AGPL-3.0-or-later",/"AGPL-3.0-or-later"/' package.json
     # packages/safe-chain/package.jsonのversionが常に1.0.0のため、実際のバージョンに書き換え
     sed -i 's/"version": "1.0.0"/"version": "${version}"/' packages/safe-chain/package.json
   '';
 
-  npmDepsHash = "sha256-7GvSXlmaiFYl1YhFM2rDkB44LO498MLZ9gpQxjONnCc=";
+  npmDepsFetcherVersion = 2;
+  npmDepsHash = "sha256-35+ZZ/6WioLSuuqAw3Hex4d6cu06RuHpt48v+BwV9Iw=";
 
   npmWorkspace = "packages/safe-chain";
 
