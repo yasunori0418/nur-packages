@@ -160,6 +160,14 @@ pp.buildPythonPackage rec {
       trafilatura
       # [benchmark]
       lm-eval
+    ]
+    ++ [
+      # litellm は起動時 (litellm_core_utils/common_utils.py) に bedrock-runtime /
+      # sagemaker-runtime の event-stream response shape を botocore から pre-load する。
+      # headroom の [all] extra に bedrock は含まれず botocore が閉包に無いため、
+      # `litellm: could not pre-load ... Error: No module named 'botocore'` 警告が
+      # 毎回出る。botocore を補って警告を解消する (event-stream デコードも有効化される)。
+      botocore
     ];
 
   # ast-grep-cli は nixpkgs に Python パッケージとして存在しない。実体は ast-grep/sg
