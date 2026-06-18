@@ -42,7 +42,3 @@ fetch.github = "secretlint/secretlint"
 [deno-overlay]
 src.git = "https://github.com/haruki7049/deno-overlay"
 fetch.github = "haruki7049/deno-overlay"
-
-[headroom]
-src.github = "chopratejas/headroom"
-fetch.github = "chopratejas/headroom"

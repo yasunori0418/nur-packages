@@ -30,17 +30,6 @@
     };
     date = "2026-06-12";
   };
-  headroom = {
-    pname = "headroom";
-    version = "v0.26.0";
-    src = fetchFromGitHub {
-      owner = "chopratejas";
-      repo = "headroom";
-      rev = "v0.26.0";
-      fetchSubmodules = false;
-      sha256 = "sha256-HLLElwmKe0KYH6qh5VeJvUPy6iLh8Va8hJ8xDt8xPAA=";
-    };
-  };
   k1Low-deck = {
     pname = "k1Low-deck";
     version = "3fc1d6e64dbbdf71a9ff9b985c1ebac955423f17";

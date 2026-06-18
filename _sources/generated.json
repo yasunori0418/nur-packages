@@ -41,27 +41,6 @@
     },
     "version": "7882fdfdb02a4a4af49158c10b639f5ec47d8507"
   },
-  "headroom": {
-    "cargoLock": null,
-    "date": null,
-    "extract": null,
-    "name": "headroom",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "chopratejas",
-      "repo": "headroom",
-      "rev": "v0.26.0",
-      "sha256": "sha256-HLLElwmKe0KYH6qh5VeJvUPy6iLh8Va8hJ8xDt8xPAA=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "v0.26.0"
-  },
   "k1Low-deck": {
     "cargoLock": null,
     "date": "2026-06-08",
