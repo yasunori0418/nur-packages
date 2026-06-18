@@ -73,6 +73,21 @@ pp.buildPythonPackage rec {
       --replace-fail '"ort-download-binaries-rustls-tls",' '"ort-load-dynamic",'
   '';
 
+  # headroom は複数のサブコマンドで自分自身を別プロセスとして起動する
+  # (`sys.executable -m headroom.cli proxy` / `-m headroom.memory.sync` /
+  #  `-m headroom.proxy.server` / `-m lm_eval` / `-c "import hnswlib"` 等)。
+  # しかし Nix の buildPythonPackage ラッパーは依存 site-packages を実行時に
+  # sys.path へ注入するだけで PYTHONPATH 環境変数を立てないため、素のインタプリタ
+  # (sys.executable) で起動した子プロセスは headroom / 依存パッケージを import できず
+  # `ModuleNotFoundError: No module named 'headroom'`(または 'hnswlib' 等) で失敗する。
+  # nix-subprocess-pythonpath.patch で以下を行う:
+  #   - proxy 起動 (CLI サブコマンド等価) は上流の resolve_headroom_command() /
+  #     `shutil.which("headroom")` と同じく PATH 上のラッパーバイナリを優先
+  #   - モジュール起動 (memory.sync / memory.mcp_server / proxy.server / lm_eval /
+  #     hnswlib probe) は子プロセスの env に現在の sys.path から導出した PYTHONPATH を
+  #     継承させ、素のインタプリタでも import できるようにする
+  patches = [ ./patches/nix-subprocess-pythonpath.patch ];
+
   nativeBuildInputs = [
     cargo
     rustc
