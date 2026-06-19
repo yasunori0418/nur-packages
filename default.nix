@@ -13,18 +13,19 @@
 let
   sources = pkgs.callPackage ./_sources/generated.nix { };
   inherit (pkgs.stdenv.hostPlatform) system;
+  inheritSources = { inherit sources; };
 in
 {
   # The `lib`, `modules`, and `overlays` names are special
-  lib = import ./lib { inherit pkgs; }; # functions
-  modules = import ./modules; # NixOS modules
-  overlays = import ./overlays; # nixpkgs overlays
+  lib = import ./lib/default.nix { inherit pkgs; }; # functions
+  modules = import ./modules/default.nix; # NixOS modules
+  overlays = import ./overlays/default.nix; # nixpkgs overlays
 
-  safe-chain = pkgs.callPackage ./pkgs/safe-chain { inherit sources; };
-  cchook = pkgs.callPackage ./pkgs/cchook { inherit sources; };
-  k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck { inherit sources; };
-  laminate = pkgs.callPackage ./pkgs/laminate { inherit sources; };
-  # vim = pkgs.callPackage ./pkgs/vim { inherit sources; };
+  safe-chain = pkgs.callPackage ./pkgs/safe-chain/default.nix inheritSources;
+  cchook = pkgs.callPackage ./pkgs/cchook/default.nix inheritSources;
+  k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck/default.nix inheritSources;
+  laminate = pkgs.callPackage ./pkgs/laminate/default.nix inheritSources;
+  # vim = pkgs.callPackage ./pkgs/vim/default.nix inheritSources;
   vim-overlay =
     (pkgs.extend (
       inputs.vim-overlay.lib.features {
@@ -35,15 +36,15 @@ in
         sodium = true;
       }
     )).vim;
-  # neovim = pkgs.callPackage ./pkgs/neovim { inherit sources; };
-  nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers { };
-  pict = pkgs.callPackage ./pkgs/pict { inherit sources; };
-  kotlin-lsp = pkgs.callPackage ./pkgs/kotlin-lsp { };
+  # neovim = pkgs.callPackage ./pkgs/neovim/default.nix inheritSources;
+  nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers/default.nix { };
+  pict = pkgs.callPackage ./pkgs/pict/default.nix inheritSources;
+  kotlin-lsp = pkgs.callPackage ./pkgs/kotlin-lsp/default.nix { };
   # Linux専用。nullはlib.isDerivationフィルタで除外される
   xremap-wlroots =
     if pkgs.stdenv.isLinux then inputs.xremap-flake.packages.${system}.xremap-wlroots else null;
-  roots = pkgs.callPackage ./pkgs/roots { inherit sources; };
-  secretlint = pkgs.callPackage ./pkgs/secretlint { inherit sources; };
+  roots = pkgs.callPackage ./pkgs/roots/default.nix inheritSources;
+  secretlint = pkgs.callPackage ./pkgs/secretlint/default.nix inheritSources;
   worktrunk = inputs.worktrunk.packages.${system}.default;
-  deno = pkgs.callPackage ./pkgs/deno-overlay { inherit sources; };
+  deno = pkgs.callPackage ./pkgs/deno-overlay/default.nix inheritSources;
 }
