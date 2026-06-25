@@ -139,12 +139,12 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.5.10",
-      "sha256": "sha256-5TKk9dGtAwzI68xCxqRdnpYNgUyFNo0Z4y2vRDj4rKU=",
+      "rev": "1.5.11",
+      "sha256": "sha256-rz8O+FxY3gHTmoYeisvS2cucFQe7sWwsEWpSHIT0oqA=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.5.10"
+    "version": "1.5.11"
   },
   "secretlint": {
     "cargoLock": null,
