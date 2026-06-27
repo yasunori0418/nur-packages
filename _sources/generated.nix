@@ -20,15 +20,15 @@
   };
   deno-overlay = {
     pname = "deno-overlay";
-    version = "7882fdfdb02a4a4af49158c10b639f5ec47d8507";
+    version = "ceda0519e695cf19f90c02805a78818b2a1f4dc6";
     src = fetchFromGitHub {
       owner = "haruki7049";
       repo = "deno-overlay";
-      rev = "7882fdfdb02a4a4af49158c10b639f5ec47d8507";
+      rev = "ceda0519e695cf19f90c02805a78818b2a1f4dc6";
       fetchSubmodules = false;
-      sha256 = "sha256-W5LEAEcB/72sUaTwRbS+2dzFzm0xObQw2A0M3UI+P2g=";
+      sha256 = "sha256-7YoU2XXsEy3WdW22umGSbMU2gy5+sc7BCd3C6iEKOYQ=";
     };
-    date = "2026-06-12";
+    date = "2026-06-26";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
@@ -79,11 +79,11 @@
   };
   safe-chain = {
     pname = "safe-chain";
-    version = "1.5.11";
+    version = "1.5.12";
     src = fetchFromGitHub {
       owner = "AikidoSec";
       repo = "safe-chain";
-      rev = "1.5.11";
+      rev = "1.5.12";
       fetchSubmodules = false;
       sha256 = "sha256-rz8O+FxY3gHTmoYeisvS2cucFQe7sWwsEWpSHIT0oqA=";
     };
