@@ -16,7 +16,7 @@ jobs:
         include:
           - os: ubuntu-latest
             system: x86_64-linux
-          - os: macos-latest
+          - os: macos-26
             system: aarch64-darwin
     runs-on: ${{ matrix.os }}
     steps:
