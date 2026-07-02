@@ -1,0 +1,13 @@
+name: "Setup Nix (quick install)"
+description: "Install Nix quickly via nix-quick-install-action (no Cachix; for the plan job)"
+inputs:
+  nix-access-token:
+    description: "GitHub PAT for Nix to fetch from GitHub (falls back to github.token)"
+    required: false
+runs:
+  using: "composite"
+  steps:
+    - name: Install Nix
+      uses: nixbuild/nix-quick-install-action@9f63be77f412a248c9d9a65a4c82cf066cdf8f0c # v35
+      with:
+        github_access_token: ${{ inputs.nix-access-token || github.token }}
