@@ -20,13 +20,13 @@
   };
   deno-overlay = {
     pname = "deno-overlay";
-    version = "d4d65b2070942ccb8f36329a380e720572d6a434";
+    version = "c1a20dc22f330b800bf0ee97eaaaf3b92a87217f";
     src = fetchFromGitHub {
       owner = "haruki7049";
       repo = "deno-overlay";
-      rev = "d4d65b2070942ccb8f36329a380e720572d6a434";
+      rev = "c1a20dc22f330b800bf0ee97eaaaf3b92a87217f";
       fetchSubmodules = false;
-      sha256 = "sha256-b1cDSA3NMKNKn19rvKth9z4ZMSh/Ot+b9YvUTnVu5wI=";
+      sha256 = "sha256-GWfgYt4hxe21gd0qkWOCJFkT0PyMGH7aGyvNn8Nhoko=";
     };
     date = "2026-07-02";
   };
@@ -56,15 +56,15 @@
   };
   pict = {
     pname = "pict";
-    version = "a096eaf237abcc50fdc48b0dc2d468622083a33d";
+    version = "1aac57c93a6bc5fd1631e943ee33ca96406ec28d";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "pict";
-      rev = "a096eaf237abcc50fdc48b0dc2d468622083a33d";
+      rev = "1aac57c93a6bc5fd1631e943ee33ca96406ec28d";
       fetchSubmodules = false;
-      sha256 = "sha256-GS2/IhCAtgT79Lk2v6xxGx6WVzrbxUXtQIYPeRyzyyI=";
+      sha256 = "sha256-wNMiuERRz4Xt+KLUoW1mwQu0ebmTeRH/DeaazmOyfjQ=";
     };
-    date = "2026-05-13";
+    date = "2026-07-03";
   };
   roots = {
     pname = "roots";
