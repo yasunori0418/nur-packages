@@ -22,7 +22,7 @@
   },
   "deno-overlay": {
     "cargoLock": null,
-    "date": "2026-07-09",
+    "date": "2026-07-16",
     "extract": null,
     "name": "deno-overlay",
     "passthru": null,
@@ -34,12 +34,12 @@
       "name": null,
       "owner": "haruki7049",
       "repo": "deno-overlay",
-      "rev": "8efc13cb188720b79d0d89b5815a6631455d3bf2",
-      "sha256": "sha256-6Lq/WvmZUSuNaq7xS7Taq34AdldRbCk+fOnxORGKscw=",
+      "rev": "4b24eb4c498ae37338a1da04f0ec4f43e2ade27b",
+      "sha256": "sha256-qvmAY4DR4Uq3UyW/RKi2oMZvepoIn1Sz4VIYQyayH80=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "8efc13cb188720b79d0d89b5815a6631455d3bf2"
+    "version": "4b24eb4c498ae37338a1da04f0ec4f43e2ade27b"
   },
   "k1Low-deck": {
     "cargoLock": null,
@@ -139,12 +139,12 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.5.12",
-      "sha256": "sha256-rz8O+FxY3gHTmoYeisvS2cucFQe7sWwsEWpSHIT0oqA=",
+      "rev": "1.5.13",
+      "sha256": "sha256-2sGv4XTO13fm4GiK9zeOlhBasqXZaSTuQ5ztj9fFS6w=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.5.12"
+    "version": "1.5.13"
   },
   "secretlint": {
     "cargoLock": null,
