@@ -34,12 +34,12 @@
       "name": null,
       "owner": "haruki7049",
       "repo": "deno-overlay",
-      "rev": "4b24eb4c498ae37338a1da04f0ec4f43e2ade27b",
-      "sha256": "sha256-qvmAY4DR4Uq3UyW/RKi2oMZvepoIn1Sz4VIYQyayH80=",
+      "rev": "7c61282387e5fc26bd2db676dbe251eb7b2eaded",
+      "sha256": "sha256-JChOxu2CTXtK3fWls0WW7kqPMgcdyNgBekZludpQmDY=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "4b24eb4c498ae37338a1da04f0ec4f43e2ade27b"
+    "version": "7c61282387e5fc26bd2db676dbe251eb7b2eaded"
   },
   "k1Low-deck": {
     "cargoLock": null,

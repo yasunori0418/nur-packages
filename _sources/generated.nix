@@ -20,13 +20,13 @@
   };
   deno-overlay = {
     pname = "deno-overlay";
-    version = "4b24eb4c498ae37338a1da04f0ec4f43e2ade27b";
+    version = "7c61282387e5fc26bd2db676dbe251eb7b2eaded";
     src = fetchFromGitHub {
       owner = "haruki7049";
       repo = "deno-overlay";
-      rev = "4b24eb4c498ae37338a1da04f0ec4f43e2ade27b";
+      rev = "7c61282387e5fc26bd2db676dbe251eb7b2eaded";
       fetchSubmodules = false;
-      sha256 = "sha256-qvmAY4DR4Uq3UyW/RKi2oMZvepoIn1Sz4VIYQyayH80=";
+      sha256 = "sha256-JChOxu2CTXtK3fWls0WW7kqPMgcdyNgBekZludpQmDY=";
     };
     date = "2026-07-16";
   };
