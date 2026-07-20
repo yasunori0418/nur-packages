@@ -1,7 +1,7 @@
 {
   description = "My personal NUR repository";
   inputs = {
-    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable?shallow=1";
+    nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
     nix-unit = {
       url = "github:nix-community/nix-unit";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -14,7 +14,7 @@
     xremap-flake.url = "github:xremap/nix-flake";
     rust-overlay.url = "github:oxalica/rust-overlay";
     worktrunk = {
-      url = "github:max-sixty/worktrunk?shallow=1";
+      url = "github:max-sixty/worktrunk";
       inputs.nixpkgs.follows = "nixpkgs";
       inputs.rust-overlay.follows = "rust-overlay";
     };
