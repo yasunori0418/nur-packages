@@ -45,14 +45,7 @@
           "x86_64-linux"
         ] (system: f nixpkgs.legacyPackages.${system});
       treefmtEval = forAllSystems (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
-      # nix-unit 上流の default.nix が nativeBuildInputs にネストリストを含み、
-      # nixpkgs 26.05 の deprecation 警告を出すため flatten で回避する。
-      # stdenv は元々ネストを平坦化するため drvPath は変わらない（リビルドなし）。
-      nixUnitFor =
-        pkgs:
-        inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default.overrideAttrs (old: {
-          nativeBuildInputs = pkgs.lib.flatten old.nativeBuildInputs;
-        });
+      nixUnitFor = pkgs: inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default;
 
       # narinfo が未登録のパッケージだけを含む matrix フラグメント
       # （[{package,system,os}]）を stdout に出力する app。
