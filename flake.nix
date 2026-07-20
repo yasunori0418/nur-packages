@@ -42,7 +42,6 @@
         nixpkgs.lib.genAttrs [
           "aarch64-darwin"
           "aarch64-linux"
-          "x86_64-darwin"
           "x86_64-linux"
         ] (system: f nixpkgs.legacyPackages.${system});
       treefmtEval = forAllSystems (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
