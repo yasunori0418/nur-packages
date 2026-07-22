@@ -9,6 +9,10 @@ on:
       - "**.nix"
   workflow_dispatch:
 
+concurrency:
+  group: cachix-push-${{ github.ref }}
+  cancel-in-progress: false
+
 jobs:
   plan:
     strategy:
