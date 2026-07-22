@@ -37,7 +37,6 @@ in
       }
     )).vim;
   # neovim = pkgs.callPackage ./pkgs/neovim/default.nix inheritSources;
-  nvim-treesitter-parsers = pkgs.callPackage ./pkgs/nvim-treesitter-parsers/default.nix { };
   pict = pkgs.callPackage ./pkgs/pict/default.nix inheritSources;
   kotlin-lsp = pkgs.callPackage ./pkgs/kotlin-lsp/default.nix { };
   # Linux専用。nullはlib.isDerivationフィルタで除外される
