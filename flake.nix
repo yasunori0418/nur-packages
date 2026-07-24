@@ -119,6 +119,29 @@
               --apply "f: f '''$payload'''"
           '';
         };
+
+      # nvfetcher → nix-update → nix fmt を一括で回すローカル更新スクリプト。
+      # 実体は scripts/update-packages.sh に置き、この app は runtimeInputs で
+      # nvfetcher/nix-update を PATH に揃えたうえでスクリプトを exec する薄いラッパー。
+      updatePackagesApp =
+        pkgs:
+        pkgs.writeShellApplication {
+          name = "update-packages";
+          runtimeInputs = with pkgs; [
+            nvfetcher
+            nix-update
+            git
+            nix
+          ];
+          text = ''
+            set -euo pipefail
+            if ! root="$(git rev-parse --show-toplevel 2>/dev/null)"; then
+              echo "ERROR: git リポジトリ内で実行してください" >&2
+              exit 1
+            fi
+            exec bash "$root/scripts/update-packages.sh" "$@"
+          '';
+        };
     in
     {
       legacyPackages = forAllSystems (pkgs: import ./default.nix { inherit pkgs inputs; });
@@ -137,6 +160,7 @@
             with pkgs;
             [
               nvfetcher
+              nix-update
               cachix
               nix-unit
             ];
@@ -147,6 +171,11 @@
           type = "app";
           program = "${ciMatrixApp pkgs}/bin/ci-matrix";
           meta.description = "Emit a GitHub Actions build matrix, skipping packages already on the cachix cache";
+        };
+        update-packages = {
+          type = "app";
+          program = "${updatePackagesApp pkgs}/bin/update-packages";
+          meta.description = "Run nvfetcher then nix-update --version=skip for all packages with vendor/npm/pnpm hashes";
         };
       });
       formatter = forAllSystems (
