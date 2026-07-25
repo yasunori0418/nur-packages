@@ -136,6 +136,7 @@
             nix-update
             git
             nix
+            jq
           ];
           text = ''
             set -euo pipefail
