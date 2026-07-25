@@ -11,6 +11,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     vim-overlay.url = "github:kawarimidoll/vim-overlay";
+    deno-overlay = {
+      url = "github:haruki7049/deno-overlay";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
     xremap-flake.url = "github:xremap/nix-flake";
     rust-overlay.url = "github:oxalica/rust-overlay";
     worktrunk = {

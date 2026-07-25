@@ -45,5 +45,7 @@ in
   roots = pkgs.callPackage ./pkgs/roots/default.nix inheritSources;
   secretlint = pkgs.callPackage ./pkgs/secretlint/default.nix inheritSources;
   worktrunk = inputs.worktrunk.packages.${system}.default;
-  deno = pkgs.callPackage ./pkgs/deno-overlay/default.nix inheritSources;
+  deno = pkgs.callPackage ./pkgs/deno-overlay/default.nix {
+    inherit (inputs) deno-overlay;
+  };
 }
