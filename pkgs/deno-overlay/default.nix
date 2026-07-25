@@ -12,17 +12,17 @@ let
 
   # sources.json に載っている全バージョンのうち最新を採用する。
   # arch が無いバージョンは overlay 側が throw するため、
-  # 評価に成功したものだけを候補にする。
-  availableVersions = lib.filter (v: (builtins.tryEval denoVersions.${v}).success) (
-    builtins.attrNames denoVersions
-  );
-
-  latestVersion = lib.foldl' (
-    acc: v: if lib.versionOlder acc v then v else acc
-  ) (builtins.head availableVersions) availableVersions;
+  # 評価に成功したものだけを候補にし、versionOlder で最大値へ畳み込む。
+  # 初期値 "" は versionOlder "" <任意の実バージョン> が真になるので単位元として働く。
+  # 候補が空なら畳み込み結果も "" のままになる。
+  latestVersion = lib.pipe denoVersions [
+    builtins.attrNames
+    (lib.filter (v: (builtins.tryEval denoVersions.${v}).success))
+    (lib.foldl' (acc: v: if lib.versionOlder acc v then v else acc) "")
+  ];
 in
 # 現行 sources.json は aarch64-darwin / aarch64-linux / x86_64-linux を
 # 網羅しているので通常このフォールバックには入らないが、上流が arch を
 # 落とした場合に評価全体を壊さないよう null を返す。
 # null は lib.isDerivation フィルタで packages 出力から除外される。
-if availableVersions == [ ] then null else denoVersions.${latestVersion}
+if latestVersion == "" then null else denoVersions.${latestVersion}
