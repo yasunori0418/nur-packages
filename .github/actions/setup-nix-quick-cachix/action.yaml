@@ -14,6 +14,8 @@ runs:
       uses: nixbuild/nix-quick-install-action@9f63be77f412a248c9d9a65a4c82cf066cdf8f0c # v35
       with:
         github_access_token: ${{ inputs.nix-access-token || github.token }}
+        nix_conf: |
+          max-jobs = auto
 
     - name: Setup Cachix (yasunori)
       uses: cachix/cachix-action@5f2d7c5294214f71b873db4b969586b980625e71 # v17
