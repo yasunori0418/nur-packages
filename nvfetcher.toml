@@ -38,3 +38,7 @@ fetch.github = "k1LoW/roots"
 [secretlint]
 src.github = "secretlint/secretlint"
 fetch.github = "secretlint/secretlint"
+
+[sara]
+src.git = "https://github.com/cledouarec/sara"
+fetch.github = "cledouarec/sara"
