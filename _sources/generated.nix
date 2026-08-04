@@ -78,15 +78,15 @@
   };
   sara = {
     pname = "sara";
-    version = "f4d63a62406c4007b697edb8e2f509e8cd58070e";
+    version = "635fac34e5709df58894836e5f260717dee003ce";
     src = fetchFromGitHub {
       owner = "cledouarec";
       repo = "sara";
-      rev = "f4d63a62406c4007b697edb8e2f509e8cd58070e";
+      rev = "635fac34e5709df58894836e5f260717dee003ce";
       fetchSubmodules = false;
-      sha256 = "sha256-aBy2Gh2+XKpXdiVHcUcDpjypxkCKDdYgW16diY2cvmE=";
+      sha256 = "sha256-FWeRr5kTXUvHpTVYuC21eDhm+3u+S4Lpbpr7da5AxHI=";
     };
-    date = "2026-06-26";
+    date = "2026-08-01";
   };
   secretlint = {
     pname = "secretlint";

@@ -127,7 +127,7 @@
   },
   "sara": {
     "cargoLock": null,
-    "date": "2026-06-26",
+    "date": "2026-08-01",
     "extract": null,
     "name": "sara",
     "passthru": null,
@@ -139,12 +139,12 @@
       "name": null,
       "owner": "cledouarec",
       "repo": "sara",
-      "rev": "f4d63a62406c4007b697edb8e2f509e8cd58070e",
-      "sha256": "sha256-aBy2Gh2+XKpXdiVHcUcDpjypxkCKDdYgW16diY2cvmE=",
+      "rev": "635fac34e5709df58894836e5f260717dee003ce",
+      "sha256": "sha256-FWeRr5kTXUvHpTVYuC21eDhm+3u+S4Lpbpr7da5AxHI=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "f4d63a62406c4007b697edb8e2f509e8cd58070e"
+    "version": "635fac34e5709df58894836e5f260717dee003ce"
   },
   "secretlint": {
     "cargoLock": null,
