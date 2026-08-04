@@ -43,7 +43,7 @@ in
   xremap-wlroots =
     if pkgs.stdenv.isLinux then inputs.xremap-flake.packages.${system}.xremap-wlroots else null;
   roots = pkgs.callPackage ./pkgs/roots/default.nix inheritSources;
-  sara = pkgs.callPackage ./pkgs/sara/default.nix inheritSources;
+  sara = inputs.sara.packages.${system}.default;
   secretlint = pkgs.callPackage ./pkgs/secretlint/default.nix inheritSources;
   worktrunk = inputs.worktrunk.packages.${system}.default;
   deno = pkgs.callPackage ./pkgs/deno-overlay/default.nix {

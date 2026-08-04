@@ -76,18 +76,6 @@
       sha256 = "sha256-K8QMc27Wp+YZXNysTrlmz+Y44TWKAUZOq8vknEah7Gg=";
     };
   };
-  sara = {
-    pname = "sara";
-    version = "635fac34e5709df58894836e5f260717dee003ce";
-    src = fetchFromGitHub {
-      owner = "cledouarec";
-      repo = "sara";
-      rev = "635fac34e5709df58894836e5f260717dee003ce";
-      fetchSubmodules = false;
-      sha256 = "sha256-FWeRr5kTXUvHpTVYuC21eDhm+3u+S4Lpbpr7da5AxHI=";
-    };
-    date = "2026-08-01";
-  };
   secretlint = {
     pname = "secretlint";
     version = "v13.0.4";

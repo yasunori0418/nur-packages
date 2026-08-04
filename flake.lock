@@ -291,6 +291,7 @@
         "nix-unit": "nix-unit",
         "nixpkgs": "nixpkgs",
         "rust-overlay": "rust-overlay",
+        "sara": "sara",
         "treefmt-nix": "treefmt-nix_3",
         "vim-overlay": "vim-overlay",
         "worktrunk": "worktrunk",
@@ -312,6 +313,26 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
+        "type": "github"
+      }
+    },
+    "sara": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1785549977,
+        "narHash": "sha256-FWeRr5kTXUvHpTVYuC21eDhm+3u+S4Lpbpr7da5AxHI=",
+        "owner": "cledouarec",
+        "repo": "sara",
+        "rev": "635fac34e5709df58894836e5f260717dee003ce",
+        "type": "github"
+      },
+      "original": {
+        "owner": "cledouarec",
+        "repo": "sara",
         "type": "github"
       }
     },

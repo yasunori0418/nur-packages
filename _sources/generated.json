@@ -125,27 +125,6 @@
     },
     "version": "1.5.14"
   },
-  "sara": {
-    "cargoLock": null,
-    "date": "2026-08-01",
-    "extract": null,
-    "name": "sara",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "cledouarec",
-      "repo": "sara",
-      "rev": "635fac34e5709df58894836e5f260717dee003ce",
-      "sha256": "sha256-FWeRr5kTXUvHpTVYuC21eDhm+3u+S4Lpbpr7da5AxHI=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "635fac34e5709df58894836e5f260717dee003ce"
-  },
   "secretlint": {
     "cargoLock": null,
     "date": null,
