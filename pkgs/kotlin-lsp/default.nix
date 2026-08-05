@@ -9,7 +9,7 @@
 let
   inherit (stdenvNoCC) mkDerivation;
   inherit (stdenvNoCC.hostPlatform) system isLinux;
-  version = "262.7569.0";
+  version = "262.9593.0";
 
   selectSystem = attrs: attrs.${system} or (throw "kotlin-lsp: unsupported platform ${system}");
 
@@ -44,12 +44,13 @@ mkDerivation {
 
   src = fetchzip (
     {
-      url = "https://download-cdn.jetbrains.com/kotlin-lsp/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
+      # v262.8190.0 以降、配布物の置き場が /kotlin-lsp/ から /language-server/kotlin-server/ へ移動した
+      url = "https://download-cdn.jetbrains.com/language-server/kotlin-server/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
       hash = selectSystem {
-        aarch64-darwin = "sha256-2joLFpUOWHx36pIv98/aHigAjqMkbjGeqXYo20GLxok=";
-        x86_64-darwin = "sha256-4AB41QwRlJiW5SGMQZpZGPucg7lmOiqWlW6WWwF4Yng=";
-        aarch64-linux = "sha256-nV4q64DG3P7/84YMjJbNYfLFkezNrrTPvuIyb5Yr+DQ=";
-        x86_64-linux = "sha256-u2IcSjMCAukvcDEZdvfyT6hWJJ+e5O49/SAWbqlXJyo=";
+        aarch64-darwin = "sha256-qDS5nfZtxAaZUGlaxbcdP8nC1vxYYg1ynj+kwSwo37Q=";
+        x86_64-darwin = "sha256-amsA9QP+xgpLitwpG7M3Ej0tVRgXZv3Sz1w6Tk/K2CQ=";
+        aarch64-linux = "sha256-769vjedw4TzXPak1U/ls69sIiyow3057VGAADBCXtsU=";
+        x86_64-linux = "sha256-6ajvuyFga+IL9eLqNKCPphdVwRxpFQSQOy54HGreEqw=";
       };
     }
     // lib.optionalAttrs (archiveInfo.extension != null) {
