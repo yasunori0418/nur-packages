@@ -10,7 +10,7 @@ let
       f = v: lib.optionals env v;
     in
     f;
-  optionalIsLinux = optional pkgs.stdenv.isLinux;
+  optionalIsLinux = optional pkgs.stdenv.hostPlatform.isLinux;
 in
 with pkgs;
 vim.overrideAttrs (prev: {
