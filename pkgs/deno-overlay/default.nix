@@ -25,4 +25,7 @@ in
 # 網羅しているので通常このフォールバックには入らないが、上流が arch を
 # 落とした場合に評価全体を壊さないよう null を返す。
 # null は lib.isDerivation フィルタで packages 出力から除外される。
-if latestVersion == "" then null else denoVersions.${latestVersion}
+# if latestVersion == "" then null else denoVersions.${latestVersion}
+
+# 一時的に2.9.5にダウングレード
+denoVersions."2.9.5"
