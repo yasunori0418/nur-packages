@@ -44,15 +44,15 @@
   };
   pict = {
     pname = "pict";
-    version = "60416548af8f3488a5b6efed9d8e0bae0e03d157";
+    version = "08d3e5632b8f4ac7ec292a23d50cf9e06741a48a";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "pict";
-      rev = "60416548af8f3488a5b6efed9d8e0bae0e03d157";
+      rev = "08d3e5632b8f4ac7ec292a23d50cf9e06741a48a";
       fetchSubmodules = false;
-      sha256 = "sha256-fcV4w57W+ckMhnlfT/26ELZIwDHtLvK1JHZPVxxfPvY=";
+      sha256 = "sha256-ZrPwP6P5oJ5RU2DWwwOoxUJUKng1f5mStwqIFPQkko0=";
     };
-    date = "2026-07-24";
+    date = "2026-08-25";
   };
   roots = {
     pname = "roots";
@@ -78,13 +78,13 @@
   };
   secretlint = {
     pname = "secretlint";
-    version = "v13.0.4";
+    version = "v13.0.5";
     src = fetchFromGitHub {
       owner = "secretlint";
       repo = "secretlint";
-      rev = "v13.0.4";
+      rev = "v13.0.5";
       fetchSubmodules = false;
-      sha256 = "sha256-/SaGzOFrj2EXEOQxTazSuT08qgvIzbDk0al4zEubts0=";
+      sha256 = "sha256-bIvCsROct1i4A6cC/RFw4Lbgn8jXu30Nlhb4+NCEWeo=";
     };
   };
 }

@@ -64,7 +64,7 @@
   },
   "pict": {
     "cargoLock": null,
-    "date": "2026-07-24",
+    "date": "2026-08-25",
     "extract": null,
     "name": "pict",
     "passthru": null,
@@ -76,12 +76,12 @@
       "name": null,
       "owner": "microsoft",
       "repo": "pict",
-      "rev": "60416548af8f3488a5b6efed9d8e0bae0e03d157",
-      "sha256": "sha256-fcV4w57W+ckMhnlfT/26ELZIwDHtLvK1JHZPVxxfPvY=",
+      "rev": "08d3e5632b8f4ac7ec292a23d50cf9e06741a48a",
+      "sha256": "sha256-ZrPwP6P5oJ5RU2DWwwOoxUJUKng1f5mStwqIFPQkko0=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "60416548af8f3488a5b6efed9d8e0bae0e03d157"
+    "version": "08d3e5632b8f4ac7ec292a23d50cf9e06741a48a"
   },
   "roots": {
     "cargoLock": null,
@@ -139,11 +139,11 @@
       "name": null,
       "owner": "secretlint",
       "repo": "secretlint",
-      "rev": "v13.0.4",
-      "sha256": "sha256-/SaGzOFrj2EXEOQxTazSuT08qgvIzbDk0al4zEubts0=",
+      "rev": "v13.0.5",
+      "sha256": "sha256-bIvCsROct1i4A6cC/RFw4Lbgn8jXu30Nlhb4+NCEWeo=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "v13.0.4"
+    "version": "v13.0.5"
   }
 }
