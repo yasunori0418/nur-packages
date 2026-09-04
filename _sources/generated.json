@@ -64,7 +64,7 @@
   },
   "pict": {
     "cargoLock": null,
-    "date": "2026-08-25",
+    "date": "2026-09-01",
     "extract": null,
     "name": "pict",
     "passthru": null,
@@ -76,12 +76,12 @@
       "name": null,
       "owner": "microsoft",
       "repo": "pict",
-      "rev": "08d3e5632b8f4ac7ec292a23d50cf9e06741a48a",
-      "sha256": "sha256-ZrPwP6P5oJ5RU2DWwwOoxUJUKng1f5mStwqIFPQkko0=",
+      "rev": "0c66a8e332655cd64802e18de962dacbbe3882bd",
+      "sha256": "sha256-Pno18Cq8vXThX6/2E0iiWEPANTKQpSBNzG56gCqKfq8=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "08d3e5632b8f4ac7ec292a23d50cf9e06741a48a"
+    "version": "0c66a8e332655cd64802e18de962dacbbe3882bd"
   },
   "roots": {
     "cargoLock": null,
@@ -118,12 +118,12 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.5.15",
-      "sha256": "sha256-GslNlFHnQ/znHd30h+sfqZ1Sek8TRHzUXI/diOjSi4Y=",
+      "rev": "1.5.16",
+      "sha256": "sha256-aOq2iXekHIoW5P5Xrz4Slk8sxlDknM8TL1u4o31MYRk=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.5.15"
+    "version": "1.5.16"
   },
   "secretlint": {
     "cargoLock": null,
