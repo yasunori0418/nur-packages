@@ -20,15 +20,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "ce87951872cd1323f2eea644eb8c3b5495dbec3f";
+    version = "61880c787d8f26de68e308e084c58f14254b80dd";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "ce87951872cd1323f2eea644eb8c3b5495dbec3f";
+      rev = "61880c787d8f26de68e308e084c58f14254b80dd";
       fetchSubmodules = false;
-      sha256 = "sha256-VcZsBC4EQawm4l/gkVKYWrl0+BhhoSZ2MdsB0T+lfnY=";
+      sha256 = "sha256-l+5XfK5djh36Jnc+Ktgx7eLun4/Dw2rawaizNb/WQQc=";
     };
-    date = "2026-07-27";
+    date = "2026-09-08";
   };
   laminate = {
     pname = "laminate";
@@ -44,15 +44,15 @@
   };
   pict = {
     pname = "pict";
-    version = "0c66a8e332655cd64802e18de962dacbbe3882bd";
+    version = "ab76c2548f551fcb46314e58653a1bd1172f3a72";
     src = fetchFromGitHub {
       owner = "microsoft";
       repo = "pict";
-      rev = "0c66a8e332655cd64802e18de962dacbbe3882bd";
+      rev = "ab76c2548f551fcb46314e58653a1bd1172f3a72";
       fetchSubmodules = false;
-      sha256 = "sha256-Pno18Cq8vXThX6/2E0iiWEPANTKQpSBNzG56gCqKfq8=";
+      sha256 = "sha256-wupY9aMEGsdSmCbBigkAnzBeNEvFSK1qQz2R++3EGjU=";
     };
-    date = "2026-09-01";
+    date = "2026-09-08";
   };
   roots = {
     pname = "roots";
@@ -67,13 +67,13 @@
   };
   safe-chain = {
     pname = "safe-chain";
-    version = "1.5.16";
+    version = "1.5.19";
     src = fetchFromGitHub {
       owner = "AikidoSec";
       repo = "safe-chain";
-      rev = "1.5.16";
+      rev = "1.5.19";
       fetchSubmodules = false;
-      sha256 = "sha256-aOq2iXekHIoW5P5Xrz4Slk8sxlDknM8TL1u4o31MYRk=";
+      sha256 = "sha256-b/j2d4GhUqace9ExkMI3xeLaXCmaVmg1I6VfhlPTQuU=";
     };
   };
   secretlint = {

@@ -22,7 +22,7 @@
   },
   "k1Low-deck": {
     "cargoLock": null,
-    "date": "2026-07-27",
+    "date": "2026-09-08",
     "extract": null,
     "name": "k1Low-deck",
     "passthru": null,
@@ -34,12 +34,12 @@
       "name": null,
       "owner": "k1LoW",
       "repo": "deck",
-      "rev": "ce87951872cd1323f2eea644eb8c3b5495dbec3f",
-      "sha256": "sha256-VcZsBC4EQawm4l/gkVKYWrl0+BhhoSZ2MdsB0T+lfnY=",
+      "rev": "61880c787d8f26de68e308e084c58f14254b80dd",
+      "sha256": "sha256-l+5XfK5djh36Jnc+Ktgx7eLun4/Dw2rawaizNb/WQQc=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "ce87951872cd1323f2eea644eb8c3b5495dbec3f"
+    "version": "61880c787d8f26de68e308e084c58f14254b80dd"
   },
   "laminate": {
     "cargoLock": null,
@@ -64,7 +64,7 @@
   },
   "pict": {
     "cargoLock": null,
-    "date": "2026-09-01",
+    "date": "2026-09-08",
     "extract": null,
     "name": "pict",
     "passthru": null,
@@ -76,12 +76,12 @@
       "name": null,
       "owner": "microsoft",
       "repo": "pict",
-      "rev": "0c66a8e332655cd64802e18de962dacbbe3882bd",
-      "sha256": "sha256-Pno18Cq8vXThX6/2E0iiWEPANTKQpSBNzG56gCqKfq8=",
+      "rev": "ab76c2548f551fcb46314e58653a1bd1172f3a72",
+      "sha256": "sha256-wupY9aMEGsdSmCbBigkAnzBeNEvFSK1qQz2R++3EGjU=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "0c66a8e332655cd64802e18de962dacbbe3882bd"
+    "version": "ab76c2548f551fcb46314e58653a1bd1172f3a72"
   },
   "roots": {
     "cargoLock": null,
@@ -118,12 +118,12 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.5.16",
-      "sha256": "sha256-aOq2iXekHIoW5P5Xrz4Slk8sxlDknM8TL1u4o31MYRk=",
+      "rev": "1.5.19",
+      "sha256": "sha256-b/j2d4GhUqace9ExkMI3xeLaXCmaVmg1I6VfhlPTQuU=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.5.16"
+    "version": "1.5.19"
   },
   "secretlint": {
     "cargoLock": null,
