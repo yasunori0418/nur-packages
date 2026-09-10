@@ -67,13 +67,13 @@
   };
   safe-chain = {
     pname = "safe-chain";
-    version = "1.5.19";
+    version = "1.5.20";
     src = fetchFromGitHub {
       owner = "AikidoSec";
       repo = "safe-chain";
-      rev = "1.5.19";
+      rev = "1.5.20";
       fetchSubmodules = false;
-      sha256 = "sha256-b/j2d4GhUqace9ExkMI3xeLaXCmaVmg1I6VfhlPTQuU=";
+      sha256 = "sha256-vSC3hSiHzQrRSBaVYoFB0VQbGCgAVxt+gqGUTHGXLZI=";
     };
   };
   secretlint = {
