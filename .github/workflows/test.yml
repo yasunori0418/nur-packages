@@ -14,7 +14,7 @@ jobs:
     strategy:
       matrix:
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-26.04
             system: x86_64-linux
           - os: macos-26
             system: aarch64-darwin

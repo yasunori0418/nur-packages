@@ -19,7 +19,7 @@ jobs:
       fail-fast: false
       matrix:
         include:
-          - os: ubuntu-latest
+          - os: ubuntu-26.04
             system: x86_64-linux
           - os: macos-26
             system: aarch64-darwin
@@ -45,7 +45,7 @@ jobs:
 
   collect:
     needs: plan
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
     outputs:
       matrix: ${{ steps.merge.outputs.matrix }}
     steps:
