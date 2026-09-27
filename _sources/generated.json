@@ -118,12 +118,12 @@
       "name": null,
       "owner": "AikidoSec",
       "repo": "safe-chain",
-      "rev": "1.5.20",
-      "sha256": "sha256-vSC3hSiHzQrRSBaVYoFB0VQbGCgAVxt+gqGUTHGXLZI=",
+      "rev": "1.5.21",
+      "sha256": "sha256-DXawit87BjMh2FbBHPmPg78V/Cr6j6M/EGqDTPARH1c=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "1.5.20"
+    "version": "1.5.21"
   },
   "secretlint": {
     "cargoLock": null,
@@ -139,11 +139,11 @@
       "name": null,
       "owner": "secretlint",
       "repo": "secretlint",
-      "rev": "v13.0.5",
-      "sha256": "sha256-bIvCsROct1i4A6cC/RFw4Lbgn8jXu30Nlhb4+NCEWeo=",
+      "rev": "v13.0.6",
+      "sha256": "sha256-YKEj+UouwdqyMt1rEH39qDj3u7t3CyLJW4hSvLA8OP8=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "v13.0.5"
+    "version": "v13.0.6"
   }
 }
