@@ -20,15 +20,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "61880c787d8f26de68e308e084c58f14254b80dd";
+    version = "8411dde934bd08b0bd6e309afdbeb956373b939d";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "61880c787d8f26de68e308e084c58f14254b80dd";
+      rev = "8411dde934bd08b0bd6e309afdbeb956373b939d";
       fetchSubmodules = false;
-      sha256 = "sha256-l+5XfK5djh36Jnc+Ktgx7eLun4/Dw2rawaizNb/WQQc=";
+      sha256 = "sha256-yqahnR77MIjs1wznLUKdVRwZhgiTqEXexGVMlc/3egw=";
     };
-    date = "2026-09-08";
+    date = "2026-09-28";
   };
   laminate = {
     pname = "laminate";
@@ -56,24 +56,24 @@
   };
   roots = {
     pname = "roots";
-    version = "v0.4.1";
+    version = "v0.4.2";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "roots";
-      rev = "v0.4.1";
+      rev = "v0.4.2";
       fetchSubmodules = false;
-      sha256 = "sha256-ACMRfWY/lhc3C/KVhuUyS1rgkSHGWPxZrmYt+pXupJI=";
+      sha256 = "sha256-neK1K3Emam70LJR/oVi1Gn0dNM+OC6X5TyAufQJE7BQ=";
     };
   };
   safe-chain = {
     pname = "safe-chain";
-    version = "1.5.21";
+    version = "1.5.23";
     src = fetchFromGitHub {
       owner = "AikidoSec";
       repo = "safe-chain";
-      rev = "1.5.21";
+      rev = "1.5.23";
       fetchSubmodules = false;
-      sha256 = "sha256-DXawit87BjMh2FbBHPmPg78V/Cr6j6M/EGqDTPARH1c=";
+      sha256 = "sha256-U9OHf7F/0stwQVcrr9qcuw9cxDOLQZkZszBknMWYqh8=";
     };
   };
   secretlint = {
