@@ -67,24 +67,24 @@
   };
   safe-chain = {
     pname = "safe-chain";
-    version = "1.5.23";
+    version = "1.5.24";
     src = fetchFromGitHub {
       owner = "AikidoSec";
       repo = "safe-chain";
-      rev = "1.5.23";
+      rev = "1.5.24";
       fetchSubmodules = false;
-      sha256 = "sha256-U9OHf7F/0stwQVcrr9qcuw9cxDOLQZkZszBknMWYqh8=";
+      sha256 = "sha256-YugpePEa+YobPvFjYCdswRk0NTNSK/BgN2vMKvW/WqM=";
     };
   };
   secretlint = {
     pname = "secretlint";
-    version = "v13.0.6";
+    version = "v13.0.7";
     src = fetchFromGitHub {
       owner = "secretlint";
       repo = "secretlint";
-      rev = "v13.0.6";
+      rev = "v13.0.7";
       fetchSubmodules = false;
-      sha256 = "sha256-YKEj+UouwdqyMt1rEH39qDj3u7t3CyLJW4hSvLA8OP8=";
+      sha256 = "sha256-7IzaHbAN3Ql0X3u7r67oE8NwSkKE1UB+u3gRxCXCq5w=";
     };
   };
 }
