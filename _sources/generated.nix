@@ -20,15 +20,15 @@
   };
   k1Low-deck = {
     pname = "k1Low-deck";
-    version = "8411dde934bd08b0bd6e309afdbeb956373b939d";
+    version = "82e8d197553e3e30305a2a56fb3c19fc9342f377";
     src = fetchFromGitHub {
       owner = "k1LoW";
       repo = "deck";
-      rev = "8411dde934bd08b0bd6e309afdbeb956373b939d";
+      rev = "82e8d197553e3e30305a2a56fb3c19fc9342f377";
       fetchSubmodules = false;
-      sha256 = "sha256-yqahnR77MIjs1wznLUKdVRwZhgiTqEXexGVMlc/3egw=";
+      sha256 = "sha256-T3myYhC6mkg09du6OwZ53N455FdEYCUh4wuwENqjVh0=";
     };
-    date = "2026-09-28";
+    date = "2026-10-13";
   };
   laminate = {
     pname = "laminate";
