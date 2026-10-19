@@ -86,6 +86,9 @@ mkDerivation {
     "libxkbcommon.so.0"
   ];
 
+  # 配布バイナリを展開するだけなので cachix へ push せず手元で fetch する
+  preferLocalBuild = true;
+
   dontConfigure = true;
   dontBuild = true;
 
