@@ -79,7 +79,8 @@
           system = pkgs.stdenv.hostPlatform.system;
           ciLib = import ./lib/ci-matrix.nix pkgs;
           # narinfo ハッシュ（= ストアパス basename の先頭 32 文字）を lib 関数で算出。
-          narinfoHashes = ciLib.narinfoHashes self.packages.${system};
+          # preferLocalBuild のパッケージは cachix へ push しないため対象から外す。
+          narinfoHashes = ciLib.narinfoHashes (ciLib.cacheablePackages self.packages.${system});
         in
         pkgs.writeShellApplication {
           name = "ci-matrix";

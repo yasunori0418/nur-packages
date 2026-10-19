@@ -4,10 +4,41 @@ let
     any
     attrNames
     filter
+    filterAttrs
     genAttrs
     ;
 in
 rec {
+  /**
+    パッケージ集合から、cachix へ push する対象のパッケージだけを残す関数。
+
+    ci.nix の isCacheable と同じく `preferLocalBuild = true` のパッケージを
+    除外する。配布バイナリを展開するだけのパッケージなど、キャッシュするより
+    手元で fetch したほうが速いものに付ける。
+
+    # Example
+
+    ```nix
+    cacheablePackages {
+      a = { };
+      b = { preferLocalBuild = true; };
+    }
+    => { a = { }; }
+    ```
+
+    # Type
+
+    ```
+    cacheablePackages :: AttrSet Derivation -> AttrSet Derivation
+    ```
+
+    # Arguments
+
+    packages
+    : パッケージ名 -> derivation の集合
+  */
+  cacheablePackages = packages: filterAttrs (_: p: !(p.preferLocalBuild or false)) packages;
+
   /**
     パッケージ集合から、各パッケージの全出力の narinfo ハッシュ
     （ストアパス basename の先頭 32 文字）を求める関数。

@@ -133,4 +133,24 @@ in
       };
     };
   };
+  cacheablePackages = {
+    testExcludesPreferLocalBuild = {
+      description = "preferLocalBuild = true のパッケージを除外する";
+      expr = builtins.attrNames (
+        lib.cacheablePackages {
+          a = { };
+          b = {
+            preferLocalBuild = true;
+          };
+          c = {
+            preferLocalBuild = false;
+          };
+        }
+      );
+      expected = [
+        "a"
+        "c"
+      ];
+    };
+  };
 }
