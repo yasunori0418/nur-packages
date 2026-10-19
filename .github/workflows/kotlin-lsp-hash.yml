@@ -1,0 +1,50 @@
+name: kotlin-lsp Hash
+
+# Renovate は kotlin-lsp の version だけを更新し、fetchzip の hash を再計算できない。
+# renovate/** ブランチで default.nix が変わったら hash を再計算して同じブランチへ積み、
+# x86_64-linux でビルドできることを確かめる。
+# GITHUB_TOKEN による push は workflow を再起動しないため、ここでの push でループしない。
+on:
+  push:
+    branches:
+      - "renovate/**"
+    paths:
+      - "pkgs/kotlin-lsp/default.nix"
+  workflow_dispatch:
+
+concurrency:
+  group: kotlin-lsp-hash-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update-hash:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Setup Nix
+        uses: ./.github/actions/setup-nix-quick
+        with:
+          nix-access-token: ${{ secrets.NIX_ACCESS_TOKEN }}
+
+      - name: Update hashes
+        run: bash scripts/update-kotlin-lsp-hashes.sh
+
+      - name: Build kotlin-lsp
+        run: nix build .#kotlin-lsp --no-link
+
+      - name: Commit and push
+        run: |
+          if git diff --quiet -- pkgs/kotlin-lsp/default.nix; then
+            echo "hash に変更なし"
+            exit 0
+          fi
+          version="$(sed -n 's/^  version = "\(.*\)";$/\1/p' pkgs/kotlin-lsp/default.nix)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pkgs/kotlin-lsp/default.nix
+          git commit -m "update(kotlin-lsp): v${version} の hash を更新"
+          git push

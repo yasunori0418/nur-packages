@@ -8,7 +8,22 @@
     "enabled": true,
     "schedule": ["before 5am on monday"]
   },
-  "enabledManagers": ["nix", "github-actions"],
+  "enabledManagers": ["nix", "github-actions", "custom.regex"],
+  "gitIgnoredAuthors": [
+    "41898282+github-actions[bot]@users.noreply.github.com"
+  ],
+  "customManagers": [
+    {
+      "customType": "regex",
+      "description": "kotlin-lsp のリリースを GitHub Releases から追う (hash は kotlin-lsp-hash workflow が補完)",
+      "managerFilePatterns": ["/^pkgs/kotlin-lsp/default\\.nix$/"],
+      "matchStrings": ["\\n  version = \"(?<currentValue>[^\"]+)\";"],
+      "depNameTemplate": "kotlin-lsp",
+      "packageNameTemplate": "Kotlin/kotlin-lsp",
+      "datasourceTemplate": "github-releases",
+      "extractVersionTemplate": "^kotlin-lsp/v(?<version>.+)$"
+    }
+  ],
   "packageRules": [
     {
       "description": "Group flake.nix inputs together",
