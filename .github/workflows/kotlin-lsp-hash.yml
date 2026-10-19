@@ -1,7 +1,7 @@
 name: kotlin-lsp Hash
 
-# Renovate は kotlin-lsp の version だけを更新し、fetchzip の hash を再計算できない。
-# renovate/** ブランチで default.nix が変わったら hash を再計算して同じブランチへ積み、
+# Renovate は kotlin-lsp の version だけを更新し、hash を更新できない。
+# renovate/** ブランチで default.nix が変わったら上流の <配布物>.sha256 から hash を更新して同じブランチへ積み、
 # x86_64-linux でビルドできることを確かめる。
 # GITHUB_TOKEN による push は workflow を再起動しないため、ここでの push でループしない。
 on:

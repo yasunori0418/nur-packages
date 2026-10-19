@@ -2,7 +2,8 @@
   lib,
   stdenvNoCC,
   stdenv,
-  fetchzip,
+  fetchurl,
+  unzip,
   autoPatchelfHook,
   zlib,
 }:
@@ -19,22 +20,18 @@ let
     aarch64-darwin = {
       suffix = "-aarch64";
       ext = "sit";
-      extension = "zip";
     };
     x86_64-darwin = {
       suffix = "";
       ext = "sit";
-      extension = "zip";
     };
     aarch64-linux = {
       suffix = "-aarch64";
       ext = "tar.gz";
-      extension = null;
     };
     x86_64-linux = {
       suffix = "";
       ext = "tar.gz";
-      extension = null;
     };
   };
 in
@@ -42,26 +39,30 @@ mkDerivation {
   pname = "kotlin-lsp";
   inherit version;
 
-  src = fetchzip (
-    {
-      # v262.8190.0 以降、配布物の置き場が /kotlin-lsp/ から /language-server/kotlin-server/ へ移動した
-      # download-cdn への直リンクは署名なしだと 404 になる (2026-10 時点) ため、署名付き URL へリダイレクトする download.jetbrains.com を使う
-      url = "https://download.jetbrains.com/language-server/kotlin-server/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
-      hash = selectSystem {
-        aarch64-darwin = "sha256-wD4BU8Be6pLOmrnaojm7EHr+lfYAp5NjCoPC+M3deHM=";
-        x86_64-darwin = "sha256-JQrQ8ApnI8lsy8oHjeO3IPpw1PlOMVfJ096SdZHw+DA=";
-        aarch64-linux = "sha256-gxv8v1/zSQO9EPD7S1YA/2igI809uq/tah8AVdCKNds=";
-        x86_64-linux = "sha256-Ld04XYQh62ahCzpAzZzwhFtI0apmhZIhQMVRm6ak+eQ=";
-      };
-    }
-    // lib.optionalAttrs (archiveInfo.extension != null) {
-      inherit (archiveInfo) extension;
-    }
-  );
+  # 上流が配布物ごとに公開している <配布物>.sha256 と同じ値を使えるよう、
+  # 展開後の NAR ハッシュになる fetchzip ではなく fetchurl でアーカイブを取得する
+  src = fetchurl {
+    # v262.8190.0 以降、配布物の置き場が /kotlin-lsp/ から /language-server/kotlin-server/ へ移動した
+    # download-cdn への直リンクは署名なしだと 404 になる (2026-10 時点) ため、署名付き URL へリダイレクトする download.jetbrains.com を使う
+    url = "https://download.jetbrains.com/language-server/kotlin-server/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
+    hash = selectSystem {
+      aarch64-darwin = "sha256-tAO/ilS9RY47pnMc+KuzNAvgi0OcA1dt/AKxP682lLg=";
+      x86_64-darwin = "sha256-spw5Ol5UEVPQPWJueUYmhDfjWKZnpfkUoSbbtAB2ZLE=";
+      aarch64-linux = "sha256-RQq3wdgOSBBqpCm0jLQibYLKEqiiQARHrgI4Z5R4DKw=";
+      x86_64-linux = "sha256-rgxLAeF6tzpKUienjqmebcvj5JlgAxWyJ1mk5M3dEd8=";
+    };
+  };
 
-  nativeBuildInputs = lib.optionals isLinux [
-    autoPatchelfHook
-  ];
+  nativeBuildInputs =
+    lib.optionals isLinux [
+      autoPatchelfHook
+    ]
+    ++ lib.optionals (archiveInfo.ext == "sit") [
+      unzip
+    ];
+
+  # .sit は拡張子から展開方法を判別できないため、実体の ZIP として明示的に展開する
+  unpackCmd = lib.optionalString (archiveInfo.ext == "sit") "unzip -qq $curSrc";
 
   buildInputs = lib.optionals isLinux [
     zlib

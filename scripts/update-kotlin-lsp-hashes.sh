@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
-# kotlin-lsp の fetchzip hash 更新スクリプト:
-#   pkgs/kotlin-lsp/default.nix の version に合わせて、4 プラットフォーム分の
-#   hash を nix-prefetch-url --unpack で再計算して書き換える。
+# kotlin-lsp の fetchurl hash 更新スクリプト:
+#   pkgs/kotlin-lsp/default.nix の version に合わせて、上流が配布物ごとに
+#   公開している <配布物>.sha256 を取得し、4 プラットフォーム分の hash を
+#   SRI 形式に変換して書き換える。アーカイブ本体はダウンロードしない。
 #
 # Renovate は version だけを更新し hash を再計算できないため、
 # renovate/** ブランチの CI (.github/workflows/kotlin-lsp-hash.yml) から呼ばれる。
@@ -35,15 +36,19 @@ declare -A ARCHIVES=(
 
 for system in "${!ARCHIVES[@]}"; do
     archive="${ARCHIVES[$system]}"
-    # .sit は実体が ZIP。fetchzip の extension = "zip" と同じく展開させるため .zip 名を付ける
-    name_args=()
-    if [[ "$archive" == *.sit ]]; then
-        name_args=(--name src.zip)
+    # <配布物>.sha256 は "<hex> *<ファイル名>" 形式
+    hex="$(curl -fsSL "${base}${archive}.sha256" | cut -d' ' -f1)"
+    if ! [[ "$hex" =~ ^[0-9a-f]{64}$ ]]; then
+        echo "ERROR: ${base}${archive}.sha256 から sha256 を取得できません" >&2
+        exit 1
     fi
-    raw="$(nix-prefetch-url --unpack --type sha256 "${name_args[@]}" "${base}${archive}")"
-    sri="$(nix hash convert --hash-algo sha256 --to sri "$raw")"
+    sri="$(nix hash convert --hash-algo sha256 --to sri "$hex")"
     echo "$system: $sri"
-    sed -i "s|^\(        ${system} = \)\"sha256-[^\"]*\";|\1\"${sri}\";|" "$NIX_FILE"
+    sed -i "s|^\( *${system} = \)\"sha256-[^\"]*\";|\1\"${sri}\";|" "$NIX_FILE"
+    if ! grep -qF "${system} = \"${sri}\";" "$NIX_FILE"; then
+        echo "ERROR: $NIX_FILE の ${system} の hash を書き換えられません" >&2
+        exit 1
+    fi
 done
 
 git --no-pager diff --stat -- "$NIX_FILE"
