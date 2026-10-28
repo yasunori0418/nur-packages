@@ -78,13 +78,13 @@
   };
   secretlint = {
     pname = "secretlint";
-    version = "v13.0.7";
+    version = "v13.1.0";
     src = fetchFromGitHub {
       owner = "secretlint";
       repo = "secretlint";
-      rev = "v13.0.7";
+      rev = "v13.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-7IzaHbAN3Ql0X3u7r67oE8NwSkKE1UB+u3gRxCXCq5w=";
+      sha256 = "sha256-yA15C8+v8bdArgF20UfZbsJFB3vDvC1b8DKD11h1LJw=";
     };
   };
 }
