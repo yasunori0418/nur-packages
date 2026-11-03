@@ -461,11 +461,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793513396,
-        "narHash": "sha256-Oc8yirxtyDJhvlE2k9tjD+NFKbAAoHODOdBF18+k4Q4=",
+        "lastModified": 1793548403,
+        "narHash": "sha256-oHQ3PbtomO6pEhrWvzG5ZBUzBW5dYp3FMVQ7kXjBX5g=",
         "owner": "max-sixty",
         "repo": "worktrunk",
-        "rev": "e2c8a7d669a6c2766d5c476934efa406763b8daf",
+        "rev": "5b3bf92d0ffe5289d7ead90e5eb103bdc968a80b",
         "type": "github"
       },
       "original": {
