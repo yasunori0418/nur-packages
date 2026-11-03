@@ -323,11 +323,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1793631638,
-        "narHash": "sha256-w2YS85NcAG6Kp0LH4mWpHf/s/CDPnxBAe19LmJVoIN0=",
+        "lastModified": 1793697033,
+        "narHash": "sha256-9/+aybFGsoD3L67oueEmkg+vSbu9zSfopgyQEGgsAhs=",
         "owner": "cledouarec",
         "repo": "sara",
-        "rev": "d24ec46e58a107f81ad9ef9e7eea8d3fb4b31573",
+        "rev": "d061b7707e9a22a1f5becb2bed85aace9d16de74",
         "type": "github"
       },
       "original": {

@@ -46,13 +46,7 @@ in
     else
       null;
   roots = pkgs.callPackage ./pkgs/roots/default.nix inheritSources;
-  # buildRustPackage が RUST_LOG= (空) を設定するため、上流の stderr ログ検証テストが落ちる。
-  # 上流で修正されたら外す
-  sara = inputs.sara.packages.${system}.default.overrideAttrs (old: {
-    preCheck = (old.preCheck or "") + ''
-      unset RUST_LOG
-    '';
-  });
+  sara = inputs.sara.packages.${system}.default;
   secretlint = pkgs.callPackage ./pkgs/secretlint/default.nix inheritSources;
   worktrunk = inputs.worktrunk.packages.${system}.default;
   deno = pkgs.callPackage ./pkgs/deno-overlay/default.nix {
