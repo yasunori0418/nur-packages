@@ -24,7 +24,7 @@ buildNpmPackage {
   '';
 
   npmDepsFetcherVersion = 2;
-  npmDepsHash = "sha256-GoyVJU2fg/uKirqK99iBgzb4U2qrSRdJbB3NjCE1Zpw=";
+  npmDepsHash = "sha256-IJmorynCNPlewIVJli/fBxm+u0uCD+4q5riPxAticqg=";
 
   npmWorkspace = "packages/safe-chain";
 
