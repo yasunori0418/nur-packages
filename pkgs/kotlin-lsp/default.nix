@@ -10,7 +10,7 @@
 let
   inherit (stdenvNoCC) mkDerivation;
   inherit (stdenvNoCC.hostPlatform) system isLinux;
-  version = "263.7084.0";
+  version = "271.2085.0";
 
   selectSystem = attrs: attrs.${system} or (throw "kotlin-lsp: unsupported platform ${system}");
 
