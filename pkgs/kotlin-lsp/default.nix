@@ -10,7 +10,7 @@
 let
   inherit (stdenvNoCC) mkDerivation;
   inherit (stdenvNoCC.hostPlatform) system isLinux;
-  version = "263.7084.0";
+  version = "271.2085.0";
 
   selectSystem = attrs: attrs.${system} or (throw "kotlin-lsp: unsupported platform ${system}");
 
@@ -46,10 +46,10 @@ mkDerivation {
     # download-cdn への直リンクは署名なしだと 404 になる (2026-10 時点) ため、署名付き URL へリダイレクトする download.jetbrains.com を使う
     url = "https://download.jetbrains.com/language-server/kotlin-server/${version}/kotlin-server-${version}${archiveInfo.suffix}.${archiveInfo.ext}";
     hash = selectSystem {
-      aarch64-darwin = "sha256-tAO/ilS9RY47pnMc+KuzNAvgi0OcA1dt/AKxP682lLg=";
-      x86_64-darwin = "sha256-spw5Ol5UEVPQPWJueUYmhDfjWKZnpfkUoSbbtAB2ZLE=";
-      aarch64-linux = "sha256-RQq3wdgOSBBqpCm0jLQibYLKEqiiQARHrgI4Z5R4DKw=";
-      x86_64-linux = "sha256-rgxLAeF6tzpKUienjqmebcvj5JlgAxWyJ1mk5M3dEd8=";
+      aarch64-darwin = "sha256-LSI4j1i+b036eo8YweIxhxFk3KzBbkB1WQKdcjKBa0o=";
+      x86_64-darwin = "sha256-aEV6sYJTMePqyFGRt8MnN8vYmThn9anFDf4BLFUJ6Pc=";
+      aarch64-linux = "sha256-h3ruYSoX2rSBREZigqZBTsWKtCihC5fH4T7dm2s9yW4=";
+      x86_64-linux = "sha256-45jnmQJ/QXSeoz+qV0cDB9E9QPkQlhhYx+MK29d4rgg=";
     };
   };
 
