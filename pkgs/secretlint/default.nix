@@ -16,7 +16,7 @@ stdenv.mkDerivation (finalAttrs: {
     inherit (finalAttrs) pname version src;
     pnpm = pnpm_10;
     fetcherVersion = 3;
-    hash = "sha256-Xt/Au0De4vYavreoM2R0UspOJPj5aBxbylxAb8yUveQ=";
+    hash = "sha256-kOUCJWvtyRycD7bfULOLK8MoBKCAkvMAGCjmzlMhljQ=";
   };
 
   nativeBuildInputs = [
@@ -43,6 +43,7 @@ stdenv.mkDerivation (finalAttrs: {
     cp -r packages $out/lib/secretlint/
     cp -r examples $out/lib/secretlint/
     cp -r publish $out/lib/secretlint/
+    cp -r e2e $out/lib/secretlint/
     cp -r node_modules $out/lib/secretlint/
 
     makeWrapper ${nodejs_22}/bin/node $out/bin/secretlint \
