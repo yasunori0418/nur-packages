@@ -1,3 +1,5 @@
 result
 result-*
 
+# グローバル gitignore の *.patch を打ち消し、ツール用に vendor したパッチを追跡する
+!/scripts/patches/*.patch

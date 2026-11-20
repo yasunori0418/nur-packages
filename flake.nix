@@ -54,6 +54,17 @@
         ] (system: f nixpkgs.legacyPackages.${system});
       treefmtEval = forAllSystems (pkgs: inputs.treefmt-nix.lib.evalModule pkgs ./treefmt.nix);
       nixUnitFor = pkgs: inputs.nix-unit.packages.${pkgs.stdenv.hostPlatform.system}.default;
+      # Nix 2.35 以降は `nix flake metadata` がダーティな tree を store へコピーせず
+      # 遅延パスだけを返すため、nix-update 1.16.0 の --flake が
+      # "opening file /nix/store/...-source: No such file or directory" で失敗する。
+      # 上流の未マージ修正 (Mic92/nix-update#692) の options.py 部分を当てる。リリースに取り込まれたら外す。
+      nixUpdateFor =
+        pkgs:
+        pkgs.nix-update.overridePythonAttrs (old: {
+          patches = (old.patches or [ ]) ++ [
+            ./scripts/patches/nix-update-prefetch-lazy-flake-source.patch
+          ];
+        });
 
       # narinfo が未登録のパッケージだけを含む matrix フラグメント
       # （[{package,system,os}]）を stdout に出力する app。
@@ -138,13 +149,16 @@
           name = "update-packages";
           runtimeInputs = with pkgs; [
             nvfetcher
-            nix-update
+            (nixUpdateFor pkgs)
             git
             nix
             jq
           ];
           text = ''
             set -euo pipefail
+            # devShell (direnv) 由来の PYTHONPATH が残っていると、runtimeInputs の
+            # パッチ済み nix-update より別ビルドの nix_update モジュールが優先される。
+            unset PYTHONPATH
             if ! root="$(git rev-parse --show-toplevel 2>/dev/null)"; then
               echo "ERROR: git リポジトリ内で実行してください" >&2
               exit 1
@@ -170,7 +184,7 @@
             with pkgs;
             [
               nvfetcher
-              nix-update
+              (nixUpdateFor pkgs)
               cachix
               nix-unit
             ];
