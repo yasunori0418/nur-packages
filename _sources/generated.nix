@@ -6,18 +6,6 @@
   dockerTools,
 }:
 {
-  cchook = {
-    pname = "cchook";
-    version = "00d8fb77dcbdbae5913993fc85a998c73f2cd664";
-    src = fetchFromGitHub {
-      owner = "syou6162";
-      repo = "cchook";
-      rev = "00d8fb77dcbdbae5913993fc85a998c73f2cd664";
-      fetchSubmodules = false;
-      sha256 = "sha256-3oJcLvQePmZpnG99ytrF5jA1oOFKfbyYd6wcZzRT9pg=";
-    };
-    date = "2026-11-21";
-  };
   k1Low-deck = {
     pname = "k1Low-deck";
     version = "134c6eb775eda3c98e38e2df4b2b9459539c13e4";

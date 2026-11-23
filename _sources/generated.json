@@ -1,25 +1,4 @@
 {
-  "cchook": {
-    "cargoLock": null,
-    "date": "2026-11-21",
-    "extract": null,
-    "name": "cchook",
-    "passthru": null,
-    "pinned": false,
-    "src": {
-      "deepClone": false,
-      "fetchSubmodules": false,
-      "leaveDotGit": false,
-      "name": null,
-      "owner": "syou6162",
-      "repo": "cchook",
-      "rev": "00d8fb77dcbdbae5913993fc85a998c73f2cd664",
-      "sha256": "sha256-3oJcLvQePmZpnG99ytrF5jA1oOFKfbyYd6wcZzRT9pg=",
-      "sparseCheckout": [],
-      "type": "github"
-    },
-    "version": "00d8fb77dcbdbae5913993fc85a998c73f2cd664"
-  },
   "k1Low-deck": {
     "cargoLock": null,
     "date": "2026-11-18",

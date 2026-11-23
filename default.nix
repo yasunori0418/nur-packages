@@ -22,7 +22,6 @@ in
   overlays = import ./overlays/default.nix; # nixpkgs overlays
 
   safe-chain = pkgs.callPackage ./pkgs/safe-chain/default.nix inheritSources;
-  cchook = pkgs.callPackage ./pkgs/cchook/default.nix inheritSources;
   k1Low-deck = pkgs.callPackage ./pkgs/k1Low-deck/default.nix inheritSources;
   laminate = pkgs.callPackage ./pkgs/laminate/default.nix inheritSources;
   # vim = pkgs.callPackage ./pkgs/vim/default.nix inheritSources;
