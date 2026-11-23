@@ -8,15 +8,15 @@
 {
   cchook = {
     pname = "cchook";
-    version = "2d59b93c600a4651c2828e4bf06f2693799eefdc";
+    version = "00d8fb77dcbdbae5913993fc85a998c73f2cd664";
     src = fetchFromGitHub {
       owner = "syou6162";
       repo = "cchook";
-      rev = "2d59b93c600a4651c2828e4bf06f2693799eefdc";
+      rev = "00d8fb77dcbdbae5913993fc85a998c73f2cd664";
       fetchSubmodules = false;
-      sha256 = "sha256-BVm4oTIFsW8P3gWKbgBzCWTgrFTeDOnZ09bSAuHBtvM=";
+      sha256 = "sha256-3oJcLvQePmZpnG99ytrF5jA1oOFKfbyYd6wcZzRT9pg=";
     };
-    date = "2026-04-11";
+    date = "2026-11-21";
   };
   k1Low-deck = {
     pname = "k1Low-deck";
@@ -78,13 +78,13 @@
   };
   secretlint = {
     pname = "secretlint";
-    version = "v14.0.1";
+    version = "v14.1.0";
     src = fetchFromGitHub {
       owner = "secretlint";
       repo = "secretlint";
-      rev = "v14.0.1";
+      rev = "v14.1.0";
       fetchSubmodules = false;
-      sha256 = "sha256-YQ1NXKalkGReJzd356TtubKj9MYy5c2CRL3whtWWtvI=";
+      sha256 = "sha256-RDqC4esIZtdfn8mH9PjHtFsYWSp3XJWBC+Sk90oc1wg=";
     };
   };
 }

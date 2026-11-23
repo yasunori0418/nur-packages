@@ -1,7 +1,7 @@
 {
   "cchook": {
     "cargoLock": null,
-    "date": "2026-04-11",
+    "date": "2026-11-21",
     "extract": null,
     "name": "cchook",
     "passthru": null,
@@ -13,12 +13,12 @@
       "name": null,
       "owner": "syou6162",
       "repo": "cchook",
-      "rev": "2d59b93c600a4651c2828e4bf06f2693799eefdc",
-      "sha256": "sha256-BVm4oTIFsW8P3gWKbgBzCWTgrFTeDOnZ09bSAuHBtvM=",
+      "rev": "00d8fb77dcbdbae5913993fc85a998c73f2cd664",
+      "sha256": "sha256-3oJcLvQePmZpnG99ytrF5jA1oOFKfbyYd6wcZzRT9pg=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "2d59b93c600a4651c2828e4bf06f2693799eefdc"
+    "version": "00d8fb77dcbdbae5913993fc85a998c73f2cd664"
   },
   "k1Low-deck": {
     "cargoLock": null,
@@ -139,11 +139,11 @@
       "name": null,
       "owner": "secretlint",
       "repo": "secretlint",
-      "rev": "v14.0.1",
-      "sha256": "sha256-YQ1NXKalkGReJzd356TtubKj9MYy5c2CRL3whtWWtvI=",
+      "rev": "v14.1.0",
+      "sha256": "sha256-RDqC4esIZtdfn8mH9PjHtFsYWSp3XJWBC+Sk90oc1wg=",
       "sparseCheckout": [],
       "type": "github"
     },
-    "version": "v14.0.1"
+    "version": "v14.1.0"
   }
 }
